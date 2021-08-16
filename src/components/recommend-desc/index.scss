@@ -1,0 +1,47 @@
+@import '../../common/theme.scss';
+
+.recommend-desc {
+  padding: 30px;
+  background:
+    #fff
+    url(//m.360buyimg.com/img/s1242x1242_jfs/t20107/102/46635868/65056/4f27bda2/5ae2a6cbNe10d3a94.png)
+    center center no-repeat;
+  background-size: 100%;
+  margin-bottom: 20px;
+}
+
+.recommend-desc .split-line {
+  display: inline-block;
+  width: 2px;
+  height: 28px;
+  background: rgba(3, 47, 60, 0.18);
+  margin: 0 14px;
+}
+
+.recommend-desc .head {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+
+.recommend-desc .contents {
+  font-size: 26px;
+  color: rgb(137, 137, 137);
+  line-height: 36px;
+}
+
+.recommend-desc .title {
+  color: $color;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.recommend-desc .logo {
+  background:
+    url(//m.360buyimg.com/img/s270x270_jfs/t17287/234/2026312491/11305/50932707/5ae18cddN68f98adf.png)
+    center center no-repeat;
+  background-size: 100%;
+  width: 180px;
+  height: 48px;
+}

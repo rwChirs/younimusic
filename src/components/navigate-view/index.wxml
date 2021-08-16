@@ -1,0 +1,3 @@
+<view class="navigate-view" bindtap="{{clicked ? 'onTap' : ''}}">
+  <slot></slot>
+</view>

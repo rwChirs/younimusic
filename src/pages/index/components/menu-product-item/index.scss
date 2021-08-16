@@ -1,0 +1,99 @@
+$titleFamily: PingFangSC-Medium;
+
+.product-item {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 338px;
+  height: auto;
+  border-radius: 16px;
+  background-color: #fff;
+
+  .product-item-figture {
+    position: relative;
+    width: 338px;
+    height: 338px;
+
+    .product-item-image {
+      width: 338px;
+      height: 338px;
+    }
+  }
+
+  .product-item-desc {
+    padding: 0 20px;
+    text-align: left;
+    position: relative;
+
+    .product-item-title {
+      font-family: $titleFamily;
+      font-size: 30px;
+      height: 42px;
+      line-height: 42px;
+      margin-top: 10px;
+      color: rgb(29, 31, 43);
+      overflow: hidden;
+      display: -webkit-box;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 1;
+
+      /* autoprefixer: ignore next */
+      -webkit-box-orient: vertical;
+    }
+
+    .product-item-bottom {
+      padding: 20px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+
+      .product-item-bottom-left {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .clock-icon {
+          margin-right: 6px;
+          display: inline-block;
+          width: 24px;
+          height: 24px;
+          background-image: url(//m.360buyimg.com/img/jfs/t1/54751/14/2710/520/5d0993bcE12df5544/4c7875c65133cf72.png);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+
+        .unit {
+          font-size: 24px;
+          color: rgb(137, 137, 137);
+        }
+      }
+
+      .product-item-btn {
+        display: flex;
+        align-items: center;
+        color: #898989;
+        font-size: 24px;
+        position: absolute;
+        right: 0;
+        padding: 20px 0;
+
+        .collection-icon {
+          display: inline-block;
+          width: 26px;
+          height: 26px;
+          background-size: 100%;
+          background-repeat: no-repeat;
+          background-image: url(//m.360buyimg.com/img/jfs/t1/66059/5/2283/962/5d0993cfE1360248b/23e712634a568f0c.png);
+          margin-right: 10px;
+        }
+
+        .collection-icon.collected {
+          background-size: 95%;
+          background-image: url(//m.360buyimg.com/img/jfs/t1/41393/18/7070/680/5d0b637cEaeffc09d/812d091f66044721.png);
+        }
+      }
+    }
+  }
+}

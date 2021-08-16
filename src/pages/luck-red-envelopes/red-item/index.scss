@@ -1,0 +1,80 @@
+.red-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0 36px;
+}
+
+.red-item .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.red-item .avatar {
+  width: 76px;
+  height: 76px;
+  background: #f1f1f1;
+  border-radius: 38px;
+  margin-right: 22px;
+}
+
+.red-item .center {
+  flex: 1;
+}
+.red-item .center .top {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-bottom: 4px;
+}
+
+.red-item .center .name {
+  color: rgb(37, 37, 37);
+  font-size: 24px;
+  line-height: 34px;
+  margin-right: 12px;
+}
+
+.red-item .center .date {
+  font-size: 20px;
+  line-height: 28px;
+  color: rgba(37, 37, 37, 0.5);
+}
+
+.red-item .center .copywriting {
+  font-size: 20px;
+  color: rgb(37, 37, 37);
+  line-height: 28px;
+  height: 28px;
+}
+
+.red-item .unit {
+  font-size: 24px;
+  line-height: 34px;
+  margin-right: 10px;
+}
+
+.red-item .price {
+  font-size: 34px;
+  color: rgb(255, 99, 64);
+  line-height: 48px;
+}
+
+.red-item .label {
+  background: linear-gradient(to right, rgb(255, 121, 81), rgb(255, 99, 64));
+  border-radius: 13px;
+  border-top-right-radius: 0;
+  font-size: 18px;
+  color: #fff;
+  line-height: 26px;
+  padding: 0 13px;
+  display: inline-block;
+}
+
+.red-item .right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}

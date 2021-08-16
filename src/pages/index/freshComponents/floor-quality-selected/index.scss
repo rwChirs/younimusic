@@ -1,0 +1,55 @@
+.page-container,
+.page-main {
+  width: 750px;
+}
+
+.page-container {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.page-main {
+  overflow-x: scroll;
+  flex: 1;
+  -webkit-overflow-scrolling: touch;
+
+  .scroll-wrap {
+    //white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+.page-items {
+  display: inline-flex;
+  flex-direction: row;
+  margin-left: 20px;
+  border-radius: 8px;
+  padding-bottom: 3px;
+}
+
+.no-scroll-bar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+  background-color: transparent;
+  display: none;
+  zoom: 0;
+}
+
+.quality-items-wrap {
+  margin-right: 12px;
+}
+
+.quality-items-more {
+  border-radius: 16px;
+  margin-right: 6px;
+  margin-left: 3px;
+  height: 352px;
+  width: 92px;
+  overflow: hidden;
+}

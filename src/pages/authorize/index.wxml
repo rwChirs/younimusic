@@ -1,0 +1,3 @@
+<view>
+  <button open-type="openSetting" bindopensetting="onOpenSetting">打开设置</button>
+</view>

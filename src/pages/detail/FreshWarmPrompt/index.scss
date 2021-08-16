@@ -1,0 +1,13 @@
+.prompt {
+  &-component {
+    position: relative;
+  }
+
+  &-message {
+    display: -webkit-box !important;
+    line-height: 36px;
+    font-family: PingFangSC-Regular;
+    color: rgba(137, 137, 137, 1);
+    font-size: 26px;
+  }
+}

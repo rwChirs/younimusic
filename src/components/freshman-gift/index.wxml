@@ -1,0 +1,32 @@
+<view class="black-shadow">
+  <view class="redpacketContainer">
+    <view class="title">
+      <view class="gift-title">恭喜获得新人礼包</view>
+      <view class="gift-sub-title"><view class="sub-title-left"></view>一周七天 每天新鲜<view class="sub-title-right"></view></view>
+    </view>
+    <view class="redpackWrap">
+      <block wx:key="coupon.batchId" wx:for="{{redPackets}}" wx:for-item="coupon" wx:for-index="couponListIdx">
+      <view class="redpackLine {{coupon.channelType === 1 ? 'green' : coupon.channelType === 2 ? '' : 'orange' }}">
+        <view class="redpackLeft">
+          {{coupon.channelTypeName}}
+        </view>
+        <view class="redpack-middle">
+          <view class="redpack-middle-top">
+            <text class="redpack-middle-top-money">￥</text>
+            <text class="redpack-middle-top-number">{{coupon.amountDesc}}</text>
+          </view>
+          <view  class="redpack-middle-bottom">{{coupon.ruleDescSimple}}</view>
+        </view>
+        <view class="redpack-right">
+          <view class="redpack-right-top">{{coupon.couponName}}</view>
+          <view class="redpack-right-bottom">
+            <view class="redpack-right-bottom-text">{{coupon.validateTime}}</view>
+          </view>
+        </view>
+      </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="closeRedPacket" bindtap="closeRedPacket">好的，我知道了</view>
+</view>

@@ -1,0 +1,128 @@
+.fight-link-page{
+  width:700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.fight-link-product{
+  width:308px;
+  height:482px;
+  background:#fff;
+  // margin-right:14px;
+  margin-bottom:14px;
+  border-radius:10px;
+  padding:10px 16px;
+  &:last-child{
+    margin-right:0;
+    margin-bottom: 0;
+  }
+  .fight-img{
+    width:306px;
+    height:270px;
+    overflow: hidden;
+    margin-bottom:16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .fight-right{
+    width:306px;
+    .fight-title-a{
+      width:306px;
+      height:84px;
+      overflow: hidden;
+      color:rgb(29, 31, 43);
+      font-family: 'PingFangSC-Medium';
+      font-size:30px;
+      line-height:32px;
+      .new{
+        display: inline-block;
+        background: linear-gradient(90deg, #ff6d6d, #fd3232);
+        border-radius:0 15px 0 15px;
+        padding: 0 12px;
+        height: 40px;
+        line-height: 40px;
+        color: #fff;
+        font-size: 24px;
+        font-family: 'PingFangSC-Regular';
+        margin-right: 20px;
+        text-align: center;
+        position: relative;
+        top:-1px;
+      }
+    }
+    .fight-desc{
+      color:rgba(29, 31, 43,0.5);
+      font-size:24px;
+      font-family: 'PingFangSC-Regular';
+      // padding:4px 0;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      white-space:nowrap
+    }
+    .fight-bottom{
+      width:100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-end;
+      .left-price{
+        width:220px;
+        .top{
+          color:rgb(226, 52, 52);
+          line-height:28px;
+          .fight-user{
+            font-size:20px;
+            font-family: 'PingFangSC-Medium';
+            padding-right:8px;
+          }
+          .icon{
+            font-family: 'JDZhengHei-01-Regular,Helvetica';
+            font-size:30px;
+          }
+          .red{
+            font-family: 'JDZhengHei-01-Regular,Helvetica';
+            font-size:36px;
+            font-weight: 500;
+          }
+        }
+      }
+      .left-base{
+        font-family: 'PingFangSC-Regular';
+        font-size:20px;
+        color:rgb(29,31,43);
+        opacity: 0.5;
+          .txt{
+            font-family:'JDZhengHei-01-Regular,Helvetica';
+            text-decoration: line-through;
+            font-weight: bold;
+          }
+      }
+      .button{
+        padding:0 27px;
+        border-radius:30px;
+        font-size:26px;
+        font-family: 'PingFangSC-Regular';
+        height:60px;
+        line-height: 60px;
+        text-align: center;
+      }
+      .ok,.visited{
+        background: linear-gradient(to right, rgb(255,109,109), rgb(253,50,50));
+        color:#fff;
+      }
+      .visited{
+        width:160px;
+      }
+      .disabled{
+        background:rgb(243,243,243);
+        color:rgb(187,187,187);
+      }
+    }
+  }
+}
+button::after{
+  border: none;
+}

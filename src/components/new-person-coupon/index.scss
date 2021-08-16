@@ -1,0 +1,251 @@
+.list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  margin-bottom: 25px;
+  position: relative;
+  height: 160px;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.05);
+
+  .info-left {
+    width: 111px;
+    height: 116px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 20px 20px 0;
+    position: relative;
+
+    .coupon-content {
+      line-height: 18px;
+      font-weight: bold;
+      font-size: 24px;
+      text-align: center;
+      font-family: HelveticaNeue-Bold;
+      padding-top: 20px;
+
+      .b-2-s {
+        font-size: 24px;
+      }
+
+      .b-s {
+        display: inline;
+        line-height: 39px;
+        font-weight: bold;
+        font-size: 34px;
+      }
+    }
+
+    .p-s {
+      width: 100%;
+      margin: 0;
+      position: absolute;
+      bottom: 10px;
+      text-align: center;
+      line-height: 24px;
+      height: 24px;
+      font-family: PingFangSC-Regular;
+      font-size: 18px;
+      padding: 0 5px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  &.smallHeight {
+    height: 160px;
+
+    .info-left {
+      margin-top: 20px;
+    }
+  }
+}
+
+.list .coupon-limit {
+  width: 40px;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  word-break: break-all;
+  word-wrap: break-word;
+  line-height: 30px;
+  display: flex;
+  justify-content: center;
+
+  /* height: 200px; */
+}
+
+.coupon-desc .coupon-div {
+  width: 330px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.item {
+  display: flex;
+
+  /* padding: 20px 0; */
+}
+
+.coupon-desc {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  line-height: 50px;
+  width: 340px;
+  position: relative;
+}
+
+.coupon-desc-time {
+  line-height: 34px;
+  font-family: PingFangSC-Regular;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.coupon-button {
+  width: 124px;
+  height: 48px;
+  font-size: 24px;
+  color: #fff;
+  background:
+    linear-gradient(
+      127deg,
+      rgba(255, 122, 0, 1) 0%,
+      rgba(255, 39, 0, 1) 100%
+    );
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* position: absolute; */
+
+  /* right: 20px; */
+  margin-right: 10px;
+}
+
+.coupon-button.received {
+  background: #fff;
+  color: rgb(37, 37, 37);
+  border: 1px solid rgba(137, 137, 137, 0.5);
+  margin-bottom: 10px;
+}
+
+.coupon-button.challenge {
+  background: rgba(255, 232, 232, 1);
+  color: rgba(255, 57, 0, 1);
+  border: 1px solid rgba(137, 137, 137, 0);
+}
+
+.validateTime {
+  line-height: 34px;
+  font-family: PingFangSC-Regular;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 5px;
+}
+
+.icon {
+  width: 120px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  vertical-align: middle;
+}
+
+.coupon-desc-tenant-name {
+  line-height: 40px;
+  font-family: PingFangSC-Medium;
+  font-size: 28px;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  z-index: 9;
+  margin-bottom: 2px;
+}
+
+.coupon-title-main {
+  line-height: 34px;
+  font-family: PingFangSC-Medium;
+  font-size: 24px;
+  color: rgba(252, 69, 38, 1);
+  margin-bottom: 2px;
+}
+
+.coupon-name {
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 120px;
+}
+
+//卷包
+.package-outer {
+  padding-top: 10px;
+  overflow: hidden;
+}
+
+.coupon-package {
+  width: 200px;
+  height: 200px;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 0 auto 20px;
+  border-radius: 16px;
+}
+
+.content-box {
+  line-height: 31px;
+  font-family: PingFangSC-Regular;
+  font-size: 28px;
+  color: rgba(0, 0, 0, 1);
+  text-align: center;
+  padding-bottom: 15px;
+
+  .content-inner {
+    line-height: 31px;
+    font-family: PingFangSC-Medium;
+    font-size: 32px;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 10px;
+
+    .tag {
+      color: #f40;
+      font-size: 32px;
+    }
+
+    .amount {
+      color: #f40;
+      font-size: 42px;
+    }
+
+    .couponImg {
+      font-size: 32px;
+      margin-left: 10px;
+    }
+
+    .manjian {
+      font-size: 32px;
+    }
+  }
+}

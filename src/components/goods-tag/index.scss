@@ -1,0 +1,37 @@
+$primay-font-color: #00b50f;
+$ghost-border-color: #9b9b9b;
+$ghost-font-color: #898989;
+$spec-font-color: rgb(255, 104, 75);
+
+.goods-item-tag {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 14px;
+  border-radius: 15px 2px 15px 2px;
+  font-size: 22px;
+  margin-right: 20px;
+  box-sizing: border-box;
+}
+
+.goods-item-tag-primary {
+  background: linear-gradient(to bottom right, #e5fde7, #d6f8da);
+  color: $primay-font-color;
+}
+
+.goods-item-tag-red {
+  border: 1px solid $spec-font-color;
+  color: $spec-font-color;
+  line-height: 28px;
+}
+
+.goods-item-tag-ghost {
+  border: 1px solid $ghost-border-color;
+  color: $ghost-font-color;
+  line-height: 28px;
+}
+
+.goods-item-tag-spec {
+  background: #fff;
+  color: $spec-font-color;
+}

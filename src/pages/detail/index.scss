@@ -1,0 +1,247 @@
+.noscroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.detail-top-cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 750px;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.header {
+  height: 88px;
+  position: fixed;
+  top: 116px;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  margin-top: -1px;
+}
+
+.container-outer {
+  background: rgb(245, 245, 245);
+  padding-top: 118px;
+  padding-bottom: 88px;
+  box-sizing: border-box;
+}
+
+.shopping-cart {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 5;
+  background: #fff;
+}
+
+.float-tools {
+  position: fixed;
+  right: 20px;
+  bottom: 120px;
+  z-index: 2;
+}
+
+.clear {
+  width: 750px;
+  height: 22px;
+  background: #f7f7f7;
+}
+
+.open-app-btn {
+  position: fixed;
+  top: 320px;
+  right: 0;
+  z-index: 2;
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  background:
+    linear-gradient(
+      309deg,
+      rgba(45, 176, 60, 1) 0%,
+      rgba(89, 211, 68, 1) 100%
+    );
+  border-radius: 200px 0 0 200px;
+  // opacity: 0.9284;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  box-sizing: border-box;
+
+  .open-app-logo {
+    width: 52px;
+    height: 52px;
+    background:
+      url(//m.360buyimg.com/img/jfs/t1/157335/29/113/8424/5fe99783E416d6c17/26d10ef42cdb5db7.png)
+      no-repeat;
+    background-size: 100% 100%;
+    // border: 2px solid rgba(255, 255, 255, 0.48);
+    // opacity: 0.9284;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-top: 4px;
+  }
+
+  .open-app-title {
+    font-family: PingFangSC-Regular;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 1);
+    transform: scale(0.9);
+  }
+}
+
+.product-advance-sale {
+  background: #fff;
+}
+
+.product-basic {
+  padding: 0 30px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-promotion {
+  padding: 0 30px;
+  background: #fff;
+  // margin-bottom: 20px;
+}
+
+// .product-property {
+//   padding: 0 30px;
+// }
+
+.product-property.ranking-list {
+  line-height: 74px;
+  margin: 20px 0;
+  height: 74px;
+  padding: 0 30px;
+  box-sizing: border-box;
+  color: #95969f;
+  font-family: PingFangSC-Regular;
+  font-size: 26px;
+  background: #fff;
+  // background: url('//m.360buyimg.com/img/jfs/t1/185730/22/5743/10684/60aca19cEc174628d/f0411a0051c639a6.png');
+  background-size: cover;
+}
+
+.ware-trace {
+  height: 86px;
+  padding: 14px 0;
+  box-sizing: border-box;
+  background: #fff;
+
+  .ware-trace-info {
+    // width: 690px;
+    height: 58px;
+    line-height: 58px;
+    border-radius: 8px;
+    background: #e7f7e7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: PingFangSC-Regular;
+    font-size: 24px;
+    color: #00aa0b;
+
+    .img {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 18px;
+      width: 30px;
+      height: 34px;
+      background:
+        url(//m.360buyimg.com/img/jfs/t1/146311/4/18544/2549/5fd9acd0Eddde336a/ff36e2061b679573.png)
+        no-repeat;
+      background-size: 100%;
+    }
+
+    .des {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 14px;
+    }
+
+    .more {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .icon {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 18px 0 6px;
+      width: 8px;
+      height: 12px;
+      background:
+        url(//m.360buyimg.com/img/jfs/t1/151523/31/10071/582/5fd9adb5E4f882984/8e380c6e1ec67791.png)
+        no-repeat;
+      background-size: 100%;
+    }
+  }
+}
+
+.popup {
+  height: 100%;
+}
+
+.comments {
+  margin-bottom: 20px;
+}
+
+.recommend-list {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.product {
+  position: relative;
+}
+
+.solitaire-panel {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.is-show-recommend {
+  width: 88px;
+  height: 88px;
+  background: green;
+  position: fixed;
+  right: 20px;
+  bottom: 250px;
+  font-size: 22px;
+  color: rgb(149, 150, 159);
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(151, 151, 151, 0.3);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.is-show-recommendTop {
+  bottom: 380px;
+}
+
+.groupon-pay-bottom {
+  margin: 50px auto;
+}

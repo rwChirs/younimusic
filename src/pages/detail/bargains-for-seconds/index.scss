@@ -1,0 +1,127 @@
+.bargains-for-seconds {
+  width: 690px;
+  height: 114px;
+  box-sizing: border-box;
+  background-image: url('https://m.360buyimg.com/img/jfs/t1/122830/35/17411/29789/5fa3d104E7713c982/fec7f95692f967d0.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .left {
+    height: 114px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 28px;
+
+    .jd-price {
+      .price {
+        font-size: 44px;
+      }
+
+      .unit {
+        font-size: 28px;
+        line-height: 42px;
+        vertical-align: bottom;
+      }
+
+      .market-price {
+        color: rgba(255, 255, 255, 0.5);
+        text-decoration: line-through;
+        margin-left: 18px;
+      }
+
+      .question {
+        background:
+          url(//m.360buyimg.com/img/jfs/t1/125417/27/18999/984/5fb4dd87E2dd5d246/abd698e32d40bd5b.png)
+          center center no-repeat;
+        background-size: 100%;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        margin-left: 20px;
+      }
+    }
+
+    .seckill-icon-box {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .seckill-icon {
+        width: 80px;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        font-size: 24px;
+        font-family: PingFangSC-Medium;
+        color: rgba(255, 54, 50, 1);
+        background:
+          linear-gradient(
+            85deg,
+            rgba(255, 242, 203, 1) 0%,
+            rgba(255, 222, 104, 1) 100%
+          );
+        border-radius: 16px 4px 16px 4px;
+        box-shadow: 0 2px 6px 0 rgba(246, 47, 63, 1);
+
+        .icon {
+          display: inline-block;
+          padding-left: 2px;
+        }
+      }
+    }
+  }
+
+  .right {
+    height: 114px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 24px;
+
+    .title {
+      color: #fff;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .count-down {
+      color: #fff;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      font-size: 26px;
+      line-height: 50px;
+    }
+
+    .hour,
+    .minute,
+    .second {
+      background: #fff;
+      color: #ff3632;
+      border-radius: 4px;
+      width: 34px;
+      height: 32px;
+      line-height: 32px;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    .split {
+      color: #fff;
+      height: 32px;
+      line-height: 32px;
+      vertical-align: middle;
+      width: 30px;
+      margin-top: -4px;
+    }
+  }
+}

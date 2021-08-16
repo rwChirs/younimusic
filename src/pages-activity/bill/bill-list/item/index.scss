@@ -1,0 +1,184 @@
+$imgHeight: 492px;
+$titleColor: rgb(37, 37, 37);
+$sloganColor: rgb(42, 98, 149);
+$numberBg: url(https://m.360buyimg.com/img/jfs/t1/16452/35/10346/5729/5c85bdc4E626fa5c9/1af290076455fdcf.png);
+$starGost: 'https://m.360buyimg.com/img/jfs/t1/16050/16/10338/1712/5c85c488Ec1a2a9cf/91e5cd7facfa57bb.png';
+$starPrimay: 'https://m.360buyimg.com/img/jfs/t1/30508/3/7221/1381/5c950057E04108848/6612f4a8b398dd9c.png';
+$starFull: 'https://m.360buyimg.com/img/jfs/t1/10215/3/11210/821/5c6d43fcEc3102cb7/a247dd6fd3e4db97.png';
+$starHalf: 'https://m.360buyimg.com/img/jfs/t1/21028/34/7673/867/5c6d43fcE98a06d9c/d143f683900ec066.png';
+$starGray: 'https://m.360buyimg.com/img/jfs/t1/29834/7/7506/584/5c6d43fcE58a65731/af83a9399b296359.png';
+
+.item {
+  width: 656px;
+  height: 704px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.07);
+  margin-bottom: 40px;
+
+  .title,
+  .slogan {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .figure {
+    height: $imgHeight;
+    position: relative;
+
+    .img,
+    .number {
+      position: absolute;
+    }
+
+    .img {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: $imgHeight;
+      z-index: 1;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+    .number {
+      top: -8px;
+      right: 30px;
+      width: 60px;
+      height: 92px;
+      background-image: $numberBg;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      text-align: center;
+      line-height: 90px;
+      color: rgb(175, 90, 41);
+      font-size: 52px;
+      font-family: STSongti-SC-Black;
+      z-index: 10;
+    }
+  }
+
+  .desc {
+    height: 152px;
+    background-color: #fff;
+    padding: 30px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    .title-wrap {
+      display: flex;
+    }
+
+    .title {
+      height: 50px;
+      width: 462px;
+      line-height: 50px;
+      font-size: 36px;
+      font-family: PingFangSC-Semibold;
+      color: $titleColor;
+      margin-bottom: 30px;
+    }
+
+    .star-wrap {
+      height: 50px;
+      padding: 20px;
+      padding-right: 0;
+      display: flex;
+      align-items: flex-end;
+      flex-direction: row;
+      position: relative;
+      justify-content: flex-end;
+      flex: 1;
+      top: -20px;
+
+      .star {
+        width: 48px;
+        height: 48px;
+        background-image: url($starGost);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin-right: 10px;
+      }
+
+      .star.unstar {
+        background-image: url($starGost);
+      }
+
+      .star.stared {
+        background-image: url($starPrimay);
+      }
+
+      .star-amount {
+        line-height: 48px;
+        font-family: PingFangSC-Semibold;
+        color: rgb(52, 91, 143);
+        font-size: 24px;
+      }
+
+      .star-amount.stared {
+        color: rgb(255, 168, 89);
+      }
+    }
+
+    .details {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .index {
+        display: flex;
+
+        .num {
+          width: 84px;
+          height: 72px;
+          line-height: 72px;
+          padding-right: 40px;
+          font-family: STSongti-SC-Black;
+          font-size: 72px;
+          color: $titleColor;
+          text-align: right;
+        }
+
+        .star-list {
+          height: 24px;
+          margin-bottom: 10px;
+          display: flex;
+        }
+
+        .star-item {
+          width: 24px;
+          height: 24px;
+          background-repeat: no-repeat;
+          background-size: 100%;
+          margin-right: 6px;
+        }
+
+        .star-item-full {
+          background-image: url($starFull);
+        }
+
+        .star-item-half {
+          background-image: url($starHalf);
+        }
+
+        .star-item-gray {
+          background-image: url($starGray);
+        }
+
+        .stars-txt {
+          font-family: PingFangSC-Regular;
+          font-size: 24px;
+          color: rgb(137, 137, 137);
+        }
+      }
+
+      .slogan {
+        height: 40px;
+        font-family: PingFangSC-Medium;
+        font-size: 28px;
+        color: $sloganColor;
+      }
+    }
+  }
+}

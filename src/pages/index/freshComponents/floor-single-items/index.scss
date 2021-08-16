@@ -1,0 +1,21 @@
+.FloorSingleItems {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  .FloorSingleItems-container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: white;
+  }
+  .product-item-wrap{
+    margin: 0px 20px;
+  }
+  .border{
+    border-top: 1px solid rgba(0,0,0,0.1);
+  }
+}

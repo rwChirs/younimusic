@@ -1,0 +1,210 @@
+.floor-scramble-today-wrap {
+  box-sizing: border-box;
+  overflow: hidden;
+
+  .floor-scramble-today {
+    overflow: hidden;
+    border-radius: 16px;
+    padding-bottom: 10px;
+    margin: 10px 30px 20px;
+    background-color: #fff;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .fresh-more {
+      color: rgba(29, 31, 43, 0.5);
+      font-size: 24px;
+    }
+
+    .fresh-more .i {
+      background: url('//m.360buyimg.com/img/jfs/t1/29353/15/5089/279/5c398330E87a29219/78c74209a9735e59.png')
+        no-repeat;
+      background-size: 10px 16px;
+      width: 10px;
+      height: 16px;
+      display: inline-block;
+      margin-left: 6px;
+    }
+
+    .fresh-title {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 20px;
+      justify-content: space-between;
+
+      .fresh-title-left {
+        height: 50px;
+        line-height: 50px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 26px;
+        color: rgba(29, 31, 43, 0.5);
+        vertical-align: middle;
+        margin-right: 20px;
+      }
+
+      .name {
+        font-size: 36px;
+        color: rgb(29, 31, 43);
+        font-weight: bold;
+        font-family: 'HYRunYuan-75W';
+      }
+
+      .desc {
+        font-size: 26px;
+        margin-left: 30px;
+      }
+    }
+  }
+
+  .floor-scramble-today-goods {
+    width: 100%;
+
+    .floor-scramble-today-list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      border-radius: 16px;
+      padding-left: 10px;
+
+      .goods-item-wrap {
+        margin: 0 10px;
+      }
+    }
+  }
+
+  .goods-item {
+    width: 136px;
+    min-height: 150px;
+    display: block;
+    position: relative;
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    padding-bottom: 8px;
+
+    .image {
+      width: 136px;
+      height: 136px;
+    }
+
+    .goods-tag {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: inline-block;
+      padding: 0 10px;
+      height: 28px;
+      border-radius: 14px 4px 14px 4px;
+      background: rgb(251, 112, 112);
+      color: #fff;
+      font-size: 20px;
+      line-height: 28px;
+      vertical-align: top;
+    }
+
+    .jd-price {
+      text-align: center;
+      line-height: 1.2;
+
+      .jd-price-value {
+        font-size: 26px;
+        color: #e23434;
+        font-weight: 600;
+      }
+
+      .jd-price-unit {
+        font-size: 22px;
+        color: rgb(138, 138, 138);
+      }
+    }
+
+    .old-price {
+      line-height: 1.2;
+      color: #8a8a8a;
+      text-align: center;
+      text-decoration: line-through;
+      font-size: 22px;
+    }
+  }
+}
+
+.floor-week-list {
+  width: 694px;
+  margin: 0 20px;
+  overflow: hidden;
+
+  .floor-week-goods {
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    white-space: nowrap;
+    -webkit-tap-highlight-color: transparent;
+    padding-bottom: 20px;
+    margin-bottom: -20px;
+    color: transparent;
+
+    .goods {
+      width: 180px;
+      border-radius: 8px;
+      margin-right: 10px;
+      position: relative;
+
+      .discount {
+        background: #fb7070;
+        color: #fff;
+        font-size: 20px;
+        font-family: 'PingFangSC-Medium';
+        border-radius: 14px 0 14px 0;
+        width: 80px;
+        height: 28px;
+        line-height: 28px;
+        text-align: center;
+      }
+
+      .image {
+        width: 136px;
+        height: 136px;
+      }
+
+      .info {
+        color: #1d1f2b;
+        font-size: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        // margin-bottom: 10px;
+      }
+
+      .add-btn {
+        position: absolute;
+        right: 20px;
+        bottom: 16px;
+        width: 42px;
+        height: 42px;
+      }
+
+      .jd-price {
+        color: #e23434;
+        font-size: 26px;
+        display: inline-block;
+        background: url('//m.360buyimg.com/img/jfs/t1/80756/19/15043/139/5dca9a28E419819f8/95bc90ee2000e7d1.png')
+          no-repeat 0 16px;
+      }
+    }
+
+    .old-price {
+      color: #8a8a8a;
+      font-size: 20px;
+      text-decoration: line-through;
+    }
+  }
+}

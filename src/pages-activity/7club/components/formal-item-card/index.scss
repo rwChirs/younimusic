@@ -1,0 +1,88 @@
+@import '../../../../common/theme.scss';
+
+.formal-item-card {
+  box-shadow: 0 8px 22px 0 rgba(0, 0, 0, 0.04);
+  margin-bottom: 16px;
+  padding-top: 30px;
+  background: #fff;
+
+  .topic-box {
+    display: inline-block;
+    padding: 0 10px;
+    margin: 0 0 0 28px;
+    box-sizing: border-box;
+    // width: 268px;
+    height: 48px;
+    line-height: 48px;
+    padding-left: 42px;
+    background: rgba(124, 169, 255, 0.08);
+    border-radius: 8px;
+    font-family: PingFangTC-Regular;
+    font-size: 24px;
+    color: $color;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 28px;
+      height: 28px;
+      background:
+        url(//m.360buyimg.com/img/jfs/t1/111044/8/6430/1491/5eba6b08E84074409/c4521627f6fe9c4d.png)
+        no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+
+  .rank {
+    width: 750px;
+    height: 390px;
+    overflow: hidden;
+    margin-top: 34px;
+
+    .search-more {
+      display: flex;
+      flex-direction: column;
+      width: 58px;
+      padding: 104px 18px 0;
+      height: 250px;
+      background: rgba(255, 255, 255, 1);
+      border-radius: 12px;
+      box-shadow: 0 10px 22px 0 rgba(0, 0, 0, 0.05);
+      font-family: PingFangSC-Regular;
+      font-size: 22px;
+      color: rgba(37, 37, 37, 1);
+
+      .more {
+        display: inline-block;
+        width: 8px;
+        height: 16px;
+        background: url('//m.360buyimg.com/img/jfs/t1/123577/33/8687/631/5f2a8954E3db0d265/6686ce6c35c63665.png');
+        background-size: cover;
+        margin: 10px 0 0 10px;
+      }
+    }
+
+    .block {
+      width: 30px;
+      height: 390px;
+      padding: 0 15px;
+    }
+  }
+
+  .rank-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    // align-items: flex-start;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 100%;
+  }
+}
+
+.user-box {
+  padding: 0 30px;
+}

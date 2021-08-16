@@ -1,0 +1,42 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/detail/index",
+          "pathName": "pages/detail/index",
+          "query": "storeId=131229&skuId=116325&sp=K3ZCb3FvMzZwaUtxa0w5UXBaZWFBeXVCYSs2b0lPdHE=&lat=39.791809&lon=116.512840&tenantId=1&platformId=1&from=7freshapp&entrancedetail=009_131229_20191219001",
+          "scene": null
+        },
+        {
+          "name": "个人中心",
+          "pathName": "pages/my/index",
+          "query": "skuId=108089&storeId=131229&tenantId=1&platformId=1&lat=39.79181&lng=116.512841",
+          "scene": null
+        },
+        {
+          "name": "pages/category/index",
+          "pathName": "pages/category/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "首页",
+          "pathName": "pages/index/index",
+          "query": "storeId=131215",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

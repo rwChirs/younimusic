@@ -1,0 +1,96 @@
+.shopping-cart {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 110px;
+  box-shadow: 0 0 4px 0 rgba(58, 63, 64, 0.07);
+  background-color: #fff;
+
+  .cart-num,
+  .add-cart {
+    display: block;
+  }
+
+  .cart {
+    width: 240px;
+    height: 110px;
+    background:
+      url(https://m.360buyimg.com/img/jfs/t1/132710/32/15092/2737/5fa8db2cEd0fc62d3/c3021ea66707b5ab.png)
+      center center no-repeat;
+    background-size: 46px 46px;
+  }
+
+  .cart-num {
+    background: #ff5656;
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    min-width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    position: relative;
+    top: 7px;
+    left: 134px;
+  }
+
+  .cart-action-box {
+    width: 480px;
+    height: 76px;
+    border-radius: 38px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    color: #fff;
+
+    &.not-jump-cart {
+      width: 690px;
+      margin: 0 auto;
+    }
+  }
+
+  .cart-action {
+    flex: 1;
+    height: 76px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.2;
+    background:
+      linear-gradient(
+        306deg,
+        rgba(23, 195, 22, 1) 0%,
+        rgba(93, 208, 62, 1) 100%
+      );
+  }
+
+  .cart-action.pre-sale {
+    background: rgba(255, 186, 8, 1);
+    font-size: 24px;
+  }
+
+  .cart-action.small {
+    font-size: 24px;
+  }
+
+  .cart-action.disable {
+    background: #e5e5e5;
+    color: #95969f;
+  }
+}
+
+.shopping-cart-container .alert {
+  background: rgb(255, 241, 211);
+  font-size: 24px;
+  color: rgb(180, 126, 23);
+  line-height: 82px;
+  padding: 0 20px;
+  display: none; // 测试
+}

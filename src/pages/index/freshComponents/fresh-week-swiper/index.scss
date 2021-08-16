@@ -1,0 +1,116 @@
+.floor-week-list {
+  margin: 0 20px;
+  overflow: hidden;
+
+  .floor-week-goods {
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    white-space: nowrap;
+    padding-bottom: 20px;
+    margin-bottom: -20px;
+
+    .fresh-goods {
+      width: 180px;
+      border-radius: 8px;
+      margin-right: 20px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+
+      .fresh-discount {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #fb7070;
+        color: #fff;
+        font-size: 20px;
+        font-family: 'PingFangSC-Medium';
+        border-radius: 14px 0 14px 0;
+        width: 80px;
+        height: 28px;
+        line-height: 28px;
+        text-align: center;
+      }
+
+      .fresh-info {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        height: 30px;
+        width: 180px;
+        text-align: left;
+        color: #1d1f2b;
+        font-size: 20px;
+        overflow: hidden;
+      }
+
+      .fresh-image {
+        width: 136px;
+        height: 136px;
+      }
+
+      .fresh-add-btn {
+        width: 42px;
+        height: 42px;
+        margin-right: 20px;
+      }
+
+      .fresh-swiper {
+        position: relative;
+        height: 30px;
+        width: 160px;
+        margin-left: 4px;
+        margin-top: 10px;
+        color: #1d1f2b;
+        overflow: hidden;
+
+        .fresh-swiper-mask {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 180px;
+          height: 40px;
+          background: #fff;
+          opacity: 0;
+          z-index: 2;
+        }
+      }
+
+      .fresh-bottom {
+        display: flex;
+        flex-direction: column;
+        width: 160px;
+        margin: 0 auto;
+        padding: 0;
+
+        .fresh-old-price {
+          color: #8a8a8a;
+          font-size: 20px;
+          text-decoration: line-through;
+          width: 180px;
+          height: 30px;
+        }
+      }
+
+      .fresh-jd-price {
+        display: flex;
+        flex-direction: row;
+        width: 180px;
+        justify-content: space-between;
+        color: #e23434;
+        font-size: 26px;
+
+        .fresh-jd-num {
+          background: url('//m.360buyimg.com/img/jfs/t1/70018/13/15475/117/5dce5905Ed497de8f/f0ffa9e8507f57d8.png')
+            no-repeat 0 18px;
+        }
+      }
+    }
+  }
+}

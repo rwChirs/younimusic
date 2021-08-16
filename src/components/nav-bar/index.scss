@@ -1,0 +1,100 @@
+.wrapper {
+  .navbars {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+  }
+
+  .common-title-container {
+    // height: 80px;
+    // line-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .avatar {
+      position: absolute;
+      top: 50%;
+      left: 30px;
+      transform: translateY(-50%);
+      display: flex;
+      width: 50px;
+      height: 50px;
+
+      .avatar-image {
+        align-self: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .back-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    width: 58px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .image {
+      width: 24px;
+      height: 48px;
+    }
+  }
+
+  .title-new {
+    // color: white;
+    max-width: 300px;
+    font-size: 32px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 64px;
+    line-height: 64px;
+    font-family: PingFangSC-Semibold;
+    color: rgba(29, 31, 43, 1);
+    font-weight: bold;
+  }
+
+  .show-search {
+    position: absolute;
+    top: 50%;
+    left: 320px;
+    transform: translate(-50%, -50%);
+    width: 402px;
+    height: 58px;
+    border-radius: 32px;
+    background-color: #eee;
+    // position: absolute;
+    // top: 50%;
+    // right: 22%;
+    // transform: translate(-50%, -50%);
+    // width: 68px;
+    // height: 68px;
+    // background: url(//m.360buyimg.com/img/jfs/t1/115694/32/12962/3280/5f1837d7Eaba23454/4db66ce228cb9586.png)
+    //   no-repeat;
+    // background-size: 100%;
+    .icon {
+      position: absolute;
+      top: 50%;
+      left: 30px;
+      transform: translateY(-50%);
+      width: 42px;
+      height: 42px;
+      background:
+        url(//m.360buyimg.com/img/jfs/t1/16428/3/5872/870/5c4535a7Eaa08a5d1/fa81a6263ccefa5c.png)
+        no-repeat;
+      background-size: 100%;
+      margin: 0;
+    }
+  }
+}

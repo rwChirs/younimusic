@@ -1,0 +1,30 @@
+.recipe-item {
+  display: flex;
+  .img-wrap {
+    padding-top: 3rpx;
+    margin-right: 30rpx;
+    font-size: 0rpx;
+    .img {
+      width: 240rpx;
+      height: 180rpx;
+      border-radius: 4rpx;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .txt-wrap {
+    .title-wrap {
+      padding-bottom: 14rpx;
+      .title {
+        font-size: 30rpx;
+        line-height: 42rpx;
+        color: rgb(37, 37, 37);
+      }
+    }
+    .des-item {
+      margin-top: 16rpx;
+      font-size: 26rpx;
+      color: rgb(137, 137, 137);
+    }
+  }
+}

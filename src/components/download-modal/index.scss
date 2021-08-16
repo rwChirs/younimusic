@@ -1,0 +1,63 @@
+.download-modal {
+  background: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .modal-content {
+    width: 463px;
+    height: 616px;
+    background-image: url('//m.360buyimg.com/img/jfs/t1/129115/20/18186/140134/5faa8e22Edfc6b74a/fe84fe79abf1343e.png');
+    border-radius: 8px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content .title {
+    font-size: 32px;
+    text-align: center;
+    line-height: 60px;
+    margin-top: 20px;
+  }
+
+  .modal-content .content {
+    font-size: 26px;
+    color: #808080;
+    text-align: center;
+    line-height: 36px;
+    padding: 20px;
+  }
+
+  .modal-content .footer {
+    border-top: 1px solid #d5d5d6;
+  }
+
+  .modal-content .footer .btn {
+    background: none;
+    color: #09bb07;
+    border: 0;
+    border-radius: 0;
+  }
+
+  .qrcode {
+    width: 240px;
+    height: 240px;
+    margin-top: -50px;
+  }
+
+  .deleteImg {
+    width: 30px;
+    height: 30px;
+    margin-top: 68px;
+  }
+}

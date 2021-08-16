@@ -1,0 +1,431 @@
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.luck-red-envelopes {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 2px;
+  overflow: hidden;
+}
+
+.nav-bar-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 750px;
+  height: 196px;
+  // background:
+  //   linear-gradient(
+  //     360deg,
+  //     rgba(0, 0, 0, 0) 0%,
+  //     rgba(0, 0, 0, 0.52) 100%
+  //   );
+  z-index: 2;
+}
+
+.floor-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 750px;
+  height: 694px;
+}
+
+.floor-top-zw {
+  position: relative;
+  height: 600px;
+
+  .rule {
+    position: absolute;
+    right: 0;
+    bottom: 366px;
+    width: 142px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    border-radius: 200px 0 0 200px;
+    font-family: PingFangSC-Regular;
+    font-size: 24px;
+    background: rgba(0, 0, 0, 0.4);
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .info-btn {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 430px;
+    height: 80px;
+    font-family: PingFangSC-Semibold;
+    font-size: 36px;
+    color: rgb(176, 69, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .info-btn-icon {
+      margin-left: 20px;
+      width: 15px; // 5
+      height: 27px; // 9
+      background:
+        url(https://m.360buyimg.com/img/jfs/t1/168517/35/4571/684/6012c5e2E0761eba6/1884395138316b2b.png)
+        no-repeat;
+      background-size: 100%;
+    }
+  }
+
+  // pageState=1
+  .before-receive-text {
+    position: absolute;
+    bottom: 240px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: PingFangSC-Medium;
+    font-size: 32px;
+    color: rgb(176, 69, 0);
+    text-align: center;
+
+    .before-receive-price {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+
+      .before-receive-price-num {
+        margin-top: 10px;
+        line-height: 60px;
+        color: #ff4b25;
+        font-size: 56px;
+      }
+    }
+  }
+
+  .before-receive-des {
+    position: absolute;
+    bottom: 188px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: PingFangSC-Medium;
+    font-size: 22px;
+    color: rgba(176, 69, 0, 0.7986);
+  }
+
+  // pageState=2
+
+  // pageState=3
+  .go-home-text {
+    position: absolute;
+    bottom: 218px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: PingFangSC-Medium;
+    font-size: 32px;
+    color: rgb(176, 69, 0);
+    text-align: center;
+  }
+}
+
+.feeling-lucky {
+  position: relative;
+  width: 750px;
+  // height: 552px;
+}
+
+.feeling-lucky-up-zw {
+  height: 94px;
+
+  .feeling-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 690px;
+    height: 94px;
+    margin: 0 auto;
+    background-color: #ffe9cf;
+    border-radius: 20px 20px 0 0;
+    // box-shadow: 0px -4px 10px 0px rgba(168, 0, 0, 0.39);
+    .feeling-img {
+      margin: 0 12px 0 40px;
+      width: 36px;
+      height: 30px;
+      background:
+        url(https://m.360buyimg.com/img/jfs/t1/155733/16/7873/1357/60118a11Eafffc64e/78c3069363124aa0.png)
+        no-repeat;
+      background-size: 100%;
+    }
+
+    .feeling-title-text {
+      font-family: PingFangSC-Medium;
+      font-size: 30px;
+      color: #b04500;
+    }
+  }
+}
+
+.feeling-lucky-down-zw {
+  // min-height: 458px;
+  background-color: #f13400;
+
+  .feeling-lucky-box {
+    margin: 0 auto;
+    width: 690px;
+    min-height: 458px;
+    background: rgb(255, 242, 231);
+    border-radius: 0 0 20px 20px;
+    // box-shadow: 0px -4px 10px 0px rgba(168, 0, 0, 0.39);
+    .feeling-empty {
+      padding: 88px 0 0 0;
+
+      .feeling-empty-img {
+        width: 180px;
+        height: 180px;
+        margin: 0 auto;
+        background:
+          url(https://m.360buyimg.com/img/jfs/t1/159929/29/5127/6297/60118c36E8fdfb7b2/f83fdc1c7bd2195a.png)
+          no-repeat;
+        background-size: 100%;
+      }
+
+      .feeling-empty-text {
+        margin-top: 30px;
+        font-family: PingFangSC-Regular;
+        font-size: 24px;
+        color: rgba(176, 69, 0, 0.7005);
+        text-align: center;
+      }
+    }
+
+    // 手气红包组件
+    .handInfo {
+      position: relative;
+      // border-radius: 8px;
+      // box-shadow: 0 8px 32px 0 rgba(55, 58, 70, 0.12);
+      .hand-item-line {
+        width: 610px;
+        height: 2px;
+        margin: 10px auto 0;
+        background: rgba(176, 69, 0, 1);
+        opacity: 0.078;
+      }
+
+      .more-all {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 84px;
+        font-family: PingFangSC-Regular;
+        font-size: 24px;
+        color: #b04500;
+
+        .more {
+          margin-left: 10px;
+          width: 18px;
+          height: 12px;
+          background:
+            url('https://m.360buyimg.com/img/jfs/t1/170133/15/4681/541/601291d7E97ef27af/ed70f6ea9be8b657.png')
+            center center no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+  }
+}
+
+// 大促标题
+.luck-red-envelopes .promotion-bg {
+  background-color: #f13400;
+}
+
+.luck-red-envelopes .promotion {
+  position: relative;
+  height: 160px;
+  padding: 80px 0 40px 0;
+  font-weight: bold;
+  font-family: 'PingFangSC-Medium';
+  font-size: 28px;
+  text-align: center;
+  color: #ffe6ae;
+  box-sizing: border-box;
+}
+
+.luck-red-envelopes .promotion .promotionleft {
+  position: absolute;
+  bottom: 60px;
+  left: 70px;
+  width: 92px;
+  height: 2px;
+  background: rgba(255, 230, 174, 1);
+  opacity: 0.3034;
+}
+
+.luck-red-envelopes .promotion .promotionright {
+  position: absolute;
+  right: 70px;
+  bottom: 60px;
+  width: 92px;
+  height: 2px;
+  background: rgba(255, 230, 174, 1);
+  opacity: 0.3034;
+}
+
+// 二维码
+.luck-red-envelopes .nopublic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .freshInfo,
+  .fanInfo {
+    height: 228px;
+    width: 174px;
+
+    .qrcodeImg {
+      width: 174px;
+      height: 174px;
+    }
+
+    .codeName {
+      width: 174px;
+      height: 34px;
+      line-height: 34px;
+      margin-top: 20px;
+      text-align: center;
+      font-family: PingFangSC-Medium;
+      font-size: 24px;
+      color: #ffe6ae;
+    }
+  }
+
+  .fanInfo {
+    margin-left: 20px;
+  }
+}
+
+.nopublic-zw {
+  height: 84px;
+}
+
+.underpin {
+  position: relative;
+  height: 168px;
+
+  .underpin-img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 348px;
+    height: 84px;
+    background:
+      url(https://m.360buyimg.com/img/jfs/t1/167088/35/4719/4122/6012bd21E32e9cc02/8455ca3cc988836c.png)
+      no-repeat;
+    background-size: 100%;
+  }
+}
+
+.rule-model {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+
+  .rule-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 750px;
+    height: 662px;
+    background: #fff;
+    border-radius: 20px 20px 0 0;
+
+    .rule-title {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 104px;
+
+      .rule-img {
+        position: absolute;
+        top: 50%;
+        right: 38px;
+        transform: translateY(-50%);
+        width: 26px;
+        height: 26px;
+        background:
+          url(https://m.360buyimg.com/img/jfs/t1/151772/14/16782/429/6013df99Ee6fa3dc9/22590885d15aa6c2.png)
+          no-repeat;
+        background-size: 100%;
+      }
+    }
+
+    .rule-list {
+      position: relative;
+      padding: 0 30px;
+      box-sizing: border-box;
+
+      .rule-item {
+        font-family: PingFangSC-Regular;
+        font-size: 26px;
+        color: #000;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+
+// .luck-red-envelopes .redbgc {
+//   position: relative;
+//   height: 294px;
+//   background-color: rgb(201, 40, 53);
+// }
+
+// .luck-red-envelopes .redbgc .couponInfo {
+//   position: absolute;
+//   bottom: 0;
+//   left: 66px;
+//   width: 618px;
+//   height: 284px;
+//   background: url('https://m.360buyimg.com/img/jfs/t1/32938/20/7723/467075/5c99f78fE04d07ba9/84a36ef385db9875.png')
+//     center center no-repeat;
+//   background-size: cover;
+//   color: rgb(240, 71, 71);
+// }
+
+// .luck-red-envelopes .redbgc .couponInfo .message {
+//   height: 50px;
+//   text-align: center;
+//   margin-top: 134px;
+//   font-weight: bold;
+//   font-family: 'PingFangSC-Medium';
+//   font-size: 36px;
+// }
+
+// .luck-red-envelopes .redbgc .arc {
+//   position: absolute;
+//   bottom: -6px;
+//   left: 0;
+//   width: 100%;
+//   height: 92px;
+//   background: url('https://m.360buyimg.com/img/jfs/t1/26079/24/14064/6996/5ca46dd7E2952dff2/b30e8f7a97bbdb0d.png')
+//     center center no-repeat;
+//   background-size: cover;
+// }
+
+button::after {
+  border-radius: 0;
+}
+
+button {
+  border-radius: 0;
+}

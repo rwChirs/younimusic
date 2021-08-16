@@ -1,0 +1,76 @@
+.button {
+  background: linear-gradient(to right, rgb(255, 220, 124), rgb(255, 183, 102));
+  font-size: 28px;
+  font-family: 'PingFang SC',
+ 'Hiragino Sans GB',
+ 'Heiti SC',
+ 'Microsoft YaHei',
+    'WenQuanYi Micro Hei',
+ sans-serif;
+  height: 88px;
+  width: 410px;
+  border-radius: 44px 0 44px 44px;
+  color: rgb(154, 81, 52);
+  text-align: center;
+  line-height: 88px;
+}
+
+.button.textDirection {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button.disabled {
+  background: rgb(216, 216, 216) !important;
+  color: rgb(63, 67, 77);
+}
+
+.button .split {
+  width: 2px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.05);
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  margin: 0 20px;
+}
+
+.button .name {
+  font-weight: bold;
+}
+
+.button .verticalName {
+  font-weight: bold;
+  word-wrap: break-word;
+  width: 44px;
+  margin: 0 auto;
+  line-height: 44px;
+}
+
+.button .desc {
+  font-size: 24px;
+}
+
+.button .desc-icon {
+  width: 28px;
+  height: 100%;
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-flex;
+  vertical-align: top;
+  padding-right: 12px;
+}
+
+.button .font-icon {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: -4px 0 4px 20px;
+  border-top: 3px solid;
+  border-right: 3px solid;
+}

@@ -1,0 +1,75 @@
+.bottom-tip-page {
+  height: 96px;
+  width: 750px;
+  background: rgb(255, 239, 239);
+  box-shadow: 0 -2px 14px rgba(166, 106, 106, 0.16);
+  overflow: hidden;
+
+  .swiper {
+    flex-grow: 1;
+    height: 96px;
+  }
+
+  .bottom-tip-main {
+    height: 56px;
+    width: 710px;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+  }
+
+  .user-img {
+    width: 68px;
+    height: 68px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+
+  .btn {
+    position: absolute;
+    top: 16px;
+    right: 80px;
+    background: linear-gradient(to right, rgb(255, 109, 109), rgb(253, 50, 50));
+    color: #fff;
+    width: 120px;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    font-family: 'PingFangSC-Regular';
+    font-size: 26px;
+    border-radius: 50px;
+  }
+
+  .word {
+    font-size: 22px;
+    color: rgb(29, 31, 43);
+    font-family: 'PingFangSC-Regular';
+    padding-right: 30px;
+
+    .red {
+      color: rgb(226, 52, 52);
+    }
+  }
+
+  .time {
+    font-size: 22px;
+    padding-right: 50px;
+  }
+}
+
+.bottom-tip-yellow {
+  position: relative;
+  top: 14px;
+  height: 36px;
+  width: 710px;
+  background: rgb(255, 242, 208);
+  padding: 23px 30px;
+  text-align: center;
+  font-size: 26px;
+  font-family: 'PingFangSC-Regular';
+  color: #ba4d2c;
+}

@@ -1,0 +1,132 @@
+@import '../../../../common/theme.scss';
+
+.product-item-type-three {
+  position: relative;
+  // background-color: #fff;
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 411px;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 226px;
+}
+
+.product-item-type-three .product-item-figture,
+.product-item-type-three .product-item-image {
+  position: relative;
+  width: 210px;
+  height: 210px;
+}
+
+.product-item .tag-list {
+  width: 100%;
+  height: 28px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.product-item-type-three .tag-list-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  height: 30px;
+}
+
+.product-item-type-three .product-item-desc {
+  text-align: left;
+  position: relative;
+  padding: 0 12px;
+}
+
+.product-item .product-item-ad {
+  color: rgb(137, 137, 137);
+  font-size: 24px;
+  height: 34px;
+  line-height: 34px;
+}
+
+.product-item-type-three .product-item-title {
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+
+  /*! autoprefixer: ignore next */
+  -webkit-box-orient: vertical;
+  font-size: 24px;
+  color: rgb(57, 57, 57);
+  height: 68px;
+  margin-top: 10px;
+}
+
+.product-item-market-price {
+  height: 24px;
+  line-height: 24px;
+  font-size: 24px;
+  color: rgb(137, 137, 137);
+  text-decoration: line-through;
+}
+
+.product-item-type-three .price {
+  color: rgb(226, 52, 52);
+  margin-right: 6px;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.product-item-type-three .unit {
+  color: rgb(137, 137, 137);
+  font-size: 22px;
+}
+
+.product-item-type-three .product-item-btn {
+  position: absolute;
+  right: 0;
+  bottom: -16px;
+  width: 38px;
+  height: 38px;
+  padding: 20px;
+}
+
+.product-item-btn-bg {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url($addCartBtn);
+}
+
+.product-item-btn-bg.disabled {
+  background-size: 95%;
+  background-image: url($addDisabledCartBtn);
+}
+
+.product-status-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 140px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  margin: auto;
+  border-radius: 25px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.product-warm-tag {
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background:
+    url(//m.360buyimg.com/img/jfs/t1/119521/21/9938/5926/5efeeca6E62b6f52f/e82737045b2c9526.png)
+    no-repeat;
+  background-size: 100% 100%;
+}

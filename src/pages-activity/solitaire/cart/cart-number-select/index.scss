@@ -1,0 +1,45 @@
+.cart-selector {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  .num-selector-less,
+  .num-selector-plus {
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    display: inline-block;
+  }
+
+  .num-selector-less {
+    background: url('//m.360buyimg.com/img/jfs/t1/124149/22/10103/1460/5f3de6cdE0eaa9379/af5603f18b846a39.png');
+    background-size: 100%;
+
+    &.disabled {
+      background-image: url(//m.360buyimg.com/img/jfs/t1/126610/7/10090/1411/5f3de6c1Ea23961e5/68a42ad8ecc1f888.png);
+    }
+  }
+
+  .num-selector-num {
+    display: inline-block;
+    min-width: 40px;
+    padding: 0 10px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 20px;
+    text-align: center;
+    background-color: #f6f6f6;
+    font-size: 24px;
+    color: rgb(37, 37, 37);
+  }
+
+  .num-selector-plus {
+    background: url('//m.360buyimg.com/img/jfs/t1/134854/6/7479/1616/5f3de6a0E2a91659b/8200da1da299ebcf.png');
+    background-size: 100%;
+
+    &.disabled {
+      background-image: url(//m.360buyimg.com/img/jfs/t1/128178/37/10042/1572/5f3de6afE241d413f/6ac5d50de36d35f8.png);
+    }
+  }
+}

@@ -1,0 +1,167 @@
+.advance-sale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: PingFangSC-Medium;
+
+  .info {
+    flex: 1;
+    height: 120px;
+    background: rgba(255, 229, 134, 1);
+    color: #9f3f00;
+    padding-left: 30px;
+
+    .preview-price {
+      display: flex;
+      align-items: center;
+      text-align: left;
+
+      .text {
+        width: 96px;
+        height: 34px;
+        line-height: 34px;
+        font-size: 24px;
+        margin-top: 28px;
+      }
+
+      .symbol {
+        height: 34px;
+        line-height: 34px;
+        font-size: 30px;
+        margin-top: 30px;
+      }
+
+      .num {
+        height: 40px;
+        line-height: 40px;
+        font-size: 48px;
+        margin-top: 22px;
+      }
+
+      .buyUnit {
+        height: 34px;
+        line-height: 34px;
+        font-size: 30px;
+        margin-top: 30px;
+      }
+
+      .question {
+        background:
+          url(//m.360buyimg.com/img/jfs/t1/116452/12/1018/1748/5e93ff23E142c3f3f/c4b465507cc5b723.png)
+          center center no-repeat;
+        background-size: 100%;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        margin: 22px 0 0 20px;
+      }
+    }
+
+    .original-price {
+      height: 34px;
+      line-height: 34px;
+      margin-top: 4px;
+      font-size: 24px;
+      display: flex;
+      // justify-content: center;
+      align-items: center;
+
+      .text {
+        width: 72px;
+      }
+
+      .num {
+        text-decoration: line-through;
+      }
+    }
+  }
+
+  .timer {
+    min-width: 210px;
+    padding: 0 20px;
+    height: 120px;
+    background: rgba(159, 63, 0, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .describe {
+      height: 34px;
+      line-height: 34px;
+      font-size: 24px;
+      color: #ffe586;
+      font-family: PingFangSC-Regular;
+      font-weight: normal;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .timer-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 8px;
+
+      .day-num {
+        height: 34px;
+        line-height: 34px;
+        color: #ffe586;
+        font-family: PingFangSC-Regular;
+        margin-right: 4px;
+      }
+
+      .count-down {
+        width: 174px;
+        height: 52px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-weight: bold;
+        font-family: PingFangSC-Medium;
+
+        .time {
+          width: 52px;
+          height: 52px;
+          line-height: 52px;
+          background:
+            linear-gradient(
+              180deg,
+              rgba(255, 229, 134, 1) 0%,
+              rgba(255, 233, 151, 1) 100%
+            );
+          border-radius: 10px;
+          box-shadow: 0 2px 4px 0 rgba(129, 52, 1, 0.5);
+          font-size: 30px;
+          color: rgba(159, 63, 0, 1);
+        }
+
+        .yinhao {
+          width: 18px;
+          height: 52px;
+          line-height: 52px;
+          font-size: 26px;
+          color: #ffe586;
+        }
+      }
+    }
+
+    .start-time {
+      width: 200px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      background:
+        linear-gradient(
+          180deg,
+          rgba(255, 229, 134, 1) 0%,
+          rgba(255, 233, 151, 1) 100%
+        );
+      border-radius: 4px;
+      box-shadow: 0 2px 4px 0 rgba(129, 52, 1, 0.5);
+      font-size: 26px;
+      color: rgba(159, 63, 0, 1);
+    }
+  }
+}

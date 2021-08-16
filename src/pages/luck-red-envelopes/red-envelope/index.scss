@@ -1,0 +1,77 @@
+.red-envelope {
+  display: flex;
+  height: 210px;
+  flex-direction: row;
+  align-items: center;
+  background: url(https://m.360buyimg.com/img/jfs/t1/11124/12/1163/39109/5c090a60E07bf29c8/dbf75ddd081cca47.png)
+    center center no-repeat;
+  background-size: 680px 210px;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.red-envelope .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 80px;
+  margin-left: 20px;
+  margin-top: -26px;
+}
+
+.red-envelope .right {
+  margin-top: -26px;
+}
+
+.red-envelope .left .top {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-bottom: 12px;
+}
+
+.red-envelope .unit {
+  font-size: 28px;
+  line-height: 40px;
+  color: rgb(244, 81, 39);
+  margin-bottom: 10px;
+  margin-right: 6px;
+}
+
+.red-envelope .price {
+  font-size: 70px;
+  line-height: 70px;
+  color: rgb(244, 81, 39);
+  font-weight: bold;
+}
+
+.red-envelope .limit {
+  font-size: 20px;
+  line-height: 28px;
+  color: rgb(244, 81, 39);
+}
+
+.red-envelope .label {
+  background: #fff;
+  border-radius: 16px;
+  border-bottom-left-radius: 0;
+  font-size: 22px;
+  color: rgb(255, 115, 76);
+  line-height: 32px;
+  padding: 0 13px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.red-envelope .name {
+  color: #fff;
+  font-size: 26px;
+  line-height: 36px;
+}
+
+.red-envelope .use-time {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 20px;
+  line-height: 28px;
+}

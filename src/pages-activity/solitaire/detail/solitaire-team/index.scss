@@ -1,0 +1,50 @@
+.solitaire-team {
+  background: rgba(246, 175, 111, 0.1);
+  width: 650px;
+  border-radius: 10px;
+  color: rgb(132, 63, 46);
+  padding: 0 20px;
+
+  .title {
+    height: 92px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+  }
+
+  .title,
+  .step {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .name {
+    font-size: 30px;
+    font-family: 'PingFangSC-Medium';
+  }
+
+  .dotted {
+    width: 44px;
+    height: 44px;
+  }
+
+  .step {
+    font-size: 25px;
+    font-family: 'ingFangSC-Regular';
+    padding: 10px 0;
+  }
+
+  .step-number {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+  }
+
+  .next {
+    padding: 0 30px;
+    width: 14px;
+    height: 30px;
+    margin-top: 4px;
+  }
+}

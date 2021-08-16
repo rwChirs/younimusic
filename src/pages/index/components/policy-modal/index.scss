@@ -1,0 +1,68 @@
+.switch-modal {
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  left: 0;
+
+  .main {
+    width: 600px;
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .switch-title {
+    color: #252525;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: 'PingFangSC-Regular';
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .s-content .switch-name {
+    color: #252525;
+    font-size: 26px;
+    font-family: 'PingFangSC-Medium';
+    padding: 10px 30px 0;
+    text-align: left;
+    max-height: 530px;
+  }
+
+  .s-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    color: #252525;
+    font-size: 26px;
+    max-height: 530px;
+    overflow-y: scroll;
+  }
+
+  .s-footer {
+    margin-bottom: px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    overflow: hidden;
+    align-items: center;
+
+    .line {
+      width: 1px;
+      height: 50%;
+      background: #eee;
+    }
+  }
+}

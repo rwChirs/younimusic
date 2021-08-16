@@ -1,0 +1,25 @@
+.h5share {
+  width: 100%;
+  background:
+    url(//m.360buyimg.com/img/jfs/t1/146473/17/24/97727/5eda5518Ed7e8d288/fbc777e1b631c162.png)
+    no-repeat;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .sharebtnptag {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 50vh;
+    background-color: transparent;
+    border-radius: 98px;
+  }
+
+  .sharebtnptag::after {
+    border-radius: 98px;
+    border: 0;
+  }
+}

@@ -1,0 +1,16 @@
+<view bindtap="handleTap" class="p-class p-cell {{ isLastCell ? 'p-cell-last' : '' }} {{ isLink ? 'p-cell-access' : '' }}">
+    <view class="p-cell-icon">
+        <slot name="icon"></slot>
+    </view>
+    <view class="p-cell-bd">
+        <view wx:if="{{ title }}" class="p-cell-text">{{ title }}</view>
+        <view wx:if="{{ label }}" class="p-cell-desc">{{ label }}</view>
+        <slot></slot>
+    </view>
+    <view catchtap="navigateTo" class="p-cell-ft">
+        <block wx:if="{{value}}">{{ value }}</block>
+        <block wx:else>
+            <slot name="footer"></slot>
+        </block>
+    </view>
+</view>

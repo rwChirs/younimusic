@@ -1,0 +1,13 @@
+.float-img {
+  position: fixed;
+  width: 160px;
+  height: 160px;
+  right: 0;
+  bottom: 315px;
+  z-index: 100;
+
+  .float-img-icon {
+    width: 160px;
+    height: 160px;
+  }
+}

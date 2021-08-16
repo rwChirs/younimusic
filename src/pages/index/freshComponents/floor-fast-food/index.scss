@@ -1,0 +1,128 @@
+.fastfood {
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+
+  .fastfood-container {
+    height: auto;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    border-radius: 8px;
+  }
+
+  .fastfood-content {
+    margin: 0 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .fastfood-main-title {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    color: #fff;
+    padding-left: 22px;
+  }
+
+  .fastfood-main-title-val {
+    height: 90px;
+    padding: 0 26px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    //color: rgb(29, 31, 43);
+    position: relative;
+
+    .title-txt {
+      white-space: nowrap;
+    }
+
+    .title-split {
+      width: 2px;
+      height: 20px;
+      background-color: rgba(0, 0, 0, 0.1);
+      position: absolute;
+      left: 0;
+      transform: rotate(35deg);
+    }
+  }
+
+  .fastfood-main-title-val-txt {
+    width: auto;
+    height: auto;
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+    color: #1d1f2b;
+    border-radius: 20px;
+    padding: 0 26px;
+    background: #fff;
+  }
+
+  .title-txt-bottom-line {
+    position: absolute;
+    right: 4px;
+    bottom: -8px;
+    left: 4px;
+    height: 6px;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .scroll-wrap {
+    margin-top: 20px;
+    //white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+
+    .list-box {
+      display: inline-flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      padding: 0 14px;
+
+      .product-item-wrap {
+        max-width: 204px;
+        margin-right: 7px;
+        margin-left: 7px;
+        margin-bottom: 22px;
+      }
+    }
+
+    .fastfood-main-items-wrap {
+      //margin-right: 12px;
+      // background: #FFFFFF;
+      // box-shadow: 0 4px 11px 0 rgba(0,0,0,0.08);
+    }
+
+    .fastfood-main-items {
+      width: 190px;
+      height: 190px;
+      margin: 0 3px;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .fastfood-main-items-more {
+      border-radius: 16px;
+      margin-right: 6px;
+      margin-left: 3px;
+      height: 320px;
+      width: 92px;
+      overflow: hidden;
+    }
+
+    .image {
+      width: 100%;
+      height: 100%;
+      border-radius: 16px;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.button {
+  background: linear-gradient(to right, rgb(255, 220, 124), rgb(255, 183, 102));
+  font-size: 28px;
+  font-family: 'PingFang SC',
+ 'Hiragino Sans GB',
+ 'Heiti SC',
+ 'Microsoft YaHei',
+    'WenQuanYi Micro Hei';
+  height: 88px;
+  width: 410px;
+  border-radius: 44px 0 44px 44px;
+  color: rgb(154, 81, 52);
+  text-align: center;
+  line-height: 88px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .split {
+    width: 2px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.05);
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    margin: 0 20px;
+  }
+
+  .name {
+    font-weight: bold;
+  }
+
+  .desc {
+    font-size: 24px;
+  }
+}
+
+.button.disabled {
+  background: rgb(216, 216, 216) !important;
+  color: rgb(63, 67, 77);
+}

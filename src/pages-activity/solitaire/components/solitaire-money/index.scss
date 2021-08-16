@@ -1,0 +1,36 @@
+.solitaire-make-money {
+  clear: both;
+  height: 34px;
+  line-height: 34px;
+  background: linear-gradient(rgb(255, 200, 124), rgb(255, 183, 102));
+  width: 186px;
+  border-radius: 16px 0 16px 0;
+  display: flex;
+  flex-direction: row;
+
+  .text {
+    /* width: 44px; */
+    padding: 0 10px;
+    color: rgb(132, 63, 46);
+    font-family: 'PingFangSC-Regular';
+    font-size: 24px;
+    height: 34px;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  .num {
+    flex: 1;
+    font-family: 'PingFangSC-Medium';
+    font-size: 24px;
+    color: rgb(223, 71, 76);
+    background: #fff;
+    height: 34px;
+    line-height: 34px;
+    border-radius: 0 0 16px 0;
+    border: 2px solid rgb(255, 200, 120);
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0 4px;
+  }
+}

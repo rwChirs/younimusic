@@ -1,0 +1,133 @@
+@import '../../../../common/theme.scss';
+
+.popup-mask {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  z-index: 333;
+  transition: opacity 0.5s;
+  opacity: 0;
+  display: none;
+}
+
+.popup-mask-show {
+  display: block;
+}
+
+.popup-mask-anim {
+  opacity: 1;
+}
+
+.popup-container {
+  background: #fff;
+  height: 450px;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  display: none;
+  flex-direction: column;
+  padding: 20px 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  box-sizing: border-box;
+  transform: translate3d(0, 100%, 0);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1);
+  z-index: 334;
+}
+
+.popup-container-anim {
+  transform: translate3d(0, 0, 0);
+}
+
+.popup-container-show {
+  display: flex;
+}
+
+.popup-title {
+  line-height: 80px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #898989;
+  // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.popup-header {
+  width: 100%;
+  text-align: left;
+  font-size: 0.8rem;
+  color: #898989;
+  position: relative;
+  line-height: 80px;
+}
+
+.popup-type {
+  // line-height: 44px;
+  font-family: PingFangSC-Medium;
+  font-size: 32px;
+  color: rgba(37, 37, 37, 1);
+  margin: 0 10px 0 30px;
+}
+
+.popup-unit {
+  // line-height: 28px;
+  font-family: PingFangSC-Regular;
+  font-size: 24px;
+  color: rgba(149, 150, 159, 1);
+}
+
+.popup-cart {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+}
+
+.popup-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background:
+    url(//m.360buyimg.com/img/jfs/t12895/99/2618201646/1365/8d2ecb01/5a4509a4N166ae1db.png)
+    center center no-repeat;
+  width: 80px;
+  height: 80px;
+  background-size: 27px 27px;
+}
+
+.popup-contents {
+  width: 100%;
+  font-size: 0.7rem;
+  box-sizing: border-box;
+  padding: 0 20px 0;
+  color: #333;
+  overflow: auto;
+  background: #fff;
+  -webkit-overflow-scrolling: touch;
+}
+
+.bill-popup-contents {
+  padding: 0;
+}
+
+.bill-content {
+  padding: 0 20px 0;
+}
+
+.bill-block {
+  width: 100%;
+  height: 22px;
+  background: rgba(244, 247, 249, 1);
+}
+
+.popup-p {
+  display: block;
+}
+
+.text-arr {
+  margin-top: 20px;
+}

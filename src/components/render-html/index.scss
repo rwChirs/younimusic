@@ -1,0 +1,56 @@
+.rich-text {
+  padding-bottom: 20rpx;
+  display: block;
+}
+
+.rich-text-image {
+  width: 100vw;
+}
+
+.rich-text-div .rich-text-image,
+.rich-text-p .rich-text-image {
+  width: 100vw;
+  margin-left: -30rpx;
+}
+
+.rich-text-table {
+  width: 100vw;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.rich-text-table .rich-text-image {
+  width: 100%;
+  margin-left: 0;
+}
+
+.rich-text-table .rich-text-table-td,
+.rich-text-table .rich-text-table-tr {
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.rich-text-table .rich-text-table-td .rich-text-image {
+  margin: 0;
+}
+
+.rich-text-p {
+  padding: 0 30rpx;
+  font-size: 0;
+  line-height: 0;
+}
+
+.rich-text-p .rich-text-p {
+  padding: 0 30rpx;
+  line-height: 40rpx;
+}
+
+.rich-text-div {
+  font-size: 28rpx;
+  line-height: 40rpx;
+  width: 100vw;
+  .rich-text-image {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,108 @@
+.shop-content .title {
+  font-size: 36px;
+  color: #252525;
+  font-family: 'PingFangSC-Medium';
+  margin-bottom: 20px;
+}
+
+.shop-content .name {
+  color: #252525;
+  font-size: 38px;
+  font-family: 'PingFangSC-Medium';
+  padding-top: 30px;
+}
+
+.shop-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.shop-footer {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.shop-content .shop-list {
+  margin: 0 20px;
+  overflow-y: auto;
+  height: 450px;
+}
+
+.shop-content .shop-list .info {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 26px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.shop-content .shop-list .left {
+  width: 540px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.shop-content .shop-list .left .title {
+  font-size: 30px;
+  color: #252525;
+  font-family: 'PingFangSC-Medium';
+  text-align: left;
+}
+
+.shop-content .shop-list .left .address {
+  font-size: 24px;
+  color: #898989;
+  font-family: 'PingFangSC-Regular';
+  text-align: left;
+}
+
+.shop-content .shop-list .left .desc {
+  width: 576px;
+  height: 40px;
+  line-height: 40px;
+  font-family: PingFangSC-Regular;
+  font-size: 24px;
+  color: rgba(255, 75, 37, 1);
+  margin-top: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.shop-content .shop-list .right,
+.shop-content .shop-list .right .img {
+  width: 30px;
+  height: 30px;
+}
+
+.switch-shop-modal {
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  left: 0;
+
+  .main {
+    width: 670px;
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+}

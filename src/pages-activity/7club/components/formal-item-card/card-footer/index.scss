@@ -1,0 +1,62 @@
+.card-footer {
+  height: 80px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // border-top: 2px solid rgb(251, 251, 251);
+
+  .scan {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+
+    .share-btn {
+      box-sizing: content-box;
+      width: 36px;
+      height: 36px;
+      display: inline-block;
+      // background-color: transparent;
+      background:
+        url('//m.360buyimg.com/img/jfs/t1/166640/34/1949/1422/5ffbb667E144766e4/8d9a50a911fa1a69.png')
+        no-repeat;
+      background-size: 100% 100%;
+      border-radius: 0;
+      padding: 0;
+    }
+
+    .share-btn::after {
+      border: none;
+    }
+  }
+
+  .func {
+    display: flex;
+    align-items: center;
+
+    .like-box,
+    .collect-box {
+      // padding: 30px 0;
+      width: 142px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      .like {
+        width: 60px;
+        height: 60px;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .num {
+        font-size: 24px;
+        line-height: 60px;
+        color: #474748;
+        font-family: PingFangSC-Medium;
+        margin-left: 2px;
+        margin-right: 28px;
+      }
+    }
+  }
+}

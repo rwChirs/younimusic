@@ -1,0 +1,190 @@
+.Season {
+  width: 750px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.Season-container {
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.no-scroll-line::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.Season-main-title {
+  display: flex;
+  flex-direction: row;
+}
+
+.Season-main-items-container {
+  margin: 0 30px;
+  width: auto;
+  height: 330px;
+  border-radius: 16px;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Season-main-items-container-title {
+  width: auto;
+  height: 90px;
+  // margin: 10px;
+  margin: 0 10px 10px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  color: #fff;
+}
+
+.Season-main-items-container-title-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+
+  .Season-main-items-container-title-item-name {
+    height: 42px;
+    line-height: 42px;
+    font-size: 24px;
+    font-family: 'HYRunYuan-75W';
+  }
+
+  .Season-main-items-container-title-item-date {
+    font-size: 20px;
+  }
+}
+
+.Season-main-items-container-title-item.today {
+  margin-right: 20px;
+  position: relative;
+
+  .Season-main-items-container-title-item-name {
+    font-size: 34px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .Season-main-items-container-title-item-date {
+    position: relative;
+  }
+
+  .Season-main-items-container-title-line {
+    position: absolute;
+    top: 12px;
+    right: -20px;
+    width: 2px;
+    height: 20px;
+    background: #fff;
+  }
+}
+
+.Season-main-items {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.scroll-wrap {
+  //white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.Season-main-items-imgs {
+  display: flex;
+  flex: 1;
+  // margin-left: 6px;
+}
+
+.Season-main-items-img {
+  width: 152px;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 6px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.first-img {
+  width: 235px;
+  height: 210px;
+  background: #fff;
+  margin-left: 0 !important;
+}
+
+.Season-main-items-icon {
+  height: 30px;
+  padding: 0 10px;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 18px;
+  color: white;
+  border-radius: 14px;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background-image:
+    linear-gradient(
+      to right,
+      rgb(255, 130, 138),
+      rgb(255, 107, 122)
+    );
+}
+
+.Season-main-items-Image,
+.first-Image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Season-main-items-Image {
+  width: 142px;
+  height: 142px;
+}
+
+.first-Image {
+  width: 234px;
+  height: 210px;
+}
+
+.Season-main-items-name {
+  font-size: 24px;
+  color: rgb(29, 31, 43);
+  padding-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  text-align: center;
+}
+
+.more-box {
+  height: 210px;
+  width: 92px;
+  margin: 0 6px;
+  border-radius: 16px;
+  overflow: hidden;
+}

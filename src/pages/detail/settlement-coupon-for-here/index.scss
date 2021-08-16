@@ -1,0 +1,83 @@
+.list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 30px 0 0;
+  flex-direction: column;
+}
+
+.list::-webkit-scrollbar {
+  display: none;
+}
+
+// .list:last-child {
+//   width: 100%;
+//   display: flex;
+//   align-items: center;
+//   margin: 30px 0 30px;
+//   flex-direction: column;
+// }
+
+.title {
+  font-family: PingFangSC-Regular;
+  font-size: 26px;
+  color: rgba(153, 153, 153, 1);
+  margin-left: 30px;
+}
+
+.coupon-list {
+  margin-bottom: 30px;
+}
+
+.content {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 900px;
+}
+
+.coupon-modal {
+  position: fixed;
+  right: 0;
+  bottom: 100px;
+  left: 0;
+  background: rgba(246, 246, 246, 1);
+  border-radius: 16px 16px 0 0;
+  height: 800px;
+  z-index: 9;
+}
+
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 750px;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 4;
+}
+
+.coupon-modal-header {
+  position: relative;
+  width: 750px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+
+.coupon-modal-title {
+  font-family: PingFangSC-Medium;
+  font-size: 32px;
+  color: rgba(29, 31, 43, 1);
+}
+
+.coupon-modal-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  background:
+    url('//m.360buyimg.com/img/jfs/t1/153328/17/9995/525/5fd81d1eEc2bf5f43/3be2fe43d1791645.png')
+    no-repeat;
+  background-size: 40px 40px;
+}

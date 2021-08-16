@@ -1,0 +1,60 @@
+.go-top-component {
+  /* background: rgb(255, 255, 255, 0.95);
+  border-radius: 50%;
+  border: 1px solid rgba(151, 151, 151, 0.3);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1); */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  width: 88px;
+  height: 88px;
+  margin-top: 40px;
+
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 50%;
+  border: 1px solid rgba(151, 151, 151, 0.3);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.go-top-icon {
+  width: 88px;
+  height: 88px;
+}
+
+.go-top-title {
+  padding: 15px;
+  display: inline-block;
+  font-size: 22px;
+  /* color: rgb(154, 81, 52); */
+  color: rgb(94, 100, 109);
+  font-family: 'PingFangSC-Semibold';
+  text-align: center;
+  transform: scale(0.9, 0.9);
+}
+
+.go-top-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+.go-top-content .icon {
+  position: absolute;
+  border-top: 4px solid rgb(94, 100, 109);
+  border-right: 4px solid rgb(94, 100, 109);
+  transform: rotate(-45deg);
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  top: 18px;
+  left: 23px;
+}
+.go-top-content .go-top-title {
+  margin-top: 20px;
+}

@@ -1,0 +1,130 @@
+.comment-item {
+  padding: 20rpx 0;
+  .user {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 10rpx;
+    .user-info {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .name {
+        font-size: 24rpx;
+        color: rgb(37, 37, 37);
+        margin-right: 20px;
+      }
+      .score {
+        font-size: 24rpx;
+        color: rgb(37, 37, 37);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .desc {
+          margin-right: 10rpx;
+        }
+        .star {
+          width: 24rpx;
+          height: 24rpx;
+          background: url(//m.360buyimg.com/img/jfs/t10645/247/2188407342/834/ae640a53/59f07418Nac9b9df1.png)
+            center center no-repeat;
+          background-size: 24rpx 24rpx;
+        }
+        .emoji {
+          font-size: 24px;
+          line-height: 34px;
+          .good {
+            color: rgb(255, 185, 0);
+            background: url(//m.360buyimg.com/img/jfs/t1/8352/39/9833/6326/5c1d2d2fE6f44d31c/499d5a6f574497a6.png)
+              center left no-repeat;
+            background-size: 26px 26px;
+            padding-left: 34px;
+          }
+          .normal {
+            color: rgb(255, 182, 75);
+            background: url(//m.360buyimg.com/img/jfs/t1/19286/25/2510/7416/5c1d2e1aEf3046963/61817f96393f1043.png)
+              center left no-repeat;
+            background-size: 26px 26px;
+            padding-left: 34px;
+          }
+          .bad {
+            color: rgb(255, 134, 134);
+            background: url(//m.360buyimg.com/img/jfs/t1/16604/34/2429/4819/5c1d2e39E413c6bf4/8888a40aecde97c9.png)
+              center left no-repeat;
+            background-size: 26px 26px;
+            padding-left: 34px;
+          }
+        }
+      }
+    }
+    .time {
+      color: rgb(194, 194, 194);
+      font-size: 24rpx;
+      line-height: 36rpx;
+    }
+    .user-image {
+      margin-right: 20rpx;
+    }
+    .user-icon {
+      width: 50rpx;
+      height: 50rpx;
+      border-radius: 25rpx;
+    }
+    .user-detail {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  .content {
+    color: rgb(37, 37, 37);
+    font-size: 26rpx;
+    line-height: 36px;
+    display: -webkit-box;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 20px;
+  }
+  .images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .image {
+      width: 164rpx;
+      height: 164rpx;
+    }
+    .image-box {
+      position: relative;
+      height: 164px;
+      width: 164px;
+      margin-right: 10px;
+      border-radius: 10rpx;
+      overflow: hidden;
+    }
+    .image-box:last-child {
+      margin-right: 0;
+    }
+    .image-num {
+      font-size: 20px;
+      line-height: 28px;
+      color: rgb(37, 37, 37);
+      background: rgba(255, 255, 255, 0.85);
+      padding: 2px 12px;
+      border-radius: 16px;
+      border-bottom-left-radius: 0;
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+    }
+  }
+
+  .sku-desc {
+    font-size: 26rpx;
+    color: rgb(194, 194, 194);
+    line-height: 36rpx;
+  }
+}

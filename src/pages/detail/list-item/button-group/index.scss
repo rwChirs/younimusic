@@ -1,0 +1,29 @@
+@import '../../../../common/theme.scss';
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 100%;
+  align-items: center;
+
+  .button {
+    background: #fff;
+    border: 1rpx solid rgba(0, 0, 0, 0.2);
+    border-radius: 4rpx;
+    height: 48rpx;
+    min-width: 150rpx;
+    line-height: 48rpx;
+    font-size: 26rpx;
+    color: rgb(137, 137, 137);
+    margin-right: 10rpx;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .button.active {
+    color: rgb(0, 105, 140);
+    border-color: rgb(0, 105, 140);
+    background: $bgColor;
+  }
+}

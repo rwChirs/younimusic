@@ -1,0 +1,68 @@
+.user-top-page {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 690px;
+  flex-wrap: no-wrap;
+  overflow-y: hidden;
+  overflow-x: auto;
+
+  .user-tip {
+    position: absolute;
+    top: 20px;
+    left: -220px;
+    width: 180px;
+    height: 46.8px;
+    line-height: 46.8px;
+    background: rgb(255, 239, 239);
+    color: rgb(195, 31, 19);
+    border: 1px dashed rgb(249, 140, 130);
+    border-radius: 20px 20px 0 20px;
+    font-size: 20px;
+    font-family: 'PingFangSC-Regular';
+  }
+
+  .user-top {
+    position: relative;
+    width: 108px;
+    height: 108px;
+    margin-bottom: 30px;
+    margin-right: 40px;
+    border-radius: 50%;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .img {
+      width: 108px;
+      height: 108px;
+      border-radius: 50%;
+    }
+
+    .name {
+      position: absolute;
+      bottom: -5px;
+      left: 13px;
+      width: 84px;
+      height: 36px;
+      line-height: 36px;
+      font-size: 24px;
+      color: #fff;
+      border-radius: 20px;
+      text-align: center;
+      font-family: 'PingFangSC-Regular';
+      background: linear-gradient(
+        to right,
+        rgb(255, 109, 109),
+        rgb(253, 50, 50)
+      );
+    }
+  }
+}
+
+.user-top-center {
+  justify-content: center;
+}

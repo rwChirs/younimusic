@@ -1,0 +1,36 @@
+@import '../../../common/theme.scss';
+
+.recommend-paper {
+  margin-bottom: 20rpx;
+  .recommend-paper-item {
+    background-color: #fff;
+    padding: 30rpx;
+    background: url(//m.360buyimg.com/img/s1242x1242_jfs/t20107/102/46635868/65056/4f27bda2/5ae2a6cbNe10d3a94.png)
+      center center no-repeat;
+    background-size: 100%;
+    margin-bottom: 20rpx;
+  }
+  .head {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-bottom: 30rpx;
+    .logo {
+      background: url(//m.360buyimg.com/img/jfs/t1/144989/23/10811/7227/5f893390E514de310/3fe223649cf33c54.png)
+        center center no-repeat;
+      background-size: 100%;
+      width: 180rpx;
+      height: 48rpx;
+    }
+    .title {
+      color: $color;
+      font-size: 30rpx;
+      line-height: 30rpx;
+    }
+  }
+  .contents {
+    font-size: 26rpx;
+    color: rgb(137, 137, 137);
+    line-height: 36rpx;
+  }
+}

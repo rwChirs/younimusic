@@ -1,0 +1,64 @@
+.carousel-page {
+  height: 496px;
+  width: 690px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+
+  .carousel-left-picture {
+    width: 522px;
+    height: 496px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-right: 4px;
+  }
+
+  .carousel-left-picture .img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+
+  .carousel-right-picture {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 164px;
+    height: 496px;
+    font-size: 0;
+  }
+
+  .carousel-right-shadow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 164px;
+    height: 163px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  }
+
+  .carousel-right-length {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 24px;
+    color: #fff;
+    font-family: 'PingFangSC-Regular';
+  }
+
+  .carousel-right-picture .img {
+    width: 164px;
+    height: 163px;
+    margin-bottom: 3px;
+  }
+}

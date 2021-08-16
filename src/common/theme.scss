@@ -1,0 +1,74 @@
+// 主题色
+$color: #00ab0c;
+//浅色的文字颜色
+$litterColor: rgba(0, 127, 9, 0.5);
+// 背景色
+$bgColor: rgb(237, 247, 236);
+// 按钮主题色
+$btnColor: linear-gradient(306deg, rgb(53, 198, 70) 0%, rgb(103, 208, 78) 100%);
+// 黄色按钮
+$warnColor: rgba(255, 186, 8, 1);
+// 点击按钮颜色
+$normalBtnColor: rgb(53, 198, 70);
+// 设置到货提醒和定期送的主题色
+$infoBtnColor: linear-gradient(
+  306deg,
+  rgb(53, 198, 70) 0%,
+  rgb(103, 208, 78) 100%
+);
+// 模块-背景色
+$modalBgColor: linear-gradient(
+  306deg,
+  rgb(103, 208, 78) 0%,
+  rgb(153, 198, 70) 100%
+);
+// 大加a车按钮
+$addCartBigBtn: '//m.360buyimg.com/img/jfs/t1/121415/20/12638/3053/5f607f9dE1b756453/9390cf1432b1c9ae.png';
+// 小加车按钮
+$addCartBtn: '//m.360buyimg.com/img/jfs/t1/117343/29/17688/2389/5f608000E46128747/5ef88878a709fffa.png';
+// 加车不可点
+$addDisabledCartBtn: '//m.360buyimg.com/img/jfs/t1/112602/35/18608/831/5f702c63E0e7654da/642557c8741cfbec.png';
+// 页面底部logo
+$bottomLogo: '//m.360buyimg.com/img/jfs/t1/120652/34/12718/4698/5f607bcbE7421397b/7c9884a76f2eb5e9.png';
+// 单选按钮-选中样式
+$selectBtn: '//m.360buyimg.com/img/jfs/t1/151419/2/789/2020/5f61c3aeE0d5e9cb9/6d8b928fe429f991.png';
+// 单选按钮-不可选样式
+$disabledSelectBtn: '//m.360buyimg.com/img/jfs/t1/95840/16/5973/790/5df0b819E6679b0fe/92a24228d989c0c8.png';
+// 单选按钮-默认样式
+$defaultSelectBtn: '//m.360buyimg.com/img/jfs/t1/86559/9/6002/1478/5df0b890E46141a3d/265b5de14737ee5d.png';
+// 地址列表页的刷新按钮
+$loadPic: '//m.360buyimg.com/img/jfs/t1/137279/3/10670/965/5f69af1fEd5da8cc4/f0355a5a68f7c6b2.png';
+// 地址定位的图标
+$positionPic: '//m.360buyimg.com/img/jfs/t1/118912/38/18614/1227/5f69b0a9E7536349b/ea075c144cadc520.png';
+// 分享拖底图
+$sharePic: '//m.360buyimg.com/img/jfs/t1/142737/3/8995/189663/5f69d1ffE464efebb/ead5eaf4a618d75d.png';
+// 向右黑色的箭头
+$toRightBlackArrow: '//m.360buyimg.com/img/jfs/t1/128586/5/13350/516/5f6d5c37E50133399/556edecea3cb1de0.png';
+// 向右绿色的箭头
+$toRightGreenArrow: '//m.360buyimg.com/img/jfs/t1/128242/27/13228/510/5f6d5c2bE05494318/167154f7ec924fd2.png';
+// 向右红色的箭头
+$toRightRedArrow: '//m.360buyimg.com/img/jfs/t1/151560/40/752/546/5f6d5c03E9facdfc1/2b03bbbca24baa30.png';
+// 向右灰色的箭头
+$toRightGreyArrow: '//m.360buyimg.com/img/jfs/t1/124243/29/13496/492/5f6d5c17Ed9e420f7/4ad78f192bd6e34c.png';
+// 向下黑色的箭头
+$toDownBlackArrow: '//m.360buyimg.com/img/jfs/t1/143978/13/9257/691/5f6d5c54Ed02ff2ae/aec57dd90bd30707.png';
+// 订单详情顶部背景图
+$commonModalBg: '//m.360buyimg.com/img/jfs/t1/142905/22/9578/22401/5f71b725Ed38d0f72/edad4f6de9c97caf.png';
+// 电话小图标
+$telPic: '//m.360buyimg.com/img/jfs/t1/130573/15/10950/1147/5f708bf7Eac4fe850/e34c85688d858092.png';
+// 商品拖底图
+$productDefaultPicture: '//m.360buyimg.com/img/jfs/t1/153468/16/700/3673/5f6c7b9eE41269409/c664a71f7f5ac898.png';
+// 小号的商品拖底图
+$litterProductDefaultPicture: '//m.360buyimg.com/img/jfs/t1/135004/28/10628/1474/5f6c7bc4E8e434074/d1a39798d1cbf6ba.png';
+// 7 logo
+$themeLogo: '//m.360buyimg.com/img/jfs/t1/125174/12/13437/25068/5f6c044dE5df34dd8/f5b3069be649dbac.png';
+// 个人中心头像拖底图
+$mineTopPic: '//m.360buyimg.com/img/jfs/t1/113895/12/18390/5070/5f6c5afcE98125a97/7a307f1dc6b757a7.png';
+// 接龙底部logo
+$solitaireBottomLogo: '//m.360buyimg.com/img/jfs/t1/116226/15/18420/15017/5f69d368E535133c4/faba651954f11ef9.png';
+// 接龙列表团长默认头像
+$solitaireDefaultPicture: '//m.360buyimg.com/img/jfs/t1/56696/10/801/4341/5ce7ae02Ebd65a1f4/1a5e770d859f6b9a.png';
+// 拼团未参团的问号头像
+$questionUserPic: '//m.360buyimg.com/img/jfs/t1/26929/4/4756/5639/5c344af6Ebe5f3e0e/fa5459e8c7c28ac1.png';
+// 勾选口味的对号图标
+$addOkBtn: '//m.360buyimg.com/img/jfs/t1/134009/26/10957/1382/5f7042e0E625df23d/921a4203a801fdb9.png';

@@ -1,0 +1,55 @@
+@import '../../../common/theme.scss';
+
+.select-item {
+  color: rgb(37, 37, 37);
+  font-size: 26rpx;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.select-item.active {
+  color: $color;
+}
+
+.select-item .icon {
+  width: 40rpx;
+  height: 40rpx;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.select-item .icon.address {
+  background-image: url(//m.360buyimg.com/img/jfs/t12172/157/2630355692/1826/8b13831a/5a4509a4N275c65f0.png);
+}
+
+.select-item.active .icon.address {
+  background-image: url(//m.360buyimg.com/img/jfs/t1/137311/18/10990/2735/5f702ae4Ecae7268e/1e6c136b1012382d.png);
+}
+
+.select-item.active .selected {
+  display: block;
+}
+
+.select-item .selected {
+  display: none;
+  width: 24rpx;
+  height: 24rpx;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url($selectBtn);
+}
+
+.select-item .name {
+  padding: 0 30rpx;
+  flex: 1;
+  display: -webkit-box;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

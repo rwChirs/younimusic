@@ -1,0 +1,65 @@
+<view class="container">
+  <view class="order-info-extend">
+    <view class="order-info-extend-line">
+      <text class="order-info-key">订单编号：</text>
+      <text class="order-info-value">{{orderId || ''}}</text>
+    </view>
+    <view class="order-info-extend-line">
+      <text class="order-info-key">下单时间：</text>
+      <text class="order-info-value">{{umsInfo[0].showOrderCreateDate}}</text>
+    </view>
+  </view>
+  <view style="position:fixed;top:9999rpx;">
+    <canvas style="width: {{imageWidth}}px; height: {{imageHeight}}px;" canvas-id="myCanvas" ></canvas>
+  </view>
+  <view class="logistics-info">
+    <!-- <view class="left-part">
+      <view class="flag">
+        <view class="flag-in"></view>
+      </view>
+      <view class="" wx:for="{{umsInfo}}" wx:for-item="dot" wx:key="{{index}}">
+        <view class="left-dot">
+          <view class="left-dot-item">
+            <view class="left-dot-item-icon" wx:if="{{index < umsInfo.length-1}}"></view>
+          </view>
+        </view>
+      </view>
+    </view> -->
+    <view class="right-part">
+      <view class="logistics-list" wx:for="{{umsInfo}}" wx:for-item="ums" wx:key="{{index}}">
+        <view class="left-part">
+          <view class="flag" wx:if="{{index === 0}}">
+            <view class="flag-in"></view>
+          </view>
+          <view class="left-dot" wx:else>
+            <view class="left-dot-item">
+              <view class="left-dot-item-icon" wx:if="{{index < umsInfo.length-1}}"></view>
+            </view>
+          </view>
+          <view class="left-dot-item-line"></view>
+        </view>
+        <view class="logistics-list-wrap">
+          <view class="logistics-item">
+            <view class="logistics-detail">
+              <view class="logistics-detail-text" style="color: {{(index === 0 && !ums.content[0].telFlag) ? '#00AB0C' : (index === 0 && ums.content[0].telFlag) ? '#252525' : '#777777' }}">
+                <text style="color: {{(item.type=='phone') && '#00AB0C' }}" wx:for="{{ums.content}}" wx:key="{{ums.content}}" catchtap="{{item.type=='phone'?'makePhoneCall':''}}" data-phone="{{item.type=='phone'?item.val:''}}">{{item.val}}</text>
+              </view>
+            </view>
+            <view class="logistics-time" >
+              <text class="logistics-time-text">{{ums.showOperateTime}}</text>
+            </view>
+            <map
+              wx:if="{{index === 0 && showGis}}"
+              id="logisticsMap"
+              class="logistics-map"
+              markers="{{markers}}"
+              scale="{{10}}"
+              bindtap="toOrderDetailMap"
+            >
+            </map>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

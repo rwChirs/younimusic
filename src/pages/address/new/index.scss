@@ -1,0 +1,154 @@
+@import '../../../common/theme.scss';
+
+::-moz-placeholder {
+  color: #e6e6e6;
+}
+
+::-webkit-input-placeholder {
+  color: #e6e6e6;
+}
+
+:-ms-input-placeholder {
+  color: #e6e6e6;
+}
+
+input {
+  height: 92px;
+  line-height: 92px;
+}
+
+.new-edit {
+  padding: 0 20px;
+  background: #fff;
+}
+
+.new-address .edit-list {
+  position: relative;
+  height: 100px;
+  line-height: 100px;
+  font-size: 28px;
+  color: #252525;
+  font-family: 'PingFangSC-Regular';
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.new-address .edit-list input {
+  width: 520px;
+}
+
+.new-address .edit-list:last-child {
+  border-bottom: 0;
+}
+
+.new-address .cell-bottom {
+  line-height: 40px;
+  margin-bottom: 20px;
+
+  .cell-bottom-img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+  }
+
+  .cell-bottom-text {
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 24px;
+    color: #ff4b25;
+  }
+}
+
+.new-address .choose-address {
+  height: 82px;
+  line-height: 82px;
+  width: 450px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+}
+
+.choose-address .placeholder {
+  color: #e6e6e6;
+}
+
+.address-right-icon {
+  width: 18px;
+  height: 26px;
+  margin-right: 20px;
+}
+
+.text-placeholder {
+  color: #e6e6e6;
+}
+
+.saveBtn {
+  position: fixed;
+  right: 80px;
+  bottom: 40px;
+  left: 80px;
+  width: 590px;
+  height: 80px;
+  background: $btnColor;
+  // box-shadow: 0 10px 20px rgba(36, 85, 128, 0.3);
+  color: #fff;
+  font-size: 32px;
+  text-align: center;
+  line-height: 80px;
+  border-radius: 44px 44px 44px 44px;
+}
+
+.address-tip {
+  background: $color;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.clock-icon {
+  width: 20px;
+  height: 27px;
+  margin: 0 20px;
+  display: block;
+}
+
+.tip-close {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.tip-txt {
+  width: 640px;
+  font-size: 24px;
+  line-height: 80px;
+}
+
+.address-o {
+  width: 530px;
+
+  .label-tip {
+    width: 132px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'PingFangSC-Regular';
+    border-radius: 6px;
+    color: #252525;
+    border: 1px solid rgb(194, 194, 194);
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .label-tip.current {
+    background: $bgColor;
+    color: $color;
+    border: 1px solid $color;
+  }
+}

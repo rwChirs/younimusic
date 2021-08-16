@@ -1,0 +1,36 @@
+<view class="container page">
+  <view class="noOpen">
+    <view class="wxIcon"></view>
+    <view class="wxText">
+      <view class="wxTextTip">微信免密支付</view>
+      <view class="wxOpenStatus" wx:if="{{isOpenPay == true}}">{{openPayStatus}}</view>
+    </view>
+    <view class="openText">
+      <view class="openTextBtn" bindtap="payOperate" wx:if="{{isOpenPay}}">{{openBtn}}</view>
+      <navigator class='openTextBtn openTextBtnActive'  wx:else target="miniProgram"  app-id="{{appId}}" version="release" extra-data="{{extraData}}" path="{{path}}" open-type="navigate"   hover-class="none">
+        {{openBtn}}
+      </navigator>
+    </view>
+  </view>
+
+  <view class="pay-config" wx:if="{{cardInfoList && cardInfoList.length>0}}">
+    <view class="pay-config-title">支付设置：</view>
+    <view class="switchs" wx:for="{{cardInfoList}}" wx:key="cardType">
+      <view class="switch-box">
+        <view class="switch-title">{{item.cardName}}</view>
+        <view class="switch-btn">
+          <view class="switch-txt">{{item.cardDesc}}</view>
+          <switch class="switch" data-cardtype="{{item.cardType}}" data-index="{{index}}" checked="{{item.payUse}}" bindchange="switchDefaultPayChange"/>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+  <view class="tips" wx:if="{{false}}">
+    <text class="tips-title">温馨提示：</text>
+    <text class="tips-content">
+      开通微信免密支付后，在七鲜门店内，可扫码直接付款，支付更便捷。免密支付限单笔2000元。
+    </text>
+  </view>
+</view>

@@ -1,0 +1,174 @@
+.daily-check-in-container {
+  height: 166px;
+  line-height: 166px;
+  position: relative;
+  overflow: hidden;
+  padding: 5px 15px 0 15px;
+}
+
+.daily-check-in-scroll {
+  height: 140px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.daily-box {
+  position: relative;
+  text-align: center;
+}
+
+.img-outer {
+  position: relative;
+  background-color: #fff;
+  display: inline-block;
+  opacity: 1;
+  z-index: 1;
+
+  .daily-check-in-type {
+    display: inline-block;
+    box-sizing: border-box;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: absolute;
+
+    &.daily-check-in-type1 {
+      width: 52px;
+      height: 52px;
+    }
+
+    &.daily-check-in-type2 {
+      width: 78px !important;
+      height: 78px;
+      bottom: -5px;
+      border: 4px;
+      border-radius: 8px;
+    }
+  }
+
+  .sell-out {
+    width: 78px;
+    height: 78px;
+    position: absolute;
+    top: 21px;
+    left: 0;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    line-height: 78px;
+    text-align: center;
+    border-radius: 8px;
+  }
+
+  .gray-box-s {
+    -webkit-filter: grayscale(0.2); /* Webkit */
+    filter: #d3d3d3; /* IE6-9 */
+    filter: grayscale(0.2); /* W3C */
+    opacity: 0.5;
+    z-index: 2;
+  }
+}
+
+.daily-check-in-day {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 34px;
+  line-height: 34px;
+  font-size: 24px;
+  bottom: 0;
+  z-index: 2;
+}
+
+.daily-check-in-line {
+  position: absolute;
+
+  /* transform: translateY(-50%); */
+  right: -48px;
+  width: 48px;
+  height: 4px;
+}
+
+.daily-check-in-distance {
+  height: 34px;
+  margin-top: 18px;
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  font-size: 24px;
+  color: #ac8346;
+}
+
+.distance-number {
+  color: #ff4d36;
+}
+
+.daily-check-in-button {
+  position: relative;
+  margin-top: 34px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 420px;
+  height: 76px;
+  line-height: 76px;
+  background:
+    linear-gradient(
+      270deg,
+      rgba(255, 64, 39, 1) 0%,
+      rgba(255, 86, 63, 1) 100%
+    );
+  border-radius: 42px;
+  box-shadow: 0 5px 7px 0 rgba(171, 0, 0, 0.13);
+  font-family: PingFangSC-Regular;
+  font-size: 32px;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+}
+
+/* .scroll-inner___32kZG{
+  padding-right: 0 !important;
+  margin-right: 0 !important;
+} */
+.line-box {
+  position: absolute;
+  top: 48%;
+  left: 0;
+  height: 8px;
+  width: 100%;
+
+  /* margin-left: 5%; */
+  border-radius: 4px;
+}
+
+.gray-box {
+  width: 100%;
+  height: 8px;
+  background: rgba(238, 238, 238, 1);
+  position: absolute;
+  top: 0;
+}
+
+.orange-box {
+  height: 8px;
+  background: #ffc82a;
+  position: absolute;
+  top: 0;
+}
+
+.leftModal {
+  position: absolute;
+  top: -1px;
+  height: 14px;
+  background-color: #fff;
+  left: 0;
+}
+
+.rightModal {
+  position: absolute;
+  top: -1px;
+  height: 14px;
+  background-color: #fff;
+  right: 0;
+}

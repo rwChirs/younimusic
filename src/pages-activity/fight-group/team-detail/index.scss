@@ -1,0 +1,127 @@
+.team-detail-page {
+  .team-detail-bg {
+    background: url('https://m.360buyimg.com/img/jfs/t1/32697/27/2888/1234/5c6fa63aE8b3f3267/f9ce67df2ed96602.png');
+    background-repeat: no-repeat;
+    background-size: 100% 121px;
+    width: 100%;
+    height: 121px;
+  }
+
+  .team-detail-main {
+    position: relative;
+    margin-top: -80px;
+  }
+
+  .team-detail-top-card {
+    width: 710px;
+    margin: 0 auto;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  }
+
+  .team-detail-top-desc {
+    height: 76px;
+    line-height: 76px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 30px;
+    background:
+      linear-gradient(
+        to bottom,
+        rgb(249, 249, 249),
+        rgb(255, 255, 255)
+      );
+
+    .rule {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      margin-right: 18px;
+
+      .icon {
+        width: 32px;
+        height: 32px;
+        margin-right: 10px;
+      }
+
+      .word {
+        font-family: 'PingFangSC-Regular';
+        font-size: 24px;
+        color: #252525;
+        opacity: 0.6;
+      }
+    }
+  }
+
+  .team-detail-modal {
+    margin-top: 32px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 100%;
+
+    .title {
+      margin: 0 auto 24px;
+    }
+
+    .time {
+      margin: 0 auto 37.6px;
+    }
+
+    .desc-info {
+      font-size: 30px;
+      font-family: 'PingFangSC-Regular';
+      margin: 0 auto 20px;
+
+      .red {
+        color: #fe4242;
+      }
+    }
+  }
+
+  .team-detail-link {
+    background: rgb(248, 248, 248);
+    padding: 40px 26px 20px;
+
+    .fight-link {
+      width: 382px;
+      height: 74px;
+      margin: 0 auto 40px;
+      display: flex;
+      flex: 1;
+    }
+
+    .fight-list-bottom {
+      font-size: 24px;
+      color: rgb(137, 137, 137);
+      font-family: 'PingFangSC-Medium';
+      text-align: center;
+      height: 100px;
+      line-height: 80px;
+      margin-top: 30px;
+    }
+  }
+
+  .go-to-fight {
+    margin: 40px 30px 80px;
+    background: #fff;
+
+    .title {
+      margin-bottom: 40px;
+    }
+  }
+
+  .go-team-modal {
+    margin-bottom: 40px;
+    height: 140px;
+  }
+
+  .new-born-zone-con {
+    margin-top: 30px;
+  }
+}

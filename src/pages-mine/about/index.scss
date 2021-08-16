@@ -1,0 +1,60 @@
+page {
+  background: rgb(247, 247, 247);
+}
+
+.list {
+  font-size: 30px;
+  line-height: 42px;
+  color: #252525;
+  background: #fff;
+}
+
+.item-box {
+  height: 100px;
+  box-sizing: border-box;
+  padding: 0 30px;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 28px 0;
+}
+
+.item-box:last-child .item {
+  border-bottom: 0;
+}
+
+.title {
+  flex: 1;
+}
+
+.icon {
+  width: 14px;
+  height: 26px;
+  background: url('//m.360buyimg.com/img/jfs/t1/127379/37/8082/147/5f1e79d5Eae13a426/d9fc3a5390a04fe3.png');
+  background-size: 100%;
+}
+
+.brand {
+  padding: 58px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-icon {
+  width: 120px;
+  height: 120px;
+}
+
+.brand-title {
+  font-size: 34px;
+  line-height: 48px;
+  color: #252525;
+  margin-top: 16px;
+}

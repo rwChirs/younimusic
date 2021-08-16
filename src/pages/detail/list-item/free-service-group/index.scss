@@ -1,0 +1,50 @@
+.free-buy-service {
+  padding: 0 0 20px;
+
+  .service-title {
+    display: inline-block;
+    vertical-align: top;
+    width: 68px;
+    height: 26px;
+
+    .free-img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .service-desc {
+    // margin-top: 10px;
+    line-height: 36px;
+    font-size: 28px;
+    color: #252525;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+    .service-con {
+      display: inline-block;
+      color: rgba(149, 150, 159, 1);
+
+      .text-msg {
+        float: left;
+        font-size: 24px;
+      }
+
+      .doated {
+        float: left;
+        margin: 0 12px;
+      }
+
+      .noShow {
+        visibility: hidden;
+      }
+    }
+
+    .service-con:nth-last-child(1) .doated {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+$cartBg: "https://m.360buyimg.com/img/jfs/t1/26288/34/14220/2753/5ca56d0aEdbfb08ba/3b465e92345b7a0a.png";
+
+.cart {
+  position: relative;
+  background-image: url($cartBg);
+  width: 88px;
+  height: 88px;
+  background-size: 100%;
+  opacity: 0.95;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid rgba(151, 151, 151, 0.3);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+  .cart-txt {
+    position: absolute;
+    padding: 0px 8px;
+    border-radius: 14px;
+    background-color: rgb(255, 86, 86);
+    height: 28px;
+    min-width: 12px;
+    line-height: 28px;
+    font-family: PingFangSC-Medium;
+    font-size: 20px;
+    color: #fff;
+    right: -3px;
+    top: -1px;
+  }
+}

@@ -1,0 +1,17 @@
+.floor-notice {
+  width: 100%;
+  position: relative;
+
+  .floor-notice-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .floor-notice-btn,
+  .floor-notice-dynamic-area {
+    position: absolute;
+    z-index: 2;
+  }
+}

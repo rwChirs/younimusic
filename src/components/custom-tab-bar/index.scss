@@ -1,0 +1,56 @@
+.custom-tab-bar {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 750px;
+  height: 100px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 -10px 20px 0 rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  z-index: 20;
+
+  .tabList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 80px;
+
+    .pic {
+      width: 50px;
+      height: 50px;
+    }
+
+    .name {
+      margin-top: 4px;
+      display: inline-block;
+      height: 30px;
+      line-height: 30px;
+      font-family: PingFangSC-Regular;
+      font-size: 20px;
+      color: rgba(101, 103, 107, 1);
+    }
+
+    .tab-cart-num {
+      position: absolute;
+      width: 40px;
+      height: 30px;
+      border-radius: 15px;
+      top: 4px;
+      right: -6px;
+      font-size: 20px;
+      color: #fff;
+      background-color: red;
+      text-align: center;
+    }
+  }
+}
+
+.custom-tab-block {
+  width: 750px;
+  height: 100px;
+}

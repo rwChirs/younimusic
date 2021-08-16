@@ -1,0 +1,63 @@
+.floor-red-run {
+  width: 750px;
+  height: auto;
+  background-color: rgb(72, 12, 10);
+  padding: 20px 0;
+}
+.floor-red-run-container {
+  display: flex;
+  width: 694px;
+  height: 210px;
+  margin: 0 auto;
+}
+.left-part {
+  display: flex;
+  flex: 1;
+  background-color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.right-part {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background: #ffffff;
+  padding-left: 20px;
+  padding-top: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.right-part-t {
+  display: flex;
+  flex: 1;
+  font-size: 34px;
+  color: rgb(29, 32, 43);
+  align-items: center;
+}
+.right-part-b {
+  font-size: 24px;
+  color: rgb(149, 150, 159);
+  //padding-top: 10px;
+  display: flex;
+  flex: 1;
+}
+.countdown-time {
+  //padding-top: 34px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  //justify-content: center;
+  padding-bottom: 20px;
+}
+
+.activity-txt {
+  padding-bottom: 20px;
+  font-size: 24px;
+  color: #f25000;
+}
+.end-color {
+  color: rgb(149, 150, 159);
+}

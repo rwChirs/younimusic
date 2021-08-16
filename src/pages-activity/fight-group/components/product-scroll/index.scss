@@ -1,0 +1,22 @@
+.product-scroll-page{
+  height:600px;
+  width:680px;
+  // margin: 0 auto;
+  overflow: hidden;
+  position:relative;
+  .swiper{
+    flex-grow: 1;
+    height:100%;
+  }
+  .go-team-modal{
+    height:160px;
+  }
+  .page-scroll-mask{
+    position:absolute;
+    top:0;
+    left:0;
+    width:80%;
+    height:100%;
+    z-index:3;
+  }
+}

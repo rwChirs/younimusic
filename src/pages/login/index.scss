@@ -1,0 +1,95 @@
+@import '../../common/theme.scss';
+
+.login {
+  height: 100%;
+}
+
+.select-store {
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.select-store .left {
+  margin-right: 20px;
+}
+
+.select-store .name {
+  color: rgb(37, 37, 37);
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.select-store .address {
+  color: rgb(137, 137, 137);
+  font-size: 24px;
+  line-break: 34px;
+}
+
+.select-store .radio {
+  background:
+    url('https://m.360buyimg.com/img/jfs/t1/21234/32/1328/797/5c11bc88Ef18893b2/d52b8a242aa50250.png')
+    center center no-repeat;
+  width: 40px;
+  height: 40px;
+  background-size: 100%;
+}
+
+.select-store .radio.active {
+  background:
+    url('https://m.360buyimg.com/img/jfs/t1/6384/2/8857/769/5c11bcebE742382c2/f36cc8817721db4c.png')
+    center center no-repeat;
+  width: 40px;
+  height: 40px;
+  background-size: 100%;
+}
+
+.select-store .select-box {
+  background: #fff;
+  width: 100%;
+  flex: 1;
+  // width: 580px;
+  // height: 802px;
+  overflow-y: scroll;
+  // border-radius: 10px;
+  padding: 40px;
+}
+
+.select-store .store {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 60px;
+  padding: 0 40px;
+}
+
+.select-store .confirm {
+  background: #fff;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+
+.select-store .confirm .btn {
+  width: 520px;
+  height: 100px;
+  background: $btnColor;
+  line-height: 100px;
+  border-radius: 50px;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 32px;
+}
+
+.red-packet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}

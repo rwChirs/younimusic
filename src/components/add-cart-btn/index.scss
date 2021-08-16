@@ -1,0 +1,34 @@
+.add-cart-btn-component {
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.add-cart-btn-component.add-cart-btn-big {
+  width: 46px;
+  height: 46px;
+  background-image: url(//m.360buyimg.com/img/jfs/t1/121415/20/12638/3053/5f607f9dE1b756453/9390cf1432b1c9ae.png);
+}
+
+.add-cart-btn-component.add-cart-btn-small {
+  width: 40px;
+  height: 40px;
+  background-image: url(//m.360buyimg.com/img/jfs/t1/117343/29/17688/2389/5f608000E46128747/5ef88878a709fffa.png);
+}
+
+.add-cart-btn-component.add-cart-btn-big.disabled {
+  background-image: url(//m.360buyimg.com/img/jfs/t1/121094/29/1932/1438/5ec22ee5E5be99fe1/125f3d83b99e19aa.png);
+}
+
+.add-cart-btn-component.add-cart-btn-small.disabled {
+  background-image: url(//m.360buyimg.com/img/jfs/t1/121094/29/1932/1438/5ec22ee5E5be99fe1/125f3d83b99e19aa.png);
+}
+
+.buy-now {
+  height: 44px;
+  line-height: 44px;
+  padding: 0 12px;
+  border-radius: 22px;
+  border: 1px solid rgba(37, 37, 37, 0.3);
+  font-size: 22px;
+  color: rgba(29, 31, 43, 1);
+}

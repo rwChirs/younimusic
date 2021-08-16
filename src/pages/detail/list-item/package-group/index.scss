@@ -1,0 +1,52 @@
+.package-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .package {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 32rpx;
+    .product {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      border-right: 1rpx solid rgb(216, 216, 216);
+      padding: 0 30rpx;
+      .image {
+        width: 72rpx;
+        height: 72rpx;
+      }
+      .total {
+        font-size: 22rpx;
+        color: rgb(37, 37, 37);
+        display: block;
+        margin-left: 10rpx;
+      }
+    }
+    .price {
+      font-size: 26rpx;
+      line-height: 26rpx;
+      text-align: center;
+      margin-top: 12rpx;
+      margin-bottom: 10rpx;
+      .jd-price {
+        color: rgb(0, 181, 15);
+      }
+      .unit {
+        color: rgb(137, 137, 137);
+        font-size: 22rpx;
+      }
+      .save {
+        display: inline-block;
+        margin-left: 4rpx;
+        padding: 4rpx 4rpx;
+        color: rgb(0, 181, 15);
+        font-size: 22rpx;
+        line-height: 22rpx;
+        border-radius: 4rpx;
+        background: linear-gradient(rgb(229, 253, 231), rgb(214, 248, 218));
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+.fight-detail-btn {
+  height: 98px;
+  width: 750px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  .share-cont {
+    width: 28%;
+    height: 98px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    .share-btn {
+      width: 100%;
+      height: 100%;
+      background: url("https://m.360buyimg.com/img/jfs/t1/21030/10/8545/1060/5c764323Ed22c7320/656f1c442d256e2a.png");
+      background-position-x: center;
+      background-position-y: 15px;
+      background-repeat: no-repeat;
+      background-size: 40px 40px;
+      padding: 0;
+      border-radius: 0;
+      margin: 0 auto;
+    }
+    .share-btn::after {
+      border: none;
+    }
+    .word {
+      font-family: "PingFangSC-Regular";
+      font-size: 22px;
+      color: rgb(29, 31, 43);
+      text-align: center;
+      width: 100%;
+      margin-top: 45px;
+    }
+  }
+  .btn {
+    background: linear-gradient(to right, rgb(255, 109, 109), rgb(253, 50, 50));
+    color: #fff;
+    width: 72%;
+    height: 98px;
+    line-height: 98px;
+    text-align: center;
+    font-size: 38px;
+    font-family: "PingFangSC-Medium";
+    border-radius: 0;
+  }
+}
+.fight-detail-disabled {
+  background: rgb(221, 221, 221);
+  color: #fff;
+  font-family: "PingFangSC-Medium";
+  font-size: 38px;
+  text-align: center;
+  line-height: 100px;
+  border-top: 0;
+  width: 750px;
+  .btn-txt {
+    flex: 1;
+  }
+}
+button::after {
+  border: none;
+}

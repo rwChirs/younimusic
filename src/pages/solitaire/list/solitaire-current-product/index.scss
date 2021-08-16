@@ -1,0 +1,251 @@
+@import '../../../../common/theme.scss';
+
+.solitaireCurProduct {
+  display: flex;
+  width: 690px;
+  flex-direction: row;
+}
+
+.solitaireCurProduct .solitaireCurProductImgBorder {
+  width: 240px;
+  height: 240px;
+  margin: 0 30px 0 10px;
+  position: relative;
+}
+
+.solitaire-border {
+  width: 240px;
+  height: 240px;
+  border: 2px solid rgba(186, 77, 44, 1);
+  opacity: 0.1;
+}
+
+.solitaireCurProductImg {
+  width: 240px;
+  height: 240px;
+  border: 2px solid rgba(255, 189, 106, 1);
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.solitaireCurProduct .product-warm-tag {
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: url(//m.360buyimg.com/img/jfs/t1/119521/21/9938/5926/5efeeca6E62b6f52f/e82737045b2c9526.png)
+    no-repeat;
+  background-size: 100% 100%;
+}
+
+.solitaireCurProductImgCover {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 240px;
+  height: 240px;
+  z-index: 1;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.solitaireCurProduct .solitaireCurProductStatus {
+  height: 52.8px;
+  line-height: 52.8px;
+  width: 168px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 25.6px;
+  position: absolute;
+  top: 92px;
+  left: 36px;
+  color: #fff;
+  font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  z-index: 100;
+}
+
+.solitaireCurProduct .solitaireCurProductStatus .line1 {
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  background: linear-gradient(
+    to left,
+    rgb(255, 255, 255),
+    rgba(255, 255, 255, 0)
+  );
+  margin-top: 24px;
+}
+
+.solitaireCurProduct .solitaireCurProductStatus .txt {
+  width: 84.4px;
+  text-align: center;
+  height: 100%;
+}
+
+.solitaireCurProduct .solitaireCurProductStatus .line2 {
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    rgb(255, 255, 255),
+    rgba(255, 255, 255, 0)
+  );
+  margin-top: 24px;
+}
+
+.solitaireCurProduct .solitaireCurProductStatus .left {
+  margin-left: 10px;
+  background: cornflowerblue;
+  width: 32px;
+  height: 2px;
+}
+
+.solitaireCurProduct .solitaireCurProductStatus .right {
+  background: cornflowerblue;
+  margin-left: 10px;
+}
+
+.solitaireCurProduct .solitaireCurProductInfo {
+  width: 370px;
+  height: 250px;
+  margin: 0 0 10px 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+.solitaireCurProduct .solitaireCurProductInfo.tuanzhang {
+  height: 292px;
+}
+
+.solitaireCurProduct .solitaireCurProductInfo .productTitle {
+  display: block;
+  height: 42px;
+  width: 350px;
+  line-height: 42px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-family: 'PingFangSC-Semibold';
+  color: rgb(15, 21, 53);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.solitaireCurProduct .solitaireCurProductInfo .productDescription {
+  display: block;
+  font-size: 24px;
+  height: 34px;
+  line-height: 34px;
+  width: 360px;
+  font-family: 'PingFangSC-Regular';
+  color: rgb(15, 21, 53);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.solitaireCurProduct .solitaireCurProductInfo .linePrice {
+  position: absolute;
+  bottom: 50px;
+  display: block;
+  font-size: 24px;
+  height: 34px;
+  line-height: 34px;
+  font-family: 'PingFangSC-Regular';
+  color: rgba(137, 137, 137, 0.7);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-decoration: line-through;
+}
+
+.solitaireCurProduct .solitaireCurProductInfo .solitairePriceInfo {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 0;
+  height: 48px;
+  line-height: 48px;
+  color: blue;
+}
+
+.solitaireCurProduct .solitaireCurProductInfo.tuanzhang .solitairePriceInfo {
+  bottom: 42px;
+}
+
+.solitaireCurProduct .solitaireCurProductInfo .original-price {
+  position: absolute;
+  bottom: 14px;
+  left: 4px;
+  font-size: 26px;
+  color: #898989;
+  line-height: 26px;
+  text-decoration: line-through;
+}
+
+.solitaireCurProduct .solitaireCurProductInfo .solitairePrice {
+  margin-left: 0;
+  font-size: 34px;
+  height: 48px;
+  width: 200px;
+  color: rgb(223, 71, 76);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: 'PingFangSC-Semibold';
+}
+
+.solitaireCurProduct .solitaireCurProductInfo .unit {
+  margin-left: 0;
+  font-size: 20px;
+  color: rgb(15, 21, 53);
+  font-family: 'PingFangSC-Semibold';
+}
+
+.solitaireCurProduct .solitaireCurProductInfo .followBtn {
+  position: absolute;
+  right: 4px;
+  bottom: 0;
+  display: inline;
+  margin-right: 0;
+  text-align: center;
+  align-content: center;
+}
+
+.solitaireCurProduct .solitaire-share-price {
+  margin: 10px 0;
+}
+
+.solitaireCurProduct .product-item-btn {
+  position: absolute;
+  right: -10px;
+  bottom: -18px;
+  width: 46px;
+  height: 46px;
+  padding: 20px;
+}
+
+.solitaireCurProduct .product-item-btn-bg {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url($addCartBtn);
+}
+
+.solitaireCurProduct .product-item-btn-bg.disabled {
+  background-size: 95%;
+  background-image: url($addDisabledCartBtn);
+}

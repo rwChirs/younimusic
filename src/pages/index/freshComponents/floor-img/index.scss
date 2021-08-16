@@ -1,0 +1,16 @@
+.swiper-img-wrap {
+  // background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  // padding: 0px 28px;
+  margin-top: -1px;
+
+  .img {
+    border-radius: 40px 10px 40px 10px;
+  }
+
+  .floor-notice-dynamic-area {
+    position: absolute;
+    z-index: 2;
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "backgroundColor": "#fff",
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "支付设置",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": false
+}

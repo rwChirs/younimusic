@@ -1,0 +1,103 @@
+.com-modal {
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  left: 0;
+
+  .main {
+    width: 670px;
+    background: #fff;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+
+    .header {
+      font-size: 32px;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+    }
+
+    .contain {
+      font-size: 32px;
+      flex: 1;
+
+      .desc {
+        width: 100%;
+        min-height: 88px;
+        line-height: 44px;
+        font-size: 32px;
+        color: rgba(29, 31, 43, 1);
+        text-align: center;
+        margin: 72px 0 0;
+        padding: 0 76px;
+        box-sizing: border-box;
+      }
+
+      .subDesc {
+        width: 100%;
+        min-height: 88px;
+        line-height: 44px;
+        font-size: 32px;
+        color: rgba(29, 31, 43, 1);
+        text-align: center;
+        margin-top: -20px;
+        padding: 0 76px;
+        box-sizing: border-box;
+      }
+    }
+
+    .footer {
+      font-size: 32px;
+
+      .one-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+        height: 80px;
+        line-height: 80px;
+        border-top: 2px solid rgba(237, 238, 242, 1);
+      }
+
+      .two-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+        border-top: 2px solid rgba(237, 238, 242, 1);
+
+        .btn-txt {
+          flex: 1;
+          height: 80px;
+          line-height: 80px;
+          font-weight: normal;
+          font-family: 'PingFangSC-Regular';
+          font-size: 30px;
+          color: rgba(51, 51, 51, 1);
+        }
+
+        .left-btn {
+          border-radius: 0 0 0 40px;
+        }
+
+        .right-btn {
+          border-radius: 0 0 40px 0;
+          color: rgb(255, 255, 255);
+          background: linear-gradient(
+            306deg,
+            rgba(53, 198, 70, 1) 0%,
+            rgba(103, 208, 78, 1) 100%
+          );
+        }
+      }
+    }
+  }
+}

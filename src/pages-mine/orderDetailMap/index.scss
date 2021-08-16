@@ -1,0 +1,52 @@
+.controls {
+  width: 68px;
+  height: 68px;
+  position: fixed;
+  bottom: 190px;
+  left: 28px;
+}
+
+.bottom-info {
+  width: 750px;
+  height: 80px;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+
+  .carrier-pic {
+    width: 80px;
+    height: 80px;
+    margin-right: 36px;
+  }
+
+  .carrier-name {
+    font-size: 32px;
+    color: #252525;
+  }
+
+  .carrier-distance {
+    font-size: 26px;
+    color: #777;
+  }
+
+  .carrier-line {
+    width: 2px;
+    height: 26px;
+    background: rgba(0, 0, 0, 1);
+    opacity: 0.3078;
+    position: absolute;
+    right: 230px;
+  }
+
+  .carrier-phone {
+    position: absolute;
+    top: 62px;
+    right: 80px;
+    width: 36px;
+    height: 36px;
+    margin-right: 60px;
+  }
+}

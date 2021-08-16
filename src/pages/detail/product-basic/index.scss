@@ -1,0 +1,179 @@
+.product-basic {
+  // padding: 10px 30px 0;
+
+  .product-name {
+    line-height: 52px;
+    font-size: 34px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 8px;
+    font-family: PingFangSC-Medium;
+    word-break: break-all;
+
+    .newSku {
+      width: 60px;
+      height: 32px;
+      position: relative;
+      top: 4px;
+      margin-right: 10px;
+    }
+  }
+
+  .health-tag-box {
+    margin-bottom: 8px;
+    font-family: PingFangSC-Regular;
+    font-size: 24px;
+    color: rgba(149, 150, 159, 1);
+  }
+
+  .health-tag {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 74px;
+    height: 30px;
+  }
+
+  .fix-scoll {
+    margin-bottom: 20px;
+    height: 48px;
+    overflow: hidden;
+  }
+
+  .product-detail-tag {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    padding-bottom: 10px;
+    margin-bottom: -10px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .tag-box {
+    display: flex;
+    flex: none;
+    padding: 0 12px;
+    margin-right: 10px;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-radius: 6px;
+    height: 48px;
+    line-height: 48px;
+    overflow: hidden;
+  }
+
+  .tag-icon {
+    height: 20px;
+    width: 20px;
+    float: left;
+    margin-right: 6px;
+    margin-top: 14px;
+  }
+
+  .tag-text {
+    float: left;
+    height: 48px;
+    line-height: 48px;
+    font-size: 26px;
+    color: rgba(29, 31, 43, 1);
+  }
+
+  .product-selling-point {
+    font-size: 26px;
+    color: #898989;
+    word-break: break-all;
+    margin-bottom: 12px;
+  }
+
+  .product-price {
+    font-size: 28px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .price-num {
+    font-size: 50px;
+    font-family: PingFangSC-Semibold;
+  }
+
+  .product-price .text {
+    display: inline-block;
+  }
+
+  .product-detail-spent-money {
+    color: #95969f;
+    text-decoration: line-through;
+    margin-left: 20px;
+  }
+
+  .product-price .price {
+    color: #ff4b25;
+    flex: 1;
+  }
+
+  .sale-num-desc {
+    font-size: 28px;
+    color: #ff4b25;
+  }
+
+  .product-price .unit {
+    font-size: 30px;
+    color: rgb(137, 137, 137);
+  }
+
+  .product-price .buyLimitDesc {
+    border-left: solid 1px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    font-size: 0.92857143em;
+    color: #252525;
+    padding-left: 30px;
+  }
+
+  .product-price .condition {
+    color: rgb(37, 37, 37);
+    font-size: 26px;
+  }
+
+  .desc {
+    display: inline-block;
+  }
+
+  .product-price .question {
+    background:
+      url(//m.360buyimg.com/img/jfs/t14224/20/1052077416/1628/92d8f99b/5a450991Nfa210c47.png)
+      center center no-repeat;
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    padding: 20px 20px 0 10px;
+    margin-bottom: -10px;
+  }
+
+  .jd-price {
+    display: inline-block;
+  }
+}
+
+.daily-fresh-line {
+  // width: 750px;
+  margin: 0 30px 22px;
+  height: 64px;
+  line-height: 64px;
+  padding-left: 160px;
+  box-sizing: border-box;
+  font-family: PingFangSC-Medium;
+  font-size: 26px;
+  text-align: left;
+  // border-radius: 8px;
+  color: rgba(255, 255, 255, 1);
+  background:
+    url(//m.360buyimg.com/img/jfs/t1/126270/1/2242/78966/5ec3c55bE7d87b831/bf70bc5fc4456c0a.png)
+    no-repeat;
+  background-size: cover;
+}

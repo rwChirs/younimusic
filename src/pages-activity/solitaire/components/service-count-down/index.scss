@@ -1,0 +1,50 @@
+.count-down-main {
+  position: relative;
+  margin-left: 16px;
+
+  .count-down {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family:
+      'JDZhengHei-01-Regular',
+      'PingFang SC',
+      'Hiragino Sans GB',
+      'Heiti SC',
+      'Microsoft YaHei',
+      'WenQuanYi Micro Hei';
+
+    .value {
+      width: 60px;
+      height: 52px;
+      background: rgba(123, 34, 34, 0.15);
+      text-align: center;
+      line-height: 52px;
+      color: #fff;
+      font-size: 32px;
+      box-shadow: 0 4px 8px rgba(237, 137, 137, 0.5);
+    }
+
+    .split {
+      color: rgba(75, 22, 22, 0.2);
+      margin: 0 16px;
+      font-weight: bold;
+    }
+
+    .unit {
+      font-family: 'PingFangSC-Medium';
+      font-size: 20px;
+      font-weight: 500;
+      color: rgb(241, 62, 42);
+    }
+
+    .left {
+      width: 46px;
+    }
+
+    .default-style {
+      color: #000;
+      font-size: 26px;
+    }
+  }
+}

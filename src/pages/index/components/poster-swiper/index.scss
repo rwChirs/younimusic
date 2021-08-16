@@ -1,0 +1,108 @@
+.poster-swiper-component {
+  width: 336px;
+  height: 468px;
+  border-radius: 16px;
+  box-shadow: 0 6px 10px 0 rgba(50, 54, 63, 0.04);
+  background: #fff;
+  margin-bottom: 10px;
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(
+      180deg,
+      rgba(238, 255, 239, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+
+    .top {
+      margin: 20px 18px 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .left {
+        width: 216px;
+        font-family: PingFangSC-Medium;
+
+        .title {
+          height: 42px;
+          line-height: 42px;
+          font-size: 30px;
+          color: rgba(2, 181, 14, 1);
+          margin-bottom: 6px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          word-break: break-all;
+        }
+
+        .desc {
+          width: 216px;
+          height: 50px;
+          line-height: 50px;
+          font-size: 36px;
+          color: rgba(29, 31, 43, 1);
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          word-break: break-all;
+        }
+      }
+
+      .dot {
+        width: 46px;
+        height: 44px;
+        background: url('//m.360buyimg.com/img/jfs/t1/127392/21/6420/1581/5f02e6baE2f18e9f9/1af4fa38a827142d.png');
+        background-size: 46px 44px;
+      }
+    }
+
+    .line {
+      width: 24px;
+      height: 6px;
+      background: rgba(2, 181, 14, 1);
+      border-radius: 6px;
+      margin-left: 18px;
+      margin-top: 10px;
+    }
+  }
+
+  .swiper {
+    width: 288px;
+    height: 288px;
+    margin: 24px 0 0 24px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+
+    .mask {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .poster-list {
+      // width: 144px;
+      height: 144px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .poster-img {
+        width: 144px;
+        height: 144px;
+        // margin-right: 24px;
+
+        &:nth-of-type(2n) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

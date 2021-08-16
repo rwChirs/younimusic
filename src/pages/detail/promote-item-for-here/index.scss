@@ -1,0 +1,104 @@
+.promote-content {
+  position: relative;
+  width: 690px;
+  padding: 20px 0 0 0;
+  background: #fff;
+  font-family: PingFangSC-Regular;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  .icon {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 36px;
+    height: 36px;
+    background: url(https://m.360buyimg.com/img/jfs/t1/169791/30/4158/414/600e2f50Efe063d0c/5e0bcde89cdf4a89.png)
+      no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
+
+  .get-promote {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    color: #1d1f2b;
+
+    /* padding: 0 0 0 30px; */
+  }
+
+  .get-promote-title {
+    width: 92px;
+    color: #95969f;
+    font-size: 26px;
+  }
+
+  .promote-title-icon {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    height: 28px;
+    line-height: 26px;
+    margin: 5px 10px 5px 0;
+    padding: 0 6px;
+    border: 1px solid rgb(255, 75, 37);
+    border-radius: 4px;
+    background-color: #fff8f8;
+    font-size: 20px;
+    font-family: PingFangSC-Medium;
+    color: #ff4b25;
+    box-sizing: border-box;
+  }
+
+  .promote-title-coupon {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    height: 28px;
+    line-height: 26px;
+    margin: 5px 10px 5px 0;
+    padding: 0 10px;
+    background: url(https://m.360buyimg.com/img/jfs/t1/163204/6/5139/698/6017ddfdE30a6b0f8/d6fc22c5ddf9da8c.png)
+      no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border: 1px solid rgb(255, 75, 37);
+    border-radius: 4px;
+    border-left: none;
+    border-right: none;
+    font-size: 20px;
+    font-family: PingFangSC-Medium;
+    color: #ff4b25;
+    box-sizing: border-box;
+  }
+
+  .promote-desc {
+    margin-left: 10px;
+    width: 0%;
+    flex: 1;
+    font-size: 26px;
+  }
+
+  .promote-desc div {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    white-space: nowrap;
+  }
+
+  .promote-list {
+    display: inline-block;
+    flex-direction: column;
+
+    /* width: 80%; */
+    width: 528px;
+    max-height: 80px;
+    overflow: hidden;
+  }
+
+  .promote-item {
+    display: flex;
+  }
+}

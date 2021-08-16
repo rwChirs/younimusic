@@ -1,0 +1,22 @@
+.promotion-group {
+  .promotion {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    .tag {
+      margin-top: 8rpx;
+    }
+    .name {
+      font-size: 26rpx;
+      color: rgb(37, 37, 37);
+      line-height: 46rpx;
+      flex: 1;
+      display: -webkit-box;
+      word-break: break-all;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

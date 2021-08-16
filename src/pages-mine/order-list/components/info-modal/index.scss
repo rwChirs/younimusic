@@ -1,0 +1,58 @@
+.info-modal {
+  position: relative;
+}
+
+.info-modal .info-modal-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 750px;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+
+.info-modal-content {
+  z-index: 6;
+  position: fixed;
+  top: 300px;
+  left: 0;
+  width: 100%;
+}
+
+.info-modal .info-modal-wx {
+  margin: 0 auto;
+  width: 420px;
+  height: 424px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 24px rgba(43, 82, 102, 0.05);
+  padding: 46px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.info-modal .info-modal-wx-sub-title {
+  font-size: 28px;
+  color: #252525;
+  font-family: 'PingFangSC-Regular';
+  margin-bottom: 42px;
+}
+
+.info-modal .info-modal-wx-img {
+  width: 260px;
+  height: 260px;
+  margin: 0 auto;
+}
+
+.info-modal .close-btn,
+.info-modal .close-btn .img {
+  width: 70px;
+  height: 70px;
+}
+
+.info-modal .close-btn {
+  margin: 50px auto 0;
+}

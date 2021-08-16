@@ -1,0 +1,15 @@
+.product-item {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  width: 338px;
+  height: 544px;
+  border-radius: 16px;
+  background-color: #fff;
+
+  .image {
+    width: 338px;
+    height: 544px;
+  }
+}

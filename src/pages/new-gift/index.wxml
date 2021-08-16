@@ -1,0 +1,3 @@
+<view class='red-packet'>
+  <freshman-gift redPackets="{{grabRedPackets}}" bind:close="closeRedPacket"></freshman-gift>
+</view>

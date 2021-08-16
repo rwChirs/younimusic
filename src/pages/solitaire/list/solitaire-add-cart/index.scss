@@ -1,0 +1,188 @@
+.solitaire-add-cart {
+  z-index: 120;
+  position: relative;
+}
+
+.solitaire-add-cart .brayBg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 121;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.solitaire-add-cart .promotion-add-cart {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  min-height: 418px;
+  width: 100%;
+  background: #fff;
+  z-index: 122;
+  border-radius: 20px 20px 0 0;
+}
+
+.solitaire-add-cart .promotion-add-cart .info {
+  height: 180px;
+  width: calc(100% - 60px);
+  padding: 20px 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.solitaire-add-cart .promotion-add-cart .info .close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 26px;
+  height: 26px;
+  background: url(https://m.360buyimg.com/img/jfs/t12895/99/2618201646/1365/8d2ecb01/5a4509a4N166ae1db.png)
+    no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.6;
+}
+
+.solitaire-add-cart .info .img {
+  width: 140px;
+  height: 140px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-right: 20px;
+}
+
+.solitaire-add-cart .promotion-add-cart .info .con {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.solitaire-add-cart .promotion-add-cart .info .con .title {
+  max-height: 84px;
+  width: 500px;
+  font-family: 'PingFangSC-Medium';
+  color: rgb(15, 21, 53);
+  font-size: 30px;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+
+  /*! autoprefixer: ignore next */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.solitaire-add-cart .promotion-add-cart .info .con .price-info .jd-price {
+  font-family: 'PingFangSC-Medium';
+  font-size: 24px;
+  color: rgb(223, 71, 76);
+}
+
+.solitaire-add-cart .promotion-add-cart .info .con .price-info .mk-price {
+  font-family: 'PingFangSC-Regular';
+  font-size: 20px;
+  color: rgb(137, 137, 137);
+  text-decoration: line-through;
+  margin-left: 40px;
+}
+
+.solitaire-add-cart .promotion-add-cart .add-cart-service {
+  width: calc(100% - 60px);
+  min-height: 100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.solitaire-add-cart .promotion-add-cart .add-cart-service .add-cart-service-title {
+  font-size: 30px;
+  line-height: 100px;
+  font-family: 'PingFangSC-Medium';
+  color: rgb(15, 21, 53);
+  width: 100px;
+}
+
+.solitaire-add-cart .promotion-add-cart .add-cart-service .add-cart-service-list {
+  flex: 1;
+  padding-top: 10px;
+  width: 85%;
+  margin-left: 4px;
+}
+
+.solitaire-add-cart .promotion-add-cart .add-cart-service .add-cart-service-list .em {
+  display: inline-block;
+  max-width: 90%;
+  height: 40px;
+  margin: 10px 10px 0 0;
+  font-size: 26px;
+  color: #898989;
+  padding: 10px 18px;
+  border: 2px solid #e6e6e6;
+  border-radius: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.solitaire-add-cart .promotion-add-cart .add-cart-service .add-cart-service-list .em.cur {
+  color: #00AB0C;
+  border: 1px solid #00AB0C;
+  background: #e6f6fc;
+}
+
+.solitaire-add-cart .promotion-add-cart .add-cart-num {
+  width: calc(100% - 60px);
+  height: 100px;
+  line-height: 100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.solitaire-add-cart .promotion-add-cart .add-cart-num .add-cart-num-title {
+  font-size: 30px;
+  font-family: 'PingFangSC-Medium';
+  color: rgb(15, 21, 53);
+  width: 60px;
+}
+
+.solitaire-add-cart .promotion-add-cart .add-cart-num .operate-cart {
+  position: relative;
+  // float: right;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.solitaire-add-cart .promotion-add-cart .add-cart-num .operate-cart .operate-cart-em {
+  font-family: 'PingFangSC-Regular';
+  font-size: 26px;
+  color: rgb(29, 31, 43);
+  position: relative;
+  margin-left: 40px;
+  // float: right;
+  // margin-right: 200px;
+}
+
+.solitaire-add-cart .promotion-add-cart .add-cart-num .operate-cart .num {
+  position: absolute;
+  top: 14px;
+  right: -50px;
+  transform: scale(0.7);
+}
+
+.solitaire-add-cart .promotion-add-cart .add-cart-btn {
+  clear: both;
+  padding: 27px 30px;
+}
+
+.solitaire-add-cart em {
+  font-style: normal;
+}

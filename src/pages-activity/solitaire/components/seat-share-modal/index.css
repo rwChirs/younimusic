@@ -1,0 +1,76 @@
+.modal .header {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  position: relative;
+  font-size: 32px;
+}
+
+.modal .header .text {
+  height: 44px;
+  color: rgb(37, 37, 37);
+  font-family: PingFangSC-Semibold;
+}
+
+.modal .header .img {
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: url(//m.360buyimg.com/img/jfs/t1/15147/18/5666/633/5c402ae6E8c9c976d/02ced8630ce69da7.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.modal .content {
+  /* width: 730px; */
+  height: 572px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 32px;
+  flex: 1;
+}
+
+.modal .footer {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.modal {
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  left: 0;
+}
+
+.modal .main {
+  width: 670px;
+  background: #fff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal .info-share-btn {
+  width: 400px;
+  height: 88px;
+  line-height: 88px;
+  box-shadow: 0 5px 10px 0 rgba(255, 185, 104, 0.4);
+  background: linear-gradient(to right, rgb(255, 220, 124), rgb(255, 183, 102));
+  color: rgb(154, 81, 52);
+  border-radius: 44px 0 44px 44px;
+  font-size: 32px;
+  font-family: 'PingFangSC-Medium';
+  border: 0;
+  margin: 0 auto;
+}

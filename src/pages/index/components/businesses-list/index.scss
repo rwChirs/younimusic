@@ -1,0 +1,67 @@
+.brayBg-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 101;
+}
+
+.businesses-list-main {
+  position: fixed;
+  top: 230px;
+  right: 0;
+  left: 0;
+  width: 690px;
+  height: auto;
+  margin: auto;
+  z-index: 999;
+}
+
+.businesses-list {
+  position: relative;
+  width: 690px;
+  background: rgb(242, 242, 242);
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+}
+
+.businesses-list-item {
+  margin-bottom: 20px;
+}
+
+.businesses-list-item:last-child {
+  padding-bottom: 12px;
+}
+
+.businesses-list-title {
+  width: 630px;
+  font-size: 28px;
+  color: rgb(119, 119, 119);
+  text-align: left;
+  padding-bottom: 22px;
+}
+
+.businesses-list-icon {
+  width: 38px;
+  height: 20px;
+  position: absolute;
+  top: -19px;
+  left: 320px;
+  z-index: 2;
+  background-image: url('https://m.360buyimg.com/img/jfs/t1/39343/33/11730/536/5d2d8aedEc29a08dd/7646396703df1a17.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.businesses-list-container {
+  max-height: 690px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}

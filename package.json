@@ -1,0 +1,96 @@
+{
+  "name": "taro-miniapp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "music小程序",
+  "templateInfo": {
+    "name": "default",
+    "typescript": false,
+    "css": "sass"
+  },
+  "scripts": {
+    "start": "yarn run dev:weapp",
+    "build:weapp": "taro build --type weapp",
+    "build:weapp:dev": "taro build --type weapp --env development",
+    "build:swan": "taro build --type swan",
+    "build:alipay": "taro build --type alipay",
+    "build:tt": "taro build --type tt",
+    "build:h5": "taro build --type h5",
+    "build:rn": "taro build --type rn",
+    "build:qq": "taro build --type qq",
+    "build:jd": "taro build --type jd",
+    "build:quickapp": "taro build --type quickapp",
+    "dev:weapp": "npm run build:weapp -- --watch",
+    "dev:swan": "npm run build:swan -- --watch",
+    "dev:alipay": "npm run build:alipay -- --watch",
+    "dev:tt": "npm run build:tt -- --watch",
+    "dev:h5": "npm run build:h5 -- --watch",
+    "dev:rn": "npm run build:rn -- --watch",
+    "dev:qq": "npm run build:qq -- --watch",
+    "dev:jd": "npm run build:jd -- --watch",
+    "dev:quickapp": "npm run build:quickapp -- --watch",
+    "lint-staged": "lint-staged",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "prettier --write",
+      "eslint --ext .js --fix",
+      "git add"
+    ],
+    "src/**/*.jsx": [
+      "prettier --write",
+      "eslint --ext .jsx",
+      "git add"
+    ],
+    "src/**/*.scss": [
+      "prettier --write",
+      "stylelint --syntax scss && stylelint --fix scss",
+      "git add"
+    ],
+    "src/**/*.css": [
+      "prettier --write",
+      "stylelint --fix",
+      "git add"
+    ]
+  },
+  "browserslist": [
+    "last 3 versions",
+    "Android >= 4.1",
+    "ios >= 8"
+  ],
+  "author": "",
+  "dependencies": {
+    "@7fresh/api": "^0.2.137",
+    "@babel/runtime": "^7.7.7",
+    "@tarojs/components": "3.2.2",
+    "@tarojs/react": "3.2.2",
+    "@tarojs/runtime": "3.2.2",
+    "@tarojs/taro": "3.2.2",
+    "crypto-js": "^3.1.9-1",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "xss": "^1.0.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.0",
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@tarojs/mini-runner": "3.2.2",
+    "@tarojs/webpack-runner": "3.2.2",
+    "@types/react": "^17.0.2",
+    "@types/webpack-env": "^1.13.6",
+    "babel-preset-taro": "3.2.2",
+    "eslint": "^6.8.0",
+    "eslint-config-taro": "3.2.2",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-react": "^7.8.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.1",
+    "stylelint": "^13.13.0",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-order": "^4.1.0"
+  }
+}

@@ -1,0 +1,117 @@
+@import '../../common/theme.scss';
+.coupon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #fff;
+  border-radius: 20rpx;
+  padding-right: 20rpx;
+  margin: 20rpx 0;
+  border: 1rpx solid rgba(0, 0, 0, 0.05);
+
+  .limit {
+    background: rgb(137, 137, 137);
+    width: 40rpx;
+    writing-mode: vertical-lr;
+    color: #fff;
+    font-size: 18rpx;
+    padding: 20rpx 0;
+    letter-spacing: 8rpx;
+    border-top-left-radius: 12rpx;
+    border-bottom-left-radius: 12rpx;
+    line-height: 40rpx;
+    text {
+      writing-mode: vertical-lr;
+    }
+  }
+
+  &.all .limit {
+    background: linear-gradient(rgb(0, 181, 15), rgb(92, 208, 101));
+  }
+
+  &.offline .limit {
+    background: linear-gradient(rgb(255, 153, 64), rgb(255, 178, 64));
+  }
+
+  &.online .limit {
+    background: linear-gradient(rgb(68, 157, 255), rgb(122, 185, 255));
+  }
+
+  .price {
+    width: 180rpx;
+    font-size: 60rpx;
+    line-height: 60rpx;
+    padding-left: 20rpx;
+    color: rgb(137, 137, 137);
+
+    .unit {
+      font-size: 28rpx;
+    }
+  }
+
+  .rule-desc-simple {
+    width: 180rpx;
+    padding-left: 20rpx;
+    font-size: 22rpx;
+  }
+
+  &.all .price {
+    color: rgb(0, 181, 15);
+  }
+
+  &.offline .price {
+    color: rgb(255, 153, 64);
+  }
+
+  &.online .price {
+    color: rgb(68, 157, 255);
+  }
+
+  &.all .rule-desc-simple {
+    color: rgb(0, 181, 15);
+  }
+
+  &.offline .rule-desc-simple {
+    color: rgb(255, 153, 64);
+  }
+
+  &.online .rule-desc-simple {
+    color: rgb(68, 157, 255);
+  }
+
+  .content {
+    flex: 1;
+
+    .name {
+      font-size: 30rpx;
+      line-height: 42rpx;
+      color: rgb(37, 37, 37);
+    }
+
+    .expiration {
+      font-size: 20rpx;
+      color: rgb(137, 137, 137);
+      line-height: 28rpx;
+    }
+  }
+
+  .apply {
+    background: $btnColor;
+    width: 120rpx;
+    height: 40rpx;
+    color: #fff;
+    border-radius: 40rpx;
+    font-size: 28rpx;
+    text-align: center;
+  }
+
+  .disabled {
+    background: rgba(255, 255, 255, 1);
+    border: 1rpx solid rgba(194, 194, 194, 1);
+    font-family: PingFangSC-Regular;
+    font-size: 22rpx;
+    color: rgba(37, 37, 37, 1);
+    line-height: 44rpx;
+    opacity: 1;
+  }
+}

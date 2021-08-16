@@ -1,0 +1,23 @@
+.count-down {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'JDZhengHei-01-Regular', 'PingFang SC', 'Hiragino Sans GB',
+    'Heiti SC', 'Microsoft YaHei', 'WenQuanYi Micro Hei';
+}
+
+.count-down .value {
+  width: 60px;
+  height: 52px;
+  background: rgba(123, 34, 34, 0.15);
+  text-align: center;
+  line-height: 52px;
+  color: #fff;
+  font-size: 32px;
+}
+
+.count-down .split {
+  color: rgba(75, 22, 22, 0.2);
+  margin: 0 16px;
+  font-weight: bold;
+}

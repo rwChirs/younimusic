@@ -1,0 +1,8 @@
+{
+  "backgroundColor": "#fff",
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#00ab0c",
+  "navigationBarTitleText": "付款码说明",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": false
+}

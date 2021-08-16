@@ -1,0 +1,147 @@
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 750px;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+
+.settlement-coupon {
+  .coupon-modal {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 900px;
+    z-index: 6;
+    background: rgb(246, 246, 246);
+    border-radius: 16px 16px 0 0;
+  }
+
+  .coupon-modal-header {
+    position: relative;
+    width: 750px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+  }
+
+  .coupon-modal-title {
+    font-size: 32px;
+    color: rgb(29, 31, 43);
+    font-family: PingFangSC-Medium;
+  }
+
+  .coupon-modal-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    background: url("https://m.360buyimg.com/img/jfs/t1/160854/25/5311/1418/601935e0E53977465/3701223e2555f5e5.png")
+      no-repeat;
+    background-size: 40px 40px;
+  }
+
+  .discount-box {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 900px;
+  }
+
+  .promote-content {
+    position: relative;
+  }
+
+  .content {
+    padding-top: 28px;
+  }
+
+  .promote-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0 0;
+  }
+
+  .list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 28px 0 0;
+    flex-direction: column;
+  }
+
+  .list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .list:last-child {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 30px 0 30px;
+    flex-direction: column;
+  }
+
+  .title {
+    font-family: PingFangSC-Regular;
+    font-size: 26px;
+    color: rgba(153, 153, 153, 1);
+    margin-left: 30px;
+  }
+
+  .coupon-list {
+    margin-bottom: 30px;
+  }
+
+  .promote-item {
+    position: relative;
+    display: flex;
+
+    /* align-items: center; */
+    width: 690px;
+    min-height: 60px;
+  }
+
+  .promote-title {
+    height: 28px;
+    line-height: 28px;
+
+    /* transform: scale(0.83); */
+    padding: 0 4px;
+    border-radius: 4px;
+    font-family: PingFangSC-Medium;
+    font-size: 20px;
+    color: rgb(255, 75, 37);
+    background: rgb(255, 248, 248);
+    border: 1px solid rgb(255, 75, 37);
+  }
+
+  .promote-desc {
+    width: 528px;
+    line-height: 30px;
+    margin-left: 20px;
+    color: #1d1f2b;
+    font-family: PingFangSC-Regular;
+    font-size: 26px;
+  }
+
+  .icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 24px;
+    margin: auto;
+
+    /* bottom: 0; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("https://m.360buyimg.com/img/jfs/t1/157901/26/4836/458/600e331cE779cc306/b426a71e18028fba.png");
+  }
+}

@@ -1,0 +1,53 @@
+.coupon-group {
+  display: flex;
+  flex-direction: row;
+  .coupon-total {
+    display: flex;
+    min-width: 200rpx;
+    .coupon-tag {
+      width: 20px;
+      height: 60px;
+      border-radius: 6px 0px 0px 6px;
+      font-size: 80px;
+      color: rgba(255,255,255,0.2);
+      line-height: 66rpx;
+    }
+    .coupon {
+      display: inline-block;
+      font-size: 26rpx;
+      flex: 1;
+      height: 58rpx;
+      margin-left: 6rpx;
+      margin-right: 16rpx;
+      line-height: 66rpx;
+      text-align: center;
+    }
+  }
+  .all {
+    .coupon-tag {
+      background: linear-gradient(rgb(0, 181, 15), rgb(92, 208, 101));
+    }
+    .coupon {
+      color: rgb(0, 181, 15);
+      box-shadow: 0px 0px 8px 0px rgba(0, 181, 15,0.15);
+    }
+  }
+.offline {  
+    .coupon-tag {
+      background: linear-gradient(rgb(255, 153, 64), rgb(255, 178, 64));
+    }
+    .coupon {
+      box-shadow: 0px 0px 8px 0px rgba(255, 153, 64,0.15);
+      color: rgb(255, 153, 64);
+    }
+  }
+  .online {
+    .coupon-tag {
+      background: linear-gradient(rgb(68, 157, 255), rgb(122, 185, 255));
+    }
+    .coupon {
+      box-shadow: 0px 0px 8px 0px rgba(68,157,255,0.15);
+      color: rgb(68, 157, 255);
+    }
+  }
+}

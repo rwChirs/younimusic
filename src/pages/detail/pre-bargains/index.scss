@@ -1,0 +1,24 @@
+.pre-bargains {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .icon {
+    width: 100rpx;
+    height: 36rpx;
+    background: url(//m.360buyimg.com/img/jfs/t25801/359/1249188025/3014/9adc6322/5b8e578aNc15380a7.png)
+      center center no-repeat;
+    background-size: 100rpx 36rpx;
+    font-size: 24rpx;
+    color: rgb(223, 70, 97);
+    line-height: 36rpx;
+    margin-right: 20rpx;
+    padding-right: 10rpx;
+    text-align: right;
+    box-sizing: border-box;
+  }
+  .desc {
+    color: rgb(223, 70, 97);
+    font-size: 26rpx;
+    line-height: 36rpx;
+  }
+}

@@ -1,0 +1,45 @@
+.cid {
+  // position: relative;
+  // height: 104px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  font-size: 24px;
+  color: rgb(37, 37, 37);
+  font-family: PingFangSC-Regular;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  .cid-bg {
+    width: 100%;
+    position: relative;
+    height: 104px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cid-img {
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
+  }
+
+  .cid-text {
+    max-width: 16vw;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .cidLine {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 36px;
+    background-color: rgba(94, 197, 67, 1);
+  }
+}

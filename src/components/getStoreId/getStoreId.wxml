@@ -1,0 +1,13 @@
+<view class="select-store" style="display:{{showSelectStore? 'block':'none'}}">
+    <view class="locate-status">
+      <view class="head-close" ><view class="close-icon" bindtap="hideSelectStore"></view></view>
+      <view class="loc-notice">
+        <view class="pos-icon" wx:if="{{failMessage}}"></view>
+        <view class="status-text" wx:if="{{failMessage}}">{{failMessage}}</view>
+      </view>
+    </view>
+    <view wx:for="{{stores}}" wx:key="id" data-id="{{item.id}}" data-address="{{item.name}}" bindtap="handleSelectStore" class="store">
+      <view class="store-name">{{item.name}}</view>
+      <view class="store-address">{{item.address}}</view>
+    </view>
+  </view>

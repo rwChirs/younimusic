@@ -1,0 +1,82 @@
+@import '../../../common/theme.scss';
+
+.comments-new {
+  background: #fff;
+  padding: 0 30rpx;
+
+  .header-shop {
+    display: flex;
+    flex-direction: row;
+    // border-bottom: 1rpx solid rgba(0, 0, 0, 0.1);
+    align-items: center;
+    line-height: 84rpx;
+
+    .title-shop {
+      font-size: 26rpx;
+      flex: 1;
+      color: rgb(20, 20, 20);
+      font-weight: bold;
+    }
+
+    .right-area {
+      font-size: 26rpx;
+      color: rgb(137, 137, 137);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .em {
+        color: $color;
+        display: inline-block;
+      }
+
+      .arrow {
+        width: 44rpx;
+        height: 44rpx;
+        line-height: 0;
+        background: url($toRightGreenArrow) center center no-repeat;
+        background-size: 10rpx 18rpx;
+      }
+    }
+  }
+
+  .comment-labels {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .comment-label {
+    font-size: 24px;
+    line-height: 34px;
+    padding: 8px 25px;
+    color: $color;
+    background: rgb(228, 246, 252);
+    border-radius: 25px;
+    margin-right: 20px;
+    margin-bottom: 28px;
+  }
+
+  .no-comment {
+    line-height: 84rpx;
+    text-align: center;
+    font-size: 26rpx;
+  }
+
+  .comment-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .comment-btn {
+    font-size: 28px;
+    line-height: 40px;
+    padding: 10px 58px;
+    color: $color;
+    border: 1px solid $color;
+    border-radius: 30px;
+    margin: 0 auto 30px;
+  }
+}

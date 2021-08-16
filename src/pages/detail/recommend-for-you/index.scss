@@ -1,0 +1,16 @@
+.recommends {
+  padding: 0 25px;
+  margin-bottom: 20px;
+  .product-list {
+    display: flex;
+    flex-flow: row wrap;
+    .product-item {
+      width: 340px;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+    }
+    .product-item:nth-child(even) {
+      margin-left: 20px;
+    }
+  }
+}

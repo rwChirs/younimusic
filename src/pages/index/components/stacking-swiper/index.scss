@@ -1,0 +1,34 @@
+.stacking-swiper{
+  padding: 0 30px;
+  .slides-box{
+    position: relative;
+    min-height: 100px;
+  }
+  .slides-box .img {
+    border: 0;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  .slide_wrap {
+    position: relative;
+    min-height: 100px;
+  }
+  .slide_wrap .slide {
+    position: absolute;
+    top: 0;
+    // box-shadow: 12px 28px 60px 0 hsla(0,0%,41%,.22);
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-delay: 0;
+    opacity: 0;
+    z-index: -1;
+    transform-origin: right center;
+    right: 0; 
+    transform: scale(0.66);
+    transition-duration: 750ms;
+  }
+}

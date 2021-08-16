@@ -1,0 +1,35 @@
+.empty-page {
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+
+  .empty-page-img-container {
+    width: 200px;
+    height: auto;
+    margin: 200px auto 0;
+  }
+
+  .empty-page-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .empty-page-txt {
+    margin-top: 20px;
+    color: #898989;
+    font-size: 26px;
+  }
+
+  .empty-page-btn {
+    margin: 0 auto;
+    width: 190px;
+    height: 60px;
+    line-height: 60px;
+    background: #fff;
+    border: 1px solid #00ab0c;
+    border-radius: 32px;
+    color: #00ab0c;
+    font-size: 28px;
+    margin-top: 10%;
+  }
+}

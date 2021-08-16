@@ -1,0 +1,658 @@
+.result-page .bagIcon {
+  position: absolute;
+  top: 340px;
+  right: 31px;
+  z-index: 9;
+  width: 80px;
+  height: 80px;
+  background: url(//m.360buyimg.com/img/jfs/t1/20376/21/14818/14543/5cac4b50E42940ce1/44453f0394db8e45.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.bagIcon2 {
+  position: absolute;
+  top: 500px;
+  right: 31px;
+  width: 80px;
+  height: 80px;
+  background: url(//m.360buyimg.com/img/jfs/t1/20376/21/14818/14543/5cac4b50E42940ce1/44453f0394db8e45.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.result-page .fixedModel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  /* z-index: 10; */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.result-page .fixOrder {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.result-page .fixedModel .bag {
+  position: absolute;
+  top: 306px;
+  left: 126px;
+  width: 500px;
+  height: 604px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.result-page .fixedModel .shareFriend {
+  width: 138px;
+  height: 148px;
+  margin-top: 540px;
+}
+
+.shareFriend image {
+  width: 100%;
+  height: 100%;
+}
+
+.kefu {
+  display: block;
+  width: 755px;
+  height: 144px;
+  background: none;
+  border-radius: 0;
+  padding: 0;
+
+  &::after {
+    border: none;
+    background: none;
+  }
+
+  .Image {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+button::after {
+  border-radius: 0;
+  background: none;
+}
+
+.result-page .fixedModel .button-hover {
+  color: none;
+  background-color: none;
+}
+
+.result-page .fixedModel button {
+  border-radius: 0;
+  padding: 0;
+  background-color: rgba(255, 0, 0, 0);
+}
+
+.result-page .fixedModel .bagClose {
+  position: absolute;
+  top: 930px;
+  left: 342px;
+  width: 68px;
+  height: 68px;
+  background:
+    url('https://m.360buyimg.com/img/jfs/t1/31101/30/2130/3801/5c669c1fE98231e9e/191a2768868a76b6.png')
+    no-repeat;
+  background-size: cover !important;
+}
+
+.result-page .fixedModel .bag-close {
+  position: absolute;
+  top: 910px;
+  left: 330px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-page .fixedModel .orangebagClose {
+  width: 28px;
+  height: 28px;
+  background:
+    url('https://m.360buyimg.com/img/jfs/t1/157591/40/5422/355/60126a91Ef076d845/df8b8a350a3e4e6e.png')
+    no-repeat;
+  background-size: cover !important;
+}
+
+.result-page .groupon-pay-bottom {
+  padding-bottom: 50px;
+}
+
+.result-page .groupon-pay-price {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.03);
+}
+
+.result-page .groupon-pay-success {
+  width: 190px;
+  margin: 40px auto 20px;
+}
+
+.result-page .groupon-recommend {
+  background: #f7f8fa;
+
+  /* padding-top: 14px; */
+}
+
+.result-page .groupon-recommend .groupon-title {
+  /* margin-bottom: 20px; */
+}
+
+.result-page .groupon-recommend .groupon-model {
+  background: #fff;
+  margin: 0 auto;
+  width: 654px;
+  padding: 40px 20px 20px;
+  box-shadow: 0 4px 30px rgba(129, 84, 68, 0.1);
+  border-radius: 8px;
+}
+
+.result-page .groupon-back-all {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.result-page .groupon-pay-price-top {
+  text-align: center;
+  font-size: 24px;
+  color: #252525;
+  font-family: 'PingFangSC-Regular';
+
+  .word {
+    font-size: 28px;
+  }
+}
+
+.result-page .mr20 {
+  margin-right: 20px;
+}
+
+.result-page .red {
+  color: rgb(255, 116, 116);
+  font-family: 'JDZhengHei-01-Regula';
+  letter-spacing: 0;
+}
+
+.result-page .groupon-pay-hr {
+  width: 670px;
+  height: 0;
+
+  /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
+  border: 0;
+  margin: 10px auto;
+}
+
+.result-page .ac-coupon-tips {
+  width: 500px;
+  height: 36px;
+  line-height: 36px;
+  background: rgba(255, 220, 220, 1);
+  border-radius: 18px;
+  font-family: PingFangSC-Regular;
+  font-size: 24px;
+  color: rgba(225, 37, 27, 1);
+  box-sizing: border-box;
+  margin: 30px auto 28px;
+  display: flex;
+  justify-content: center;
+
+  .coupon-icon {
+    margin-right: 14px;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background:
+      url(//m.360buyimg.com/img/jfs/t1/133679/7/9142/1442/5f530163E6f0adfb0/610e95e9749513f8.png)
+      no-repeat 0 0;
+    background-size: 100% 100%;
+  }
+
+  .coupon-txt {
+    height: 36px;
+    line-height: 36px;
+  }
+
+  .coupon-arrow {
+    margin-left: 8px;
+    // margin-top: 6px;
+    display: inline-block;
+    width: 24px;
+    height: 36px;
+    background:
+      url(//m.360buyimg.com/img/jfs/t1/141410/18/7631/478/5f5302a1E75805c0a/d2bfdb62fcff0120.png)
+      no-repeat 0 6px;
+    background-size: 24px 24px;
+  }
+}
+
+.result-page .groupon-pay-btn {
+  // margin: 0 auto;
+  // width: 100%;
+  // box-sizing:border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.result-page .groupon-pay-btn img {
+  width: 36px;
+  height: 36px;
+  margin-right: 20px;
+}
+
+.result-page .groupon-py-btn-desc {
+  font-size: 24px;
+  color: #252525;
+  font-family: 'PingFangSC-Medium';
+  padding-right: 20px;
+}
+
+.result-page .green {
+  font-family: 'JDZhengHei-01-Regular';
+  color: rgb(0, 181, 15);
+  font-size: 32px;
+}
+
+.result-page .groupon-pay-btn .blue-btn,
+.result-page .groupon-pay-btn .grey-btn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 240px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 32px;
+  font-family: 'PingFangSC-Medium';
+  margin-bottom: 80px;
+  font-size: 28px;
+}
+
+.result-page .groupon-pay-btn .blue-btn {
+  border: 1px solid rgb(0, 105, 140);
+  color: rgb(0, 105, 140);
+}
+
+.result-page .groupon-pay-btn .grey-btn {
+  border: 2px solid rgb(149, 150, 159);
+  font-family: PingFangSC-Regular;
+  font-size: 28px;
+  color: rgba(29, 31, 43, 1);
+
+  &.green {
+    background: rgba(103, 208, 78, 1);
+    border: 1px solid rgba(103, 208, 78, 1);
+    color: #fff;
+  }
+}
+
+.result-page .groupon-pay-btn .grey-btn-card {
+  border: 2px solid #00698c;
+  font-family: PingFangSC-Regular;
+  font-size: 28px;
+  color: #00698c;
+}
+
+.result-page .groupon-back-card {
+  margin-bottom: 20px;
+}
+
+.result-page .groupon-pay-code {
+  margin: 30px 28px 20px;
+  height: 156px;
+  background: #fff;
+  padding: 32px 42px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-start;
+  box-shadow: 0 4px 30px rgba(129, 84, 68, 0.1);
+  border-radius: 8px;
+}
+
+.result-page .groupon-pay-code-img {
+  width: 156px;
+  height: 156px;
+  margin-right: 42px;
+}
+
+.result-page .groupon-pay-code-right {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+.result-page .groupon-pay-code-title {
+  font-family: 'PingFangSC-Medium';
+  font-size: 34px;
+  color: #252525;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.result-page .groupon-pay-code-desc {
+  font-family: 'PingFangSC-Light';
+  font-size: 24px;
+  color: #252525;
+}
+
+.result-page button::after {
+  border: none;
+}
+
+.suc-img-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.suc-img-main {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 750px;
+  height: 820px;
+  margin: auto;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.suc-img {
+  width: 100%;
+  height: 706px;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 74px;
+  height: 74px;
+  margin: auto;
+  z-index: 2;
+}
+
+.result-page .result-content {
+  background: rgb(248, 248, 248);
+
+  /* margin-top:40px; */
+  padding-top: 28px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.result-page .result-content .result-wx {
+  position: relative;
+  width: 710px;
+  height: 190px;
+  padding: 30px 0;
+  box-shadow: 0 4px 30px rgba(150, 147, 146, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  margin: 0 20px;
+}
+
+.result-page .result-content .result-wx .groupon-bg-img {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: 134px;
+  height: 200px;
+}
+
+.result-page .result-content .result-wx .left-wx-img {
+  width: 160px;
+  height: 160px;
+  margin-right: 20px;
+  margin-left: 48px;
+}
+
+.result-page .result-content .result-wx .right {
+  width: 470px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.result-page .result-content .result-wx .right .logo-img {
+  width: 184px;
+  height: 60px;
+  position: relative;
+  left: -4px;
+}
+
+.result-page .result-content .result-wx .right .desc {
+  font-size: 24px;
+  font-family: 'PingFangSC-Regular';
+  color: #252525;
+}
+
+.result-page .all-img {
+  width: 382px;
+  height: 84px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.result-page .fight-list-bottom {
+  font-size: 24px;
+  color: rgb(137, 137, 137);
+  font-family: 'PingFangSC-Medium';
+  text-align: center;
+  height: 100px;
+  line-height: 80px;
+}
+
+.result-page {
+  position: relative;
+  background: rgba(249, 249, 249, 1);
+  min-height: 100vh;
+
+  .pro-item-style {
+    margin-bottom: 14px;
+  }
+
+  .p-icon {
+    position: fixed;
+    top: 40px;
+    right: 0;
+    z-index: 3;
+  }
+
+  .mr24 {
+    margin-right: 24px;
+  }
+
+  .result-bg {
+    background-color: #fff;
+  }
+
+  .community {
+    width: 100%;
+    height: 144px;
+  }
+
+  .result-product-list {
+    padding-bottom: 50px;
+    margin-top: 10px;
+
+    .result-product-title {
+      margin: 50px auto 20px;
+      text-align: center;
+
+      .title-img {
+        width: 238px;
+        height: 72px;
+      }
+    }
+
+    .result-product-item {
+      margin: 0 30px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  .amount-list {
+    margin: 20px auto 0;
+  }
+
+  .goTop {
+    position: fixed;
+    right: 30px;
+    bottom: 150px;
+    z-index: 4;
+  }
+
+  .cart-icon {
+    width: 88px;
+    height: 88px;
+    position: fixed;
+    right: 30px;
+    bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 50%;
+    border: 1px solid rgba(151, 151, 151, 0.3);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+
+    .cart-image {
+      width: 88px;
+      height: 88px;
+      background:
+        url(https://m.360buyimg.com/img/jfs/t1/26288/34/14220/2753/5ca56d0aEdbfb08ba/3b465e92345b7a0a.png)
+        no-repeat;
+      background-size: 100%;
+    }
+
+    .cart-num {
+      position: absolute;
+      width: 40px;
+      height: 30px;
+      border-radius: 15px;
+      top: -1px;
+      right: -3px;
+      font-size: 20px;
+      color: #fff;
+      background-color: red;
+      text-align: center;
+    }
+  }
+
+  .maotai-outbox {
+    width: 750px;
+    display: flex;
+    justify-content: center;
+
+    .maotai-pickcode {
+      width: 610px;
+      background: rgba(245, 245, 245, 0.92);
+      border: 1px solid rgba(219, 219, 219, 1);
+      border-radius: 8px;
+
+      .title {
+        text-align: center;
+        height: 80px;
+        line-height: 80px;
+        font-family: PingFang-SC;
+        font-size: 26px;
+        color: rgba(0, 0, 0, 1);
+      }
+
+      .line {
+        width: 610px;
+        height: 1px;
+        background: rgba(0, 0, 0, 0.1);
+      }
+
+      .code {
+        height: 135px;
+        line-height: 135px;
+        text-align: center;
+        font-family: PingFangSC;
+        font-size: 60px;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 1);
+      }
+
+      .descs {
+        font-family: PingFangSC;
+        min-height: 60px;
+        background: rgba(255, 241, 211, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .desc-inner {
+          font-size: 24px;
+          color: rgba(180, 126, 23, 1);
+          line-height: 36px;
+        }
+
+        .imgs {
+          width: 22px;
+          height: 22px;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}

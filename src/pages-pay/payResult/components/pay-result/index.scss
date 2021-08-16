@@ -1,0 +1,43 @@
+.pay-success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .pay-success-ok-icon {
+    width: 122px;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+
+  .pay-success-fail-icon {
+    width: 120px;
+    height: 110px;
+    margin-bottom: 20px;
+  }
+
+  .pay-price {
+    height: 56px;
+    line-height: 56px;
+    font-family: HelveticaNeue-Bold;
+    font-size: 56px;
+    color: rgba(29, 31, 43, 1);
+
+    .unit {
+      height: 40px;
+      line-height: 40px;
+      font-family: PingFangSC-Semibold;
+      font-size: 40px;
+      color: rgba(29, 31, 43, 1);
+      padding-right: 5px;
+    }
+  }
+
+  .pay-status {
+    text-align: center;
+    color: #252525;
+    font-size: 42px;
+    font-family: 'PingFangSC-Medium';
+  }
+}

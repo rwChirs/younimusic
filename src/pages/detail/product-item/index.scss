@@ -1,0 +1,646 @@
+@import '../../../common/theme.scss';
+$titleFamily: PingFangSC-Medium;
+
+.product-item-detail {
+  position: relative;
+  // background-color: #fff;
+  overflow: hidden;
+  box-sizing: border-box;
+  box-shadow: 0 6px 10px 0 rgba(50, 54, 63, 0.04);
+
+  .flagImage-container {
+    display: flex;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    .flag-image {
+      width: 100px;
+      height: 30px;
+    }
+  }
+
+  .product-item-figture {
+    .season-tag {
+      width: 48px;
+      height: 60px;
+      position: absolute;
+      top: 0;
+      left: 6px;
+    }
+
+    .action-tag {
+      width: 52px;
+      height: 26px;
+      position: absolute;
+      top: 6px;
+      left: 6px;
+    }
+
+    .health-tag {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 32px;
+    }
+
+    .store-prop-tag {
+      width: 76px;
+      height: 26px;
+      position: absolute;
+      top: 6px;
+      right: 6px;
+    }
+
+    .product-warm-tag {
+      width: 52px;
+      height: 52px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background:
+        url(//m.360buyimg.com/img/jfs/t1/119521/21/9938/5926/5efeeca6E62b6f52f/e82737045b2c9526.png)
+        no-repeat;
+      background-size: 100% 100%;
+    }
+
+    .product-item-advertisement {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      color: rgb(237, 229, 183);
+      font-size: 24px;
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center;
+      height: 42px;
+      line-height: 42px;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(52, 52, 52, 1) 0%,
+          rgba(85, 85, 85, 1) 10%,
+          rgba(0, 0, 0, 1) 100%
+        );
+      border-radius: 0 200px 200px 0;
+      overflow: hidden;
+      display: -webkit-box;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 1;
+
+      /*! autoprefixer: ignore next */
+      -webkit-box-orient: vertical;
+    }
+
+    .product-status-icon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 140px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.8);
+      margin: auto;
+      border-radius: 25px;
+      font-size: 24px;
+      color: #fff;
+    }
+  }
+
+  .product-item-desc {
+    text-align: left;
+    position: relative;
+    margin-top: 6px;
+
+    .product-item-title {
+      font-family: $titleFamily;
+
+      .product-item-title-tag {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 4px;
+
+        &.dingqisong {
+          width: 120px;
+        }
+
+        &.yushou {
+          width: 90px;
+        }
+
+        &.fresh {
+          width: 92px;
+        }
+      }
+
+      .pre-title-tag {
+        display: inline-block;
+        width: 76px;
+        height: 28px;
+        margin-right: 10px;
+      }
+
+      &.two-line {
+        max-height: 84px !important;
+        line-height: 42px;
+        // margin-bottom: 20px;
+        white-space: normal !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+
+        /*! autoprefixer: ignore next */
+        -webkit-box-orient: vertical;
+      }
+    }
+
+    .product-item-ad {
+      color: rgb(137, 137, 137);
+      font-size: 24px;
+      height: 34px;
+      line-height: 34px;
+    }
+
+    .tag-list-wrap {
+      height: 30px;
+      margin-top: 10px;
+
+      .tag-list {
+        width: 100%;
+        height: 28px;
+        overflow: hidden;
+        text-align: left;
+      }
+    }
+
+    .price-wrap {
+      .price {
+        color: rgb(226, 52, 52);
+        margin-right: 6px;
+        font-weight: bold;
+      }
+
+      .no-price {
+        font-size: 24px;
+        color: rgb(137, 137, 137);
+      }
+
+      .unit {
+        color: rgb(137, 137, 137);
+      }
+
+      .three-market-price {
+        text-decoration: line-through;
+        font-size: 20px;
+        color: rgb(138, 138, 138);
+        padding-left: 4px;
+      }
+    }
+
+    .product-item-btn {
+      .product-item-btn-bg {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-image: url($addCartBtn);
+      }
+
+      .product-item-btn-bg.disabled {
+        background-size: 95%;
+        background-image: url($addDisabledCartBtn);
+      }
+    }
+
+    .buy-now {
+      position: absolute;
+      right: 0;
+      bottom: 34px;
+      height: 44px;
+      line-height: 44px;
+      padding: 0 12px;
+      border-radius: 22px;
+      border: 1px solid rgba(37, 37, 37, 0.3);
+      font-size: 22px;
+      color: rgba(29, 31, 43, 1);
+    }
+  }
+
+  &.product-item-type-one {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 28px;
+
+    .product-item-figture {
+      margin-right: 26px;
+      position: relative;
+      width: 244px;
+      height: 244px;
+
+      .product-item-image {
+        width: 244px;
+        height: 244px;
+      }
+
+      .health-tag {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 40px;
+      }
+    }
+
+    .product-item-desc {
+      .product-item-title {
+        font-size: 30px;
+        max-height: 84px;
+        line-height: 42px;
+        margin-top: 10px;
+        color: rgb(32, 32, 32);
+        overflow: hidden;
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+
+        /* autoprefixer: ignore next */
+        -webkit-box-orient: vertical;
+
+        .product-item-title-tag {
+          height: 38px;
+          margin-top: -6px;
+        }
+      }
+
+      .product-item-ad {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 360px;
+        height: 34px;
+        margin-bottom: 4px;
+      }
+
+      .product-item-market-price,
+      .price-wrap {
+        position: absolute;
+        left: 0;
+
+        .price {
+          font-size: 26px;
+        }
+
+        .unit {
+          font-size: 26px;
+        }
+      }
+
+      .product-item-market-price {
+        bottom: 80px;
+      }
+
+      .price-wrap {
+        bottom: 36px;
+      }
+
+      .product-item-btn {
+        position: absolute;
+        right: 0;
+        bottom: 14px;
+        width: 50px;
+        height: 50px;
+        padding: 20px;
+      }
+    }
+  }
+
+  &.product-item-type-two {
+    height: auto;
+    // height: 520px;
+    border-radius: 10px;
+    background-color: #fff;
+
+    .product-item-figture {
+      position: relative;
+      width: 336px;
+      height: 346px;
+
+      .product-item-image {
+        width: 336px;
+        height: 346px;
+      }
+
+      .season-tag {
+        width: 60px;
+        height: 76px;
+        position: absolute;
+        top: 0;
+        left: 6px;
+      }
+
+      .action-tag {
+        width: 52px;
+        height: 26px;
+        position: absolute;
+        top: 6px;
+        left: 6px;
+      }
+
+      .health-tag {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 56px;
+      }
+
+      .store-prop-tag {
+        width: 76px;
+        height: 26px;
+        position: absolute;
+        top: 6px;
+        right: 6px;
+      }
+    }
+
+    .product-item-desc {
+      padding: 0 20px;
+
+      .product-item-title {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 30px;
+        height: 42px;
+        line-height: 42px;
+        margin-top: 10px;
+        color: rgb(32, 32, 32);
+
+        .product-item-title-tag {
+          height: 38px;
+          margin-top: -6px;
+        }
+      }
+
+      .product-item-ad {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding: 10px 0;
+      }
+
+      .price-wrap {
+        line-height: 52px;
+        margin-bottom: 20px;
+
+        .price {
+          font-size: 30px;
+        }
+
+        .unit {
+          font-size: 24px;
+        }
+      }
+
+      .product-item-btn {
+        position: absolute;
+        right: 0;
+        bottom: -18px;
+        width: 46px;
+        height: 46px;
+        padding: 20px;
+      }
+
+      .buy-now {
+        position: absolute;
+        right: 20px;
+        bottom: 2px;
+      }
+    }
+  }
+
+  &.product-item-type-three {
+    height: 320px;
+    // height: 384px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 6px 10px 0 rgba(50, 54, 63, 0.04);
+    position: relative;
+
+    .product-item-figture {
+      width: 200px;
+      height: 210px;
+
+      .product-item-image {
+        width: 200px;
+        height: 210px;
+      }
+    }
+
+    .product-item-desc {
+      padding: 0 12px;
+
+      .product-item-title {
+        font-size: 24px;
+        // margin-top: 10px;
+        color: rgb(57, 57, 57);
+        height: 34px;
+        line-height: 34px;
+        overflow: hidden;
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 1;
+
+        /* autoprefixer: ignore next */
+        -webkit-box-orient: vertical;
+
+        .product-item-title-tag {
+          height: 30px;
+          margin-top: -3px;
+
+          &.dingqisong {
+            width: 100px;
+          }
+
+          &.yushou {
+            width: 80px;
+          }
+
+          &.fresh {
+            width: 82px;
+          }
+        }
+      }
+
+      .product-item-ad {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      // .tag-list-wrap {
+      //   position: absolute;
+      //   bottom: 0;
+      //   left: 20px;
+      // }
+
+      .price-wrap {
+        .price {
+          font-size: 26px;
+        }
+
+        .unit {
+          font-size: 22px;
+        }
+      }
+
+      .product-item-btn {
+        position: absolute;
+        right: 0;
+        bottom: -16px;
+        width: 38px;
+        height: 38px;
+        padding: 20px;
+      }
+    }
+  }
+
+  &.product-item-type-small {
+    // height: 320px;
+    height: 340px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 6px 10px 0 rgba(50, 54, 63, 0.04);
+    position: relative;
+    width: 200px;
+    margin: 0 15px 15px 0 !important;
+
+    .product-item-figture {
+      width: 200px;
+      height: 210px;
+
+      .product-item-image {
+        width: 200px;
+        height: 210px;
+      }
+    }
+
+    .product-item-desc {
+      padding: 0 12px;
+
+      .product-item-title {
+        padding: 0 5px;
+        height: 72px;
+        line-height: 36px;
+        font-size: 24px;
+        color: #1d1f2b;
+        overflow: hidden;
+        display: -webkit-box;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+
+        .product-item-title-tag {
+          height: 30px;
+          margin-top: -3px;
+
+          &.dingqisong {
+            width: 100px;
+          }
+
+          &.yushou {
+            width: 80px;
+          }
+
+          &.fresh {
+            width: 82px;
+          }
+        }
+      }
+
+      .product-item-ad {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .price-wrap {
+        .price {
+          font-size: 26px;
+        }
+
+        .unit {
+          font-size: 22px;
+        }
+      }
+
+      .product-item-btn {
+        position: absolute;
+        right: 0;
+        bottom: -16px;
+        width: 38px;
+        height: 38px;
+        padding: 20px;
+      }
+    }
+  }
+
+  &.customize-tail {
+    height: 340px;
+
+    .product-item-desc {
+      padding: 0 12px;
+
+      .product-item-btn {
+        padding: 18px;
+      }
+
+      .product-item-title {
+        padding: 0 5px;
+        height: 72px;
+        line-height: 36px;
+        font-size: 24px;
+        color: #1d1f2b;
+        overflow: hidden;
+        display: -webkit-box;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+
+  .bank-show {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 0;
+
+    .bank-icon {
+      width: 26px;
+      height: 26px;
+      padding-right: 10px;
+    }
+
+    .bank-content {
+      height: 32px;
+      line-height: 32px;
+      font-family: PingFangSC-Regular;
+      font-size: 24px;
+      color: rgba(149, 150, 159, 1);
+    }
+  }
+}

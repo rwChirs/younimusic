@@ -1,0 +1,49 @@
+.loading-common-component {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 750px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-loading {
+  width: 40px;
+  height: 40px;
+  background:
+    url('//m.360buyimg.com/img/jfs/t1/115815/33/15454/1065/5f432a37E035ffe07/ce555ec2729f4c13.png')
+    no-repeat;
+  background-size: cover;
+  animation: circle 1s infinite linear;
+}
+
+@-webkit-keyframes circle {
+  0% {
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes circle {
+  0% {
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
