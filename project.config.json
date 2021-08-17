@@ -2,7 +2,7 @@
   "miniprogramRoot": "dist/",
   "projectname": "taro-miniapp",
   "description": "music小程序",
-  "appid": "wxb8c24a764d1e1e6d",
+  "appid": "wxae9140d69ccf0c22",
   "setting": {
     "urlCheck": false,
     "es6": true,

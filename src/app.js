@@ -34,7 +34,7 @@ if (!dev) {
 }
 
 let sr = srSdk.init({
-  appid: 'wxb8c24a764d1e1e6d',
+  appid: 'wxae9140d69ccf0c22',
   token: 'bi942e65c935cb45a3',
   debug: dev,
 });
@@ -83,7 +83,7 @@ class App extends Component {
   // 页面标题
   pageTitle = '七鲜';
   // 小程序appid
-  wxversion = 'wxb8c24a764d1e1e6d';
+  wxversion = 'wxae9140d69ccf0c22';
   appid = '269';
   // 高德地图key
   gaodeKey = 'a186a963d392b84a9cc4b91feeda4a19';

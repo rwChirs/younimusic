@@ -1,6 +1,6 @@
 /* eslint-disable import/prefer-default-export */
 export const config = {
-  wxversion: 'wxb8c24a764d1e1e6d',
+  wxversion: 'wxae9140d69ccf0c22',
   appid: 750,
   // returnPage: '/pages/arrivedStore/arrivedStore',
   returnPage: '/pages/index/index',
