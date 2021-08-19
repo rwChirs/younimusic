@@ -1,20 +1,19 @@
 import Taro from "@tarojs/taro";
 import { Component } from "react";
 import { View, Text, Image } from "@tarojs/components";
-import { AtButton, AtTabBar, AtTabs, AtTabsPane } from "taro-ui";
+import { AtTabs, AtTabsPane } from "taro-ui";
 
 import "taro-ui/dist/style/components/tab-bar.scss";
 import "taro-ui/dist/style/components/badge.scss";
 import "taro-ui/dist/style/components/icon.scss"; // 字体图标
 import "taro-ui/dist/style/components/tabs.scss"; // 标签tab
-import "taro-ui/dist/style/components/button.scss"; // 按钮
+import CustomTabBar from "../components/custom-tab-bar";
 import "./index.scss";
 
 export default class Index extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      pageCurrent: 1,
       tabCurrent: 0
     };
   }
@@ -38,23 +37,6 @@ export default class Index extends Component {
     };
   }
 
-  pageClick = value => {
-    this.setState(
-      {
-        pageCurrent: value
-      },
-      () => {
-        if (value === 0) {
-          Taro.navigateTo({ url: "/pages/index/index" });
-        } else if (value === 1) {
-          Taro.navigateTo({ url: "/pages/category/index" });
-        } else if (value === 2) {
-          Taro.navigateTo({ url: "/pages/my/index" });
-        }
-      }
-    );
-  };
-
   tabClick = value => {
     this.setState({
       tabCurrent: value
@@ -68,7 +50,7 @@ export default class Index extends Component {
       { title: "精彩瞬间" }
     ];
     return (
-      <View className="index">
+      <View className="category">
         <AtTabs
           current={this.state.tabCurrent}
           // scroll
@@ -89,16 +71,7 @@ export default class Index extends Component {
           className="index-image"
           src="http://m.qpic.cn/psc?/V52Y80us2CqO3j0smwyw3SzevE21vJxr/ruAMsa53pVQWN7FLK88i5h*MehgkvxmZiuG5Mgkjh79GP8m4UzCgJz5.NUGo4sJuriXX6BS8uCWig9J49lCJBql9g3mwPhdxCalnGsZtVrc!/mnull&bo=0AIABQAAAAABB*c!&rf=photolist&t=5"
         /> */}
-        <AtTabBar
-          tabList={[
-            { title: "动态发布", iconType: "home", text: "new" },
-            { title: "往期回顾", iconType: "bullet-list" },
-            { title: "关于我们", iconType: "user" }
-          ]}
-          fixed="true"
-          onClick={this.pageClick.bind(this)}
-          current={this.state.pageCurrent}
-        />
+        <CustomTabBar selected={1} />
       </View>
     );
   }

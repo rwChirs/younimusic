@@ -1,3 +1,3 @@
 export default {
-  navigationBarTitleText: '分类'
+  navigationBarTitleText: '往期回顾'
 }
