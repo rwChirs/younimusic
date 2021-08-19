@@ -12,7 +12,7 @@ export default {
   isTest: undefined,
   isKepler: undefined,
   navigationBarColor: { backgroundColor: '#67D04E', frontColor: '#ffffff' },
-  navigationBarTitle: { title: '七鲜' },
+  navigationBarTitle: { title: '由你音乐' },
   tabNum: 2,
   requestHost: 'https://wxapplogin.m.jd.com',
   logPluginName: '', // 埋点插件的名字 例如：'log-plugin'

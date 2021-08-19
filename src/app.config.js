@@ -88,10 +88,6 @@ export default {
         },
       },
     },
-    // {
-    //   root: 'pages-pay/payResult/', // 通用支付结果页
-    //   pages: ['index'],
-    // },
     {
       root: 'pages-mine/',
       pages: [
@@ -132,17 +128,6 @@ export default {
         'fight-group/three-group/index',
         'bill/bill-detail/index',
         'bill/bill-index/index',
-      ],
-    },
-    {
-      root: 'pages-pay/',
-      pages: [
-        'payTip/payTip',
-        'price-desc/index',
-        'wxpay/wxpay',
-        'wechatpay/index',
-        'openPayCode/openPayCode',
-        'payResult/index',
       ],
     },
     {

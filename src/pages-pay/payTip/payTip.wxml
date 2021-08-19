@@ -1,9 +1,0 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="pay-title">1. 如何使用付款？</view>
-  <view class="pay-content">登录“七鲜”，点击首页的【付款码】，向收银员展示二维码/条形码</view>
-  <view class="pay-content">收银员使用扫码枪或者摄像头扫描二维码/条形码，操作成功后完成支付</view>
-  <view class="pay-title">2. 如何确认支付成功？</view>
-  <view class="pay-content">支付成功后，在手机联网情况下，会为您展示结果页</view>
-  <view class="pay-content">支付成功后，收银员也会获取到订单支付结果，您可以选择与收银员确认支付结果</view>
-</view>
