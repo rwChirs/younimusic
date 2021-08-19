@@ -1,0 +1,13 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "younimusic",
+  "description": "music",
+  "appid": "wxae9140d69ccf0c22",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "postcss": false,
+    "minified": false
+  },
+  "compileType": "miniprogram"
+}
