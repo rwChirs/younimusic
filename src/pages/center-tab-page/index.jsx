@@ -1,5 +1,7 @@
 import Taro,{ getCurrentInstance } from '@tarojs/taro';
-import { WebView, View } from '@tarojs/components';
+import { 
+  // WebView,
+   View } from '@tarojs/components';
 import {
   getClubQueryUserInfo,
   getClubIndexV2,
@@ -7,17 +9,8 @@ import {
   getListData,
 } from '@7fresh/api';
 import CommonPageComponent from '../../utils/common/CommonPageComponent';
-import {
-  getUserStoreInfo,
-  utils,
-  get7clubPath,
-  getShareImage,
-  logClick,
-} from '../../pages-activity/7club/utils';
-import Loading from '../../components/loading';
-import ClubHome from '../../pages-activity/7club/home/index';
-import NoneDataPage from '../../components/none-data-page';
-import { HOT_SHARE, BOTTOM_TAB } from '../../pages-activity/7club/reportPoints';
+// import Loading from '../../components/loading';
+
 import { exportPoint } from '../../utils/common/exportPoint';
 import util from '../login/util';
 import NavBar from '../../components/nav-bar';
@@ -96,39 +89,6 @@ export default class CenterTabPage extends CommonPageComponent {
     this.onPageHide();
   }
 
-  getStoreId = isRefresh => {
-    const { storeId = '', lat = '', lon = '' } = getCurrentInstance().router.params;
-    const addressInfo = Taro.getStorageSync('addressInfo') || {};
-
-    //三公里定位
-    getUserStoreInfo(
-      storeId || addressInfo.storeId || '',
-      lon || addressInfo.lon || '',
-      lat || addressInfo.lat || '',
-      '',
-      4
-    )
-      .then(res => {
-        if (
-          !isRefresh &&
-          this.state.storeId &&
-          Number(res.storeId) === Number(this.state.storeId)
-        ) {
-          return;
-        }
-        this.setState(
-          {
-            storeId: res.storeId || 131229,
-          },
-          () => {
-            this.initData();
-          }
-        );
-      })
-      .catch(err => {
-        console.log(err);
-      });
-  };
 
   initData = isRefresh => {
     if (!isRefresh) {
@@ -179,7 +139,6 @@ export default class CenterTabPage extends CommonPageComponent {
             });
           } else if (res.toUrl) {
             const toUrl = this.addAddressInfoInUrl(res.toUrl);
-            utils.h5Init({ returnPage: toUrl, pageType: 'h5' });
             this._genToken(toUrl);
           } else {
             this.setState({
@@ -234,7 +193,6 @@ export default class CenterTabPage extends CommonPageComponent {
             const toUrl = this.addAddressInfoInUrl(res.toUrl);
             // const toUrl= 'https://7fresh.m.jd.com/channel/?id=7675&showNavigationBar=1&fullScreen=true&statusBarStyleType=1&storeId=131229';
             // const h5_url = encodeURIComponent(toUrl);
-            utils.h5Init({ returnPage: toUrl, pageType: 'h5' });
             this._genToken(toUrl);
           } else {
             this.setState({
@@ -272,31 +230,17 @@ export default class CenterTabPage extends CommonPageComponent {
 
   onReachBottom = () => {
     //触发子组件触底
-    if (this.ClubHome) {
-      this.ClubHome.onReachBottom();
-    }
   };
 
   onPullDownRefresh = () => {
     // console.log('PULL DOWN REFRESH~');
-    if (this.ClubHome) {
-      this.ClubHome.onPullDownRefresh();
-    } else {
-      this.initData(true);
-      setTimeout(() => {
-        Taro.stopPullDownRefresh();
-      }, 300);
-    }
+    
   };
 
   //监听tab点击切换事件加埋点
-  onTabItemTap = item => {
-    logClick({ eid: BOTTOM_TAB, eparam: { name: item.text } });
+  onTabItemTap = () => {
   };
 
-  onRef = ref => {
-    this.ClubHome = ref;
-  };
 
   // 获取当天日期
   getPlanDate = () => {
@@ -348,13 +292,12 @@ export default class CenterTabPage extends CommonPageComponent {
     console.log('7club转发事件', option);
     if (option.from === 'button' && option.target.dataset.shareInfo) {
       let shareInfo = option.target.dataset.shareInfo || {};
-      logClick({ eid: HOT_SHARE, eparam: { contentId: shareInfo.contentId } });
       return {
         title: shareInfo.title,
-        imageUrl: getShareImage(shareInfo),
-        path: `/pages/center-tab-page/index?returnUrl=${encodeURIComponent(
-          get7clubPath(shareInfo)
-        )}`,
+        imageUrl: '',
+        // path: `/pages/center-tab-page/index?returnUrl=${encodeURIComponent(
+        //   get7clubPath(shareInfo)
+        // )}`,
       };
     } else {
       return {
@@ -368,7 +311,6 @@ export default class CenterTabPage extends CommonPageComponent {
    * 跳转个人中心
    */
   onAvatar = () => {
-    logClick({ eid: '7FRESH_miniapp_2_1578553760939|15' });
     let { userInfo } = this.state;
     if (!userInfo || !userInfo.pin) {
       Taro.showToast({
@@ -394,14 +336,9 @@ export default class CenterTabPage extends CommonPageComponent {
 
   render() {
     const {
-      isLoading,
-      isShowAppView,
-      toUrl,
-      clubData,
+      
       suportNavCustom,
-      navHeight,
       userInfo,
-      scrollTop,
     } = this.state;
     return (
       <View>
@@ -424,27 +361,7 @@ export default class CenterTabPage extends CommonPageComponent {
             />
           </View>
         )}
-        <View style={{ marginTop: suportNavCustom ? navHeight + 'px' : 0 }}>
-          {isLoading ? (
-            <Loading tip='加载中...' />
-          ) : isShowAppView ? (
-            // centerTabBar === 0 ? (
-            //   <View>
-            //     <BillList data={billData} />
-            //   </View>
-            // ) : (
-            <ClubHome
-              ref={this.onRef}
-              data={{ data: clubData, scrollTop: scrollTop }}
-              a={scrollTop}
-            />
-          ) : // )
-          !!toUrl ? (
-            <WebView src={toUrl} />
-          ) : (
-            <NoneDataPage onRefresh={this.onRefresh} />
-          )}
-        </View>
+        
         <View onClick={this.onGoTop}>
           <CustomTabBar selected={2} />
         </View>

@@ -1,10 +1,4 @@
 export default {
-  plugins: {
-    loginPlugin: {
-      version: "1.5.0",
-      provider: "wxefe655223916819e",
-    },
-  },
   pages: [
     "pages/index/index",
     "pages/category/index", //分类

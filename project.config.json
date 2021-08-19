@@ -26,7 +26,6 @@
     "useApiHostProcess": true,
     "babelSetting": {
       "ignore": [],
-      "disablePlugins": [],
       "outputPath": ""
     },
     "enableEngineNative": false,
