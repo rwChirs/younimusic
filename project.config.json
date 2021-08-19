@@ -1,6 +1,6 @@
 {
   "miniprogramRoot": "dist/",
-  "projectname": "taro-miniapp",
+  "projectname": "youni",
   "description": "music小程序",
   "appid": "wxae9140d69ccf0c22",
   "setting": {
