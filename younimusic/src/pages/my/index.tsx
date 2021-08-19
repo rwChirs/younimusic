@@ -1,11 +1,12 @@
 import Taro from "@tarojs/taro";
 import { Component } from "react";
 import { View, Text, Image } from "@tarojs/components";
-import { AtButton, AtTabBar } from "taro-ui";
+import { AtButton, AtTabBar, AtTabs, AtTabsPane } from "taro-ui";
 
 import "taro-ui/dist/style/components/tab-bar.scss";
 import "taro-ui/dist/style/components/badge.scss";
 import "taro-ui/dist/style/components/icon.scss"; // 字体图标
+import "taro-ui/dist/style/components/tabs.scss"; // 标签tab
 import "taro-ui/dist/style/components/button.scss"; // 按钮
 import "./index.scss";
 
@@ -13,7 +14,8 @@ export default class Index extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      pageCurrent: 0
+      pageCurrent: 2,
+      tabCurrent: 0
     };
   }
   componentWillMount() {}
@@ -32,8 +34,8 @@ export default class Index extends Component {
       console.log(res.target);
     }
     return {
-      title: "动态发布",
-      path: "/pages/index/index"
+      title: "关于我们",
+      path: "/pages/my/index"
     };
   }
 
@@ -54,12 +56,36 @@ export default class Index extends Component {
     );
   };
 
+  tabClick = value => {
+    this.setState({
+      tabCurrent: value
+    });
+  };
+
   render() {
+    const tabList = [
+      { title: "舞团简介" },
+      { title: "管理团队名单" },
+      { title: "成员名单" }
+    ];
     return (
       <View className="index">
-        {/* <AtButton type="primary" circle={true}>
-          1
-        </AtButton> */}
+        <AtTabs
+          current={this.state.tabCurrent}
+          // scroll
+          tabList={tabList}
+          onClick={this.tabClick.bind(this)}
+        >
+          <AtTabsPane current={this.state.tabCurrent} index={0}>
+            <View className="tab-item">标签页一的内容</View>
+          </AtTabsPane>
+          <AtTabsPane current={this.state.tabCurrent} index={1}>
+            <View className="tab-item">标签页二的内容</View>
+          </AtTabsPane>
+          <AtTabsPane current={this.state.tabCurrent} index={2}>
+            <View className="tab-item">标签页三的内容</View>
+          </AtTabsPane>
+        </AtTabs>
 
         <Image
           className="index-image"

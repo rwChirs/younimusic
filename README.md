@@ -20,4 +20,5 @@
 │ ├── index.css # 页面 CSS
 │ └── index.jsx # 页面组件，如果是 Vue 项目，此文件为 index.vue
 
+taro:https://taro-docs.jd.com/taro/docs/README
 taro-ui:https://taro-ui.jd.com/#/docs/tabbar
