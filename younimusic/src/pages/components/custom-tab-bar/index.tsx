@@ -7,8 +7,13 @@ import "taro-ui/dist/style/components/icon.scss"; // 字体图标
 import "taro-ui/dist/style/components/tabs.scss"; // 标签tab
 import "./index.scss";
 
-export default class CustomTabBar extends Component {
-  constructor(props) {
+export default class CustomTabBar extends Component<
+  { selected: number },
+  {
+    pageCurrent: boolean;
+  }
+> {
+  constructor(props: any) {
     super(props);
     this.state = {
       pageCurrent: props.selected

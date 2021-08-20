@@ -1,14 +1,12 @@
 .category {
   position: relative;
-  .index-image {
-    width: 100%;
-    height: 1200px;
-  }
   .tab-item {
-    height: 100px;
-    padding: 100px 50px;
+    padding: 30px 30px 200px;
     background-color: #fafbfc;
     text-align: center;
-    // font-size: 18px;
+  }
+
+  .index-image {
+    width: 100%;
   }
 }

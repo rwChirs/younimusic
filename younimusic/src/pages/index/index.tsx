@@ -3,6 +3,7 @@ import { Component } from "react";
 import { View, Image } from "@tarojs/components";
 
 import "taro-ui/dist/style/components/icon.scss"; // 字体图标
+import { filterImg, px2vw } from "../utils/index";
 import CustomTabBar from "../components/custom-tab-bar";
 import "./index.scss";
 
@@ -37,8 +38,14 @@ export default class Index extends Component {
       <View className="index">
         <Image
           className="index-image"
-          src="http://m.qpic.cn/psc?/V52Y80us2CqO3j0smwyw3SzevE21vJxr/ruAMsa53pVQWN7FLK88i5h*MehgkvxmZiuG5Mgkjh79GP8m4UzCgJz5.NUGo4sJuriXX6BS8uCWig9J49lCJBql9g3mwPhdxCalnGsZtVrc!/mnull&bo=0AIABQAAAAABB*c!&rf=photolist&t=5"
+          style={{
+            height: px2vw(1050)
+          }}
+          src={filterImg(
+            "//m.360buyimg.com/img/jfs/t1/193412/29/19111/130126/611fc7b7E3aa1c999/917b5e41c40cde25.png"
+          )}
         />
+        {/* <View style={{ height: px2vw(150) }} /> */}
 
         <CustomTabBar selected={0} />
       </View>
