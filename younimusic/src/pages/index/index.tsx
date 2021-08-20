@@ -39,13 +39,13 @@ export default class Index extends Component {
         <Image
           className="index-image"
           style={{
-            height: px2vw(1050)
+            height: px2vw(1500)
           }}
           src={filterImg(
             "//m.360buyimg.com/img/jfs/t1/193412/29/19111/130126/611fc7b7E3aa1c999/917b5e41c40cde25.png"
           )}
         />
-        {/* <View style={{ height: px2vw(150) }} /> */}
+        <View style={{ height: px2vw(150) }} />
 
         <CustomTabBar selected={0} />
       </View>

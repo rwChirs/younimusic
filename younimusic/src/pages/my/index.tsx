@@ -19,12 +19,13 @@ import "taro-ui/dist/style/components/button.scss";
 import "taro-ui/dist/style/components/icon.scss";
 
 import { filterImg } from "../utils/index";
+import personData from "./personneData.json";
 import CustomTabBar from "../components/custom-tab-bar";
 import "./index.scss";
 
 export default class Index extends Component<
   {},
-  { tabCurrent: number; imageData: any; personnelist: any }
+  { tabCurrent: number; imageData: any }
 > {
   constructor(props) {
     super(props);
@@ -40,60 +41,7 @@ export default class Index extends Component<
           "//m.360buyimg.com/img/jfs/t1/192101/22/18770/304826/611fbeefEf4eed5a8/33e4be1af440ad19.png",
           "//m.360buyimg.com/img/jfs/t1/184062/25/20279/297590/611fbeefEa3046acb/df907fd529a991b8.png"
         ]
-      },
-      personnelist: [
-        {
-          title: "A",
-          key: "A",
-          items: [
-            {
-              name: "阿花"
-            },
-            {
-              name: "阿set"
-            },
-            {
-              name: "按jio拉北鼻"
-            }
-          ]
-        },
-        {
-          title: "B",
-          key: "B",
-          items: [
-            {
-              name: "赑"
-            },
-            {
-              name: "白真"
-            }
-          ]
-        },
-        {
-          title: "C",
-          key: "C",
-          items: [
-            {
-              name: "单机游戏达人"
-            },
-            {
-              name: "潮野春升"
-            },
-            {
-              name: "充电"
-            },
-            {
-              name: "炽热火焱"
-            },
-            {
-              name: "橙熟"
-            },
-            {
-              name: "陈晨"
-            }
-          ]
-        }
-      ]
+      }
     };
   }
 
@@ -129,11 +77,11 @@ export default class Index extends Component<
   };
 
   render() {
-    const { imageData, personnelist } = this.state;
+    const { imageData } = this.state;
     const tabList = [
-      { title: "舞团简介" },
+      { title: "成员名单" },
       { title: "管理团队名单" },
-      { title: "成员名单" }
+      { title: "舞团简介" }
     ];
     return (
       <View className="my">
@@ -144,7 +92,25 @@ export default class Index extends Component<
           onClick={this.tabClick.bind(this)}
         >
           <AtTabsPane current={this.state.tabCurrent} index={0}>
-            <View className="tab-item">舞团简介</View>
+            <View className="tab-item">
+              <View style="height:80vh">
+                <AtIndexes
+                  list={personData.personnelist}
+                  animation={true}
+                  onScrollIntoView={fn => {
+                    this.scrollIntoView = fn;
+                  }}
+                >
+                  <View className="custom-area">
+                    {/* 用户自定义内容 */}
+                    <AtSearchBar
+                      placeholder="跳转到指定Key"
+                      onActionClick={this.handleActionClick.bind(this)}
+                    />
+                  </View>
+                </AtIndexes>
+              </View>
+            </View>
           </AtTabsPane>
           <AtTabsPane current={this.state.tabCurrent} index={1}>
             <View className="tab-item">
@@ -162,23 +128,16 @@ export default class Index extends Component<
           </AtTabsPane>
           <AtTabsPane current={this.state.tabCurrent} index={2}>
             <View className="tab-item">
-              <View style="height:80vh">
-                <AtIndexes
-                  list={personnelist}
-                  animation={true}
-                  onScrollIntoView={fn => {
-                    this.scrollIntoView = fn;
-                  }}
-                >
-                  <View className="custom-area">
-                    {/* 用户自定义内容 */}
-                    <AtSearchBar
-                      placeholder="跳转到指定Key"
-                      onActionClick={this.handleActionClick.bind(this)}
-                    />
-                  </View>
-                </AtIndexes>
-              </View>
+              <Text className="tab-item-text">
+                舞团建于2020年初，团内已有上百位优秀歌手之多。舞团承接各种婚庆仪式、生日宴会、舞团活动、家族庆典等一系列集体活动，其内容包括优秀的男女主持、现场美妙动人的歌手演唱、以及优秀的助威团等等。
+              </Text>
+              <Text className="tab-item-text">
+                由你音乐舞团对外承接各种活动，同时招收主持、歌手、场控等各种人才。
+              </Text>
+              <Text className="tab-item-text">
+                音乐彰显个性魅力，由你谱写精彩未来！{" "}
+              </Text>
+              <Text className="tab-item-text">——因为由你，因为有你！——</Text>
             </View>
           </AtTabsPane>
         </AtTabs>
