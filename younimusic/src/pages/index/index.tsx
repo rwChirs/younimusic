@@ -34,18 +34,26 @@ export default class Index extends Component {
   }
 
   render() {
+    let defaultImage =
+      "//m.360buyimg.com/img/jfs/t1/193412/29/19111/130126/611fc7b7E3aa1c999/917b5e41c40cde25.png";
+    let bgImage =
+      "//m.360buyimg.com/img/jfs/t1/201095/6/2658/430381/611ff15fE6576f144/957a8ffdb11a64b6.png";
     return (
       <View className="index">
         <Image
           className="index-image"
           style={{
-            height: px2vw(1500)
+            height: "88vh"
           }}
-          src={filterImg(
-            "//m.360buyimg.com/img/jfs/t1/193412/29/19111/130126/611fc7b7E3aa1c999/917b5e41c40cde25.png"
-          )}
+          src={filterImg(defaultImage)}
         />
-        <View style={{ height: px2vw(150) }} />
+        <Image
+          className="index-gif"
+          src={
+            "//m.360buyimg.com/img/jfs/t1/180356/3/20013/2906117/611ff291E6fd16bca/ba0311873f285f7c.gif"
+          }
+        />
+        <View style={{ height: "12vh" }} />
 
         <CustomTabBar selected={0} />
       </View>

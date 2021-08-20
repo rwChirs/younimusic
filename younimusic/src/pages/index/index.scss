@@ -3,4 +3,13 @@
   .index-image {
     width: 100%;
   }
+  .index-gif {
+    position: absolute;
+    top: 36vh;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
 }
