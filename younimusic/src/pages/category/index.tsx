@@ -80,7 +80,7 @@ export default class Index extends Component<
           onClick={this.tabClick.bind(this)}
         >
           <AtTabsPane current={this.state.tabCurrent} index={0}>
-            <View className="tab-item"></View>
+            <View className="tab-item">敬请期待～</View>
           </AtTabsPane>
           <AtTabsPane current={this.state.tabCurrent} index={1}>
             <View className="tab-item">
